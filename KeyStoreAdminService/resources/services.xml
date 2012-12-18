@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="KeyStoreAdminService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.security.keystore.service.KeyStoreAdminServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.security.keystore.service.KeyStoreAdminServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.security.keystore.service.KeyStoreAdminServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getStoreEntries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.keystore.security.carbon.wso2.org">
+            <actionMapping>urn:getStoreEntries</actionMapping>
+            <outputActionMapping>urn:getStoreEntriesResponse</outputActionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException">urn:getStoreEntriesKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException_Exception">urn:getStoreEntriesKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+        <operation name="addKeyStore" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.keystore.security.carbon.wso2.org">
+            <actionMapping>urn:addKeyStore</actionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException">urn:addKeyStoreKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException_Exception">urn:addKeyStoreKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+        <operation name="importCertToStore" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.keystore.security.carbon.wso2.org">
+            <actionMapping>urn:importCertToStore</actionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException">urn:importCertToStoreKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException_Exception">urn:importCertToStoreKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+        <operation name="getKeystoreInfo" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.keystore.security.carbon.wso2.org">
+            <actionMapping>urn:getKeystoreInfo</actionMapping>
+            <outputActionMapping>urn:getKeystoreInfoResponse</outputActionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException">urn:getKeystoreInfoKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException_Exception">urn:getKeystoreInfoKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+        <operation name="deleteStore" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.keystore.security.carbon.wso2.org">
+            <actionMapping>urn:deleteStore</actionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException">urn:deleteStoreKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException_Exception">urn:deleteStoreKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+        <operation name="getKeyStores" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.keystore.security.carbon.wso2.org">
+            <actionMapping>urn:getKeyStores</actionMapping>
+            <outputActionMapping>urn:getKeyStoresResponse</outputActionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException">urn:getKeyStoresKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="KeyStoreAdminServiceSecurityConfigException_Exception">urn:getKeyStoresKeyStoreAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

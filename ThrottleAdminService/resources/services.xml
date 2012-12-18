@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="ThrottleAdminService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.throttle.service.ThrottleAdminServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.throttle.service.ThrottleAdminServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.throttle.service.ThrottleAdminServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="disengageGlobalThrottling" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.throttle.carbon.wso2.org">
+            <actionMapping>urn:disengageGlobalThrottling</actionMapping>
+            <outputActionMapping>urn:disengageGlobalThrottlingResponse</outputActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException">urn:disengageGlobalThrottlingThrottleAdminServiceThrottleComponentException</faultActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException_Exception">urn:disengageGlobalThrottlingThrottleAdminServiceThrottleComponentException</faultActionMapping>
+        </operation>
+        <operation name="getOperationPolicyConfigs" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.throttle.carbon.wso2.org">
+            <actionMapping>urn:getOperationPolicyConfigs</actionMapping>
+            <outputActionMapping>urn:getOperationPolicyConfigsResponse</outputActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException">urn:getOperationPolicyConfigsThrottleAdminServiceThrottleComponentException</faultActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException_Exception">urn:getOperationPolicyConfigsThrottleAdminServiceThrottleComponentException</faultActionMapping>
+        </operation>
+        <operation name="enableThrottling" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.throttle.carbon.wso2.org">
+            <actionMapping>urn:enableThrottling</actionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException">urn:enableThrottlingThrottleAdminServiceThrottleComponentException</faultActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException_Exception">urn:enableThrottlingThrottleAdminServiceThrottleComponentException</faultActionMapping>
+        </operation>
+        <operation name="throttlePolicyToString" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.throttle.carbon.wso2.org">
+            <actionMapping>urn:throttlePolicyToString</actionMapping>
+            <outputActionMapping>urn:throttlePolicyToStringResponse</outputActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException">urn:throttlePolicyToStringThrottleAdminServiceThrottleComponentException</faultActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException_Exception">urn:throttlePolicyToStringThrottleAdminServiceThrottleComponentException</faultActionMapping>
+        </operation>
+        <operation name="getPolicyConfigs" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.throttle.carbon.wso2.org">
+            <actionMapping>urn:getPolicyConfigs</actionMapping>
+            <outputActionMapping>urn:getPolicyConfigsResponse</outputActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException">urn:getPolicyConfigsThrottleAdminServiceThrottleComponentException</faultActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException_Exception">urn:getPolicyConfigsThrottleAdminServiceThrottleComponentException</faultActionMapping>
+        </operation>
+        <operation name="getGlobalPolicyConfigs" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.throttle.carbon.wso2.org">
+            <actionMapping>urn:getGlobalPolicyConfigs</actionMapping>
+            <outputActionMapping>urn:getGlobalPolicyConfigsResponse</outputActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException">urn:getGlobalPolicyConfigsThrottleAdminServiceThrottleComponentException</faultActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException_Exception">urn:getGlobalPolicyConfigsThrottleAdminServiceThrottleComponentException</faultActionMapping>
+        </operation>
+        <operation name="disableThrottling" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.throttle.carbon.wso2.org">
+            <actionMapping>urn:disableThrottling</actionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException">urn:disableThrottlingThrottleAdminServiceThrottleComponentException</faultActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException_Exception">urn:disableThrottlingThrottleAdminServiceThrottleComponentException</faultActionMapping>
+        </operation>
+        <operation name="engageThrottlingForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.throttle.carbon.wso2.org">
+            <actionMapping>urn:engageThrottlingForOperation</actionMapping>
+            <outputActionMapping>urn:engageThrottlingForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException">urn:engageThrottlingForOperationThrottleAdminServiceThrottleComponentException</faultActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException_Exception">urn:engageThrottlingForOperationThrottleAdminServiceThrottleComponentException</faultActionMapping>
+        </operation>
+        <operation name="globallyEngageThrottling" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.throttle.carbon.wso2.org">
+            <actionMapping>urn:globallyEngageThrottling</actionMapping>
+            <outputActionMapping>urn:globallyEngageThrottlingResponse</outputActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException">urn:globallyEngageThrottlingThrottleAdminServiceThrottleComponentException</faultActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException_Exception">urn:globallyEngageThrottlingThrottleAdminServiceThrottleComponentException</faultActionMapping>
+        </operation>
+        <operation name="toThrottlePolicy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.throttle.carbon.wso2.org">
+            <actionMapping>urn:toThrottlePolicy</actionMapping>
+            <outputActionMapping>urn:toThrottlePolicyResponse</outputActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException">urn:toThrottlePolicyThrottleAdminServiceThrottleComponentException</faultActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException_Exception">urn:toThrottlePolicyThrottleAdminServiceThrottleComponentException</faultActionMapping>
+        </operation>
+        <operation name="disengageThrottlingForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.throttle.carbon.wso2.org">
+            <actionMapping>urn:disengageThrottlingForOperation</actionMapping>
+            <outputActionMapping>urn:disengageThrottlingForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException">urn:disengageThrottlingForOperationThrottleAdminServiceThrottleComponentException</faultActionMapping>
+            <faultActionMapping faultName="ThrottleAdminServiceThrottleComponentException_Exception">urn:disengageThrottlingForOperationThrottleAdminServiceThrottleComponentException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

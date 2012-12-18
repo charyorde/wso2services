@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="JMSTransportAdmin">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.transport.jms.JMSTransportAdminMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.transport.jms.JMSTransportAdminMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.transport.jms.JMSTransportAdminSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getGloballyDefinedOutParameters" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:getGloballyDefinedOutParameters</actionMapping>
+            <outputActionMapping>urn:getGloballyDefinedOutParametersResponse</outputActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:getGloballyDefinedOutParametersJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:getGloballyDefinedOutParametersJMSTransportAdminException</faultActionMapping>
+        </operation>
+        <operation name="updateGloballyDefinedInParameters" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:updateGloballyDefinedInParameters</actionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:updateGloballyDefinedInParametersJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:updateGloballyDefinedInParametersJMSTransportAdminException</faultActionMapping>
+        </operation>
+        <operation name="updateServiceSpecificInParameters" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:updateServiceSpecificInParameters</actionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:updateServiceSpecificInParametersJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:updateServiceSpecificInParametersJMSTransportAdminException</faultActionMapping>
+        </operation>
+        <operation name="removeConnectionFactory" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:removeConnectionFactory</actionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:removeConnectionFactoryJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:removeConnectionFactoryJMSTransportAdminException</faultActionMapping>
+        </operation>
+        <operation name="updateServiceSpecificOutParameters" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:updateServiceSpecificOutParameters</actionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:updateServiceSpecificOutParametersJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:updateServiceSpecificOutParametersJMSTransportAdminException</faultActionMapping>
+        </operation>
+        <operation name="getServiceSpecificOutParameters" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:getServiceSpecificOutParameters</actionMapping>
+            <outputActionMapping>urn:getServiceSpecificOutParametersResponse</outputActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:getServiceSpecificOutParametersJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:getServiceSpecificOutParametersJMSTransportAdminException</faultActionMapping>
+        </operation>
+        <operation name="getGloballyDefinedInParameters" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:getGloballyDefinedInParameters</actionMapping>
+            <outputActionMapping>urn:getGloballyDefinedInParametersResponse</outputActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:getGloballyDefinedInParametersJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:getGloballyDefinedInParametersJMSTransportAdminException</faultActionMapping>
+        </operation>
+        <operation name="disableTransportListener" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:disableTransportListener</actionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:disableTransportListenerJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:disableTransportListenerJMSTransportAdminException</faultActionMapping>
+        </operation>
+        <operation name="getServiceSpecificInParameters" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:getServiceSpecificInParameters</actionMapping>
+            <outputActionMapping>urn:getServiceSpecificInParametersResponse</outputActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:getServiceSpecificInParametersJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:getServiceSpecificInParametersJMSTransportAdminException</faultActionMapping>
+        </operation>
+        <operation name="disableTransportSender" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:disableTransportSender</actionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:disableTransportSenderJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:disableTransportSenderJMSTransportAdminException</faultActionMapping>
+        </operation>
+        <operation name="addConnectionFactory" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:addConnectionFactory</actionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:addConnectionFactoryJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:addConnectionFactoryJMSTransportAdminException</faultActionMapping>
+        </operation>
+        <operation name="updateGloballyDefinedOutParameters" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://jms.transport.carbon.wso2.org">
+            <actionMapping>urn:updateGloballyDefinedOutParameters</actionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException">urn:updateGloballyDefinedOutParametersJMSTransportAdminException</faultActionMapping>
+            <faultActionMapping faultName="JMSTransportAdminException_Exception">urn:updateGloballyDefinedOutParametersJMSTransportAdminException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="STSAdminService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.security.sts.service.STSAdminServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.security.sts.service.STSAdminServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.security.sts.service.STSAdminServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="removeTrustedService" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.sts.security.carbon.wso2.org">
+            <actionMapping>urn:removeTrustedService</actionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException">urn:removeTrustedServiceSTSAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException_Exception">urn:removeTrustedServiceSTSAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+        <operation name="addTrustedService" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.sts.security.carbon.wso2.org">
+            <actionMapping>urn:addTrustedService</actionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException">urn:addTrustedServiceSTSAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException_Exception">urn:addTrustedServiceSTSAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+        <operation name="setProofKeyType" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.sts.security.carbon.wso2.org">
+            <actionMapping>urn:setProofKeyType</actionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException">urn:setProofKeyTypeSTSAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException_Exception">urn:setProofKeyTypeSTSAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+        <operation name="getProofKeyType" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.sts.security.carbon.wso2.org">
+            <actionMapping>urn:getProofKeyType</actionMapping>
+            <outputActionMapping>urn:getProofKeyTypeResponse</outputActionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException">urn:getProofKeyTypeSTSAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException_Exception">urn:getProofKeyTypeSTSAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+        <operation name="getCertAliasOfPrimaryKeyStore" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.sts.security.carbon.wso2.org">
+            <actionMapping>urn:getCertAliasOfPrimaryKeyStore</actionMapping>
+            <outputActionMapping>urn:getCertAliasOfPrimaryKeyStoreResponse</outputActionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException">urn:getCertAliasOfPrimaryKeyStoreSTSAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException_Exception">urn:getCertAliasOfPrimaryKeyStoreSTSAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+        <operation name="getTrustedServices" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.sts.security.carbon.wso2.org">
+            <actionMapping>urn:getTrustedServices</actionMapping>
+            <outputActionMapping>urn:getTrustedServicesResponse</outputActionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException">urn:getTrustedServicesSTSAdminServiceSecurityConfigException</faultActionMapping>
+            <faultActionMapping faultName="STSAdminServiceSecurityConfigException_Exception">urn:getTrustedServicesSTSAdminServiceSecurityConfigException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

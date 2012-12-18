@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://discovery.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://org.apache.synapse/xsd" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://discovery.carbon.wso2.org" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ax2110="http://util.discovery.carbon.wso2.org/xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>DiscoveryAdmin</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://util.discovery.carbon.wso2.org/xsd">
+            <xs:complexType name="DiscoveryProxyDetails">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="online" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="policy" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="url" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="TargetServiceDetails">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="addresses" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="scopes" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="serviceId" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="types" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="version" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="ProbeDetails">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="rule" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="scopes" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="types" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="ServiceDiscoveryConfig">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="enabled" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="proxyURL" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://org.apache.synapse/xsd" xmlns:ax2111="http://util.discovery.carbon.wso2.org/xsd">
+            <xs:import namespace="http://util.discovery.carbon.wso2.org/xsd"/>
+            <xs:element name="DiscoveryAdminException">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="DiscoveryAdminException" nillable="true" type="ns:Exception"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="Exception">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="updateDiscoveryProxy">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="pd" nillable="true" type="ax2111:DiscoveryProxyDetails"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="resolveTargetService">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="serviceId" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="resolveTargetServiceResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ax2111:TargetServiceDetails"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="removeDiscoveryProxy">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="probeDiscoveryProxy">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="probe" nillable="true" type="ax2111:ProbeDetails"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="probeDiscoveryProxyResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ax2111:TargetServiceDetails"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getServiceDiscoveryConfig">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getServiceDiscoveryConfigResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ax2111:ServiceDiscoveryConfig"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getDiscoveryProxy">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getDiscoveryProxyResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ax2111:DiscoveryProxyDetails"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getDiscoveryProxies">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getDiscoveryProxiesResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ax2111:DiscoveryProxyDetails"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="enableServiceDiscovery">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="proxyURL" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="disableServiceDiscovery">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="sendBye" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addDiscoveryProxy">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="pd" nillable="true" type="ax2111:DiscoveryProxyDetails"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="updateDiscoveryProxyRequest">
+    <wsdl:part name="parameters" element="ns:updateDiscoveryProxy">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="probeDiscoveryProxyRequest">
+    <wsdl:part name="parameters" element="ns:probeDiscoveryProxy">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDiscoveryProxiesRequest">
+    <wsdl:part name="parameters" element="ns:getDiscoveryProxies">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="disableServiceDiscoveryRequest">
+    <wsdl:part name="parameters" element="ns:disableServiceDiscovery">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="probeDiscoveryProxyResponse">
+    <wsdl:part name="parameters" element="ns:probeDiscoveryProxyResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDiscoveryProxyRequest">
+    <wsdl:part name="parameters" element="ns:getDiscoveryProxy">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="resolveTargetServiceRequest">
+    <wsdl:part name="parameters" element="ns:resolveTargetService">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="enableServiceDiscoveryRequest">
+    <wsdl:part name="parameters" element="ns:enableServiceDiscovery">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getServiceDiscoveryConfigRequest">
+    <wsdl:part name="parameters" element="ns:getServiceDiscoveryConfig">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="resolveTargetServiceResponse">
+    <wsdl:part name="parameters" element="ns:resolveTargetServiceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDiscoveryProxyResponse">
+    <wsdl:part name="parameters" element="ns:getDiscoveryProxyResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DiscoveryAdminException">
+    <wsdl:part name="parameters" element="ns:DiscoveryAdminException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getServiceDiscoveryConfigResponse">
+    <wsdl:part name="parameters" element="ns:getServiceDiscoveryConfigResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="removeDiscoveryProxyRequest">
+    <wsdl:part name="parameters" element="ns:removeDiscoveryProxy">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDiscoveryProxiesResponse">
+    <wsdl:part name="parameters" element="ns:getDiscoveryProxiesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addDiscoveryProxyRequest">
+    <wsdl:part name="parameters" element="ns:addDiscoveryProxy">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="DiscoveryAdminPortType">
+    <wsdl:operation name="probeDiscoveryProxy">
+      <wsdl:input message="tns:probeDiscoveryProxyRequest" wsaw:Action="urn:probeDiscoveryProxy">
+    </wsdl:input>
+      <wsdl:output message="tns:probeDiscoveryProxyResponse" wsaw:Action="urn:probeDiscoveryProxyResponse">
+    </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException" message="tns:DiscoveryAdminException" wsaw:Action="urn:probeDiscoveryProxyDiscoveryAdminException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="removeDiscoveryProxy">
+      <wsdl:input message="tns:removeDiscoveryProxyRequest" wsaw:Action="urn:removeDiscoveryProxy">
+    </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException" message="tns:DiscoveryAdminException" wsaw:Action="urn:removeDiscoveryProxyDiscoveryAdminException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDiscoveryProxies">
+      <wsdl:input message="tns:getDiscoveryProxiesRequest" wsaw:Action="urn:getDiscoveryProxies">
+    </wsdl:input>
+      <wsdl:output message="tns:getDiscoveryProxiesResponse" wsaw:Action="urn:getDiscoveryProxiesResponse">
+    </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException" message="tns:DiscoveryAdminException" wsaw:Action="urn:getDiscoveryProxiesDiscoveryAdminException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getServiceDiscoveryConfig">
+      <wsdl:input message="tns:getServiceDiscoveryConfigRequest" wsaw:Action="urn:getServiceDiscoveryConfig">
+    </wsdl:input>
+      <wsdl:output message="tns:getServiceDiscoveryConfigResponse" wsaw:Action="urn:getServiceDiscoveryConfigResponse">
+    </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException" message="tns:DiscoveryAdminException" wsaw:Action="urn:getServiceDiscoveryConfigDiscoveryAdminException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="disableServiceDiscovery">
+      <wsdl:input message="tns:disableServiceDiscoveryRequest" wsaw:Action="urn:disableServiceDiscovery">
+    </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException" message="tns:DiscoveryAdminException" wsaw:Action="urn:disableServiceDiscoveryDiscoveryAdminException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateDiscoveryProxy">
+      <wsdl:input message="tns:updateDiscoveryProxyRequest" wsaw:Action="urn:updateDiscoveryProxy">
+    </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException" message="tns:DiscoveryAdminException" wsaw:Action="urn:updateDiscoveryProxyDiscoveryAdminException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="resolveTargetService">
+      <wsdl:input message="tns:resolveTargetServiceRequest" wsaw:Action="urn:resolveTargetService">
+    </wsdl:input>
+      <wsdl:output message="tns:resolveTargetServiceResponse" wsaw:Action="urn:resolveTargetServiceResponse">
+    </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException" message="tns:DiscoveryAdminException" wsaw:Action="urn:resolveTargetServiceDiscoveryAdminException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addDiscoveryProxy">
+      <wsdl:input message="tns:addDiscoveryProxyRequest" wsaw:Action="urn:addDiscoveryProxy">
+    </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException" message="tns:DiscoveryAdminException" wsaw:Action="urn:addDiscoveryProxyDiscoveryAdminException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="enableServiceDiscovery">
+      <wsdl:input message="tns:enableServiceDiscoveryRequest" wsaw:Action="urn:enableServiceDiscovery">
+    </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException" message="tns:DiscoveryAdminException" wsaw:Action="urn:enableServiceDiscoveryDiscoveryAdminException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDiscoveryProxy">
+      <wsdl:input message="tns:getDiscoveryProxyRequest" wsaw:Action="urn:getDiscoveryProxy">
+    </wsdl:input>
+      <wsdl:output message="tns:getDiscoveryProxyResponse" wsaw:Action="urn:getDiscoveryProxyResponse">
+    </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException" message="tns:DiscoveryAdminException" wsaw:Action="urn:getDiscoveryProxyDiscoveryAdminException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DiscoveryAdminHttpBinding" type="tns:DiscoveryAdminPortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="probeDiscoveryProxy">
+      <http:operation location="probeDiscoveryProxy"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDiscoveryProxies">
+      <http:operation location="getDiscoveryProxies"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeDiscoveryProxy">
+      <http:operation location="removeDiscoveryProxy"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getServiceDiscoveryConfig">
+      <http:operation location="getServiceDiscoveryConfig"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="disableServiceDiscovery">
+      <http:operation location="disableServiceDiscovery"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="resolveTargetService">
+      <http:operation location="resolveTargetService"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDiscoveryProxy">
+      <http:operation location="updateDiscoveryProxy"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="addDiscoveryProxy">
+      <http:operation location="addDiscoveryProxy"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="enableServiceDiscovery">
+      <http:operation location="enableServiceDiscovery"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getDiscoveryProxy">
+      <http:operation location="getDiscoveryProxy"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DiscoveryAdminSoap12Binding" type="tns:DiscoveryAdminPortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="probeDiscoveryProxy">
+      <soap12:operation soapAction="urn:probeDiscoveryProxy" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap12:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDiscoveryProxies">
+      <soap12:operation soapAction="urn:getDiscoveryProxies" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap12:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="removeDiscoveryProxy">
+      <soap12:operation soapAction="urn:removeDiscoveryProxy" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap12:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getServiceDiscoveryConfig">
+      <soap12:operation soapAction="urn:getServiceDiscoveryConfig" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap12:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="disableServiceDiscovery">
+      <soap12:operation soapAction="urn:disableServiceDiscovery" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap12:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="resolveTargetService">
+      <soap12:operation soapAction="urn:resolveTargetService" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap12:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateDiscoveryProxy">
+      <soap12:operation soapAction="urn:updateDiscoveryProxy" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap12:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addDiscoveryProxy">
+      <soap12:operation soapAction="urn:addDiscoveryProxy" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap12:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="enableServiceDiscovery">
+      <soap12:operation soapAction="urn:enableServiceDiscovery" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap12:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDiscoveryProxy">
+      <soap12:operation soapAction="urn:getDiscoveryProxy" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap12:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DiscoveryAdminSoap11Binding" type="tns:DiscoveryAdminPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="probeDiscoveryProxy">
+      <soap:operation soapAction="urn:probeDiscoveryProxy" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDiscoveryProxies">
+      <soap:operation soapAction="urn:getDiscoveryProxies" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="removeDiscoveryProxy">
+      <soap:operation soapAction="urn:removeDiscoveryProxy" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getServiceDiscoveryConfig">
+      <soap:operation soapAction="urn:getServiceDiscoveryConfig" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="disableServiceDiscovery">
+      <soap:operation soapAction="urn:disableServiceDiscovery" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="resolveTargetService">
+      <soap:operation soapAction="urn:resolveTargetService" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateDiscoveryProxy">
+      <soap:operation soapAction="urn:updateDiscoveryProxy" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addDiscoveryProxy">
+      <soap:operation soapAction="urn:addDiscoveryProxy" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="enableServiceDiscovery">
+      <soap:operation soapAction="urn:enableServiceDiscovery" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDiscoveryProxy">
+      <soap:operation soapAction="urn:getDiscoveryProxy" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiscoveryAdminException">
+        <soap:fault name="DiscoveryAdminException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DiscoveryAdmin">
+    <wsdl:port name="DiscoveryAdminHttpsEndpoint" binding="tns:DiscoveryAdminHttpBinding">
+      <http:address location="https://appserver.cloud-test.wso2.com:9446/services/DiscoveryAdmin.DiscoveryAdminHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="DiscoveryAdminHttpsSoap12Endpoint" binding="tns:DiscoveryAdminSoap12Binding">
+      <soap12:address location="https://appserver.cloud-test.wso2.com:9446/services/DiscoveryAdmin.DiscoveryAdminHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="DiscoveryAdminHttpsSoap11Endpoint" binding="tns:DiscoveryAdminSoap11Binding">
+      <soap:address location="https://appserver.cloud-test.wso2.com:9446/services/DiscoveryAdmin.DiscoveryAdminHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

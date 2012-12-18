@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="CustomMeteringService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.usage.agent.services.CustomMeteringServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.usage.agent.services.CustomMeteringServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.usage.agent.services.CustomMeteringServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="isUsageEntryExists" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.agent.usage.carbon.wso2.org">
+            <actionMapping>urn:isUsageEntryExists</actionMapping>
+            <outputActionMapping>urn:isUsageEntryExistsResponse</outputActionMapping>
+            <faultActionMapping faultName="CustomMeteringServiceException">urn:isUsageEntryExistsCustomMeteringServiceException</faultActionMapping>
+            <faultActionMapping faultName="CustomMeteringServiceException_Exception">urn:isUsageEntryExistsCustomMeteringServiceException</faultActionMapping>
+        </operation>
+        <operation name="retrieveUsage" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.agent.usage.carbon.wso2.org">
+            <actionMapping>urn:retrieveUsage</actionMapping>
+            <outputActionMapping>urn:retrieveUsageResponse</outputActionMapping>
+            <faultActionMapping faultName="CustomMeteringServiceUsageException">urn:retrieveUsageCustomMeteringServiceUsageException</faultActionMapping>
+            <faultActionMapping faultName="CustomMeteringServiceUsageException_Exception">urn:retrieveUsageCustomMeteringServiceUsageException</faultActionMapping>
+        </operation>
+        <operation name="addUsage" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.agent.usage.carbon.wso2.org">
+            <actionMapping>urn:addUsage</actionMapping>
+            <outputActionMapping>urn:addUsageResponse</outputActionMapping>
+            <faultActionMapping faultName="CustomMeteringServiceException">urn:addUsageCustomMeteringServiceException</faultActionMapping>
+            <faultActionMapping faultName="CustomMeteringServiceException_Exception">urn:addUsageCustomMeteringServiceException</faultActionMapping>
+        </operation>
+        <operation name="persistUsage" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://services.agent.usage.carbon.wso2.org">
+            <actionMapping>urn:persistUsage</actionMapping>
+            <faultActionMapping faultName="CustomMeteringServiceException">urn:persistUsageCustomMeteringServiceException</faultActionMapping>
+            <faultActionMapping faultName="CustomMeteringServiceException_Exception">urn:persistUsageCustomMeteringServiceException</faultActionMapping>
+        </operation>
+        <operation name="getRecordedDurations" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.agent.usage.carbon.wso2.org">
+            <actionMapping>urn:getRecordedDurations</actionMapping>
+            <outputActionMapping>urn:getRecordedDurationsResponse</outputActionMapping>
+            <faultActionMapping faultName="CustomMeteringServiceException">urn:getRecordedDurationsCustomMeteringServiceException</faultActionMapping>
+            <faultActionMapping faultName="CustomMeteringServiceException_Exception">urn:getRecordedDurationsCustomMeteringServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

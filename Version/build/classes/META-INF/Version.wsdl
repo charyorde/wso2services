@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://version.services.core.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:ns="http://version.services.core.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>Version</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://version.services.core.carbon.wso2.org">
+            <xs:element name="VersionException">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="VersionException" nillable="true" type="ns:Exception"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="Exception">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="getVersion">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getVersionResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getVersionResponse">
+    <wsdl:part name="parameters" element="ns:getVersionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="VersionException">
+    <wsdl:part name="parameters" element="ns:VersionException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getVersionRequest">
+    <wsdl:part name="parameters" element="ns:getVersion">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="VersionPortType" wsp:PolicyURIs="#urn:version">
+    <wsdl:operation name="getVersion" wsp:PolicyURIs="#b9fbd58328a0e7fcafaeb091b76f5ee93bdbc0b83119473d">
+      <wsdl:input message="ns:getVersionRequest" wsaw:Action="urn:getVersion">
+    </wsdl:input>
+      <wsdl:output message="ns:getVersionResponse" wsaw:Action="urn:getVersionResponse">
+    </wsdl:output>
+      <wsdl:fault name="VersionException" message="ns:VersionException" wsaw:Action="urn:getVersionVersionException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VersionHttpBinding" type="ns:VersionPortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="getVersion">
+      <http:operation location="getVersion"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VersionSoap12Binding" type="ns:VersionPortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getVersion">
+      <soap12:operation soapAction="urn:getVersion" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="VersionException">
+        <soap12:fault name="VersionException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VersionSoap11Binding" type="ns:VersionPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getVersion">
+      <soap:operation soapAction="urn:getVersion" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="VersionException">
+        <soap:fault name="VersionException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Version">
+    <wsdl:port name="VersionHttpSoap11Endpoint" binding="ns:VersionSoap11Binding">
+      <soap:address location="http://appserver.cloud-test.wso2.com:9766/services/Version.VersionHttpSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="VersionHttpSoap12Endpoint" binding="ns:VersionSoap12Binding">
+      <soap12:address location="http://appserver.cloud-test.wso2.com:9766/services/Version.VersionHttpSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="VersionHttpsSoap12Endpoint" binding="ns:VersionSoap12Binding">
+      <soap12:address location="https://appserver.cloud-test.wso2.com:9446/services/Version.VersionHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="VersionHttpsSoap11Endpoint" binding="ns:VersionSoap11Binding">
+      <soap:address location="https://appserver.cloud-test.wso2.com:9446/services/Version.VersionHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="VersionHttpsEndpoint" binding="ns:VersionHttpBinding">
+      <http:address location="https://appserver.cloud-test.wso2.com:9446/services/Version.VersionHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="VersionHttpEndpoint" binding="ns:VersionHttpBinding">
+      <http:address location="http://appserver.cloud-test.wso2.com:9766/services/Version.VersionHttpEndpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+    <wsp:Policy wsu:Id="b9fbd58328a0e7fcafaeb091b76f5ee93bdbc0b83119473d" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <intf:OperationPolicyTestAssertion1 marker="2" xmlns:intf="http://test.policy.org/wsas"/>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy Name="urn:version" wsu:Id="urn:version" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <intf:ServicePolicyTestAssertion1 marker="2" xmlns:intf="http://test.policy.org/wsas"/>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+</wsdl:definitions>

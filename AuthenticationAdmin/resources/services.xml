@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="AuthenticationAdmin">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.core.services.authentication.AuthenticationAdminMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.core.services.authentication.AuthenticationAdminMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.core.services.authentication.AuthenticationAdminSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="logout" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://authentication.services.core.carbon.wso2.org">
+            <actionMapping>urn:logout</actionMapping>
+            <faultActionMapping faultName="AuthenticationAdminAuthenticationException">urn:logoutAuthenticationAdminAuthenticationException</faultActionMapping>
+            <faultActionMapping faultName="AuthenticationAdminAuthenticationException_Exception">urn:logoutAuthenticationAdminAuthenticationException</faultActionMapping>
+        </operation>
+        <operation name="loginWithRememberMeOption" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://authentication.services.core.carbon.wso2.org">
+            <actionMapping>urn:loginWithRememberMeOption</actionMapping>
+            <outputActionMapping>urn:loginWithRememberMeOptionResponse</outputActionMapping>
+            <faultActionMapping faultName="AuthenticationAdminAuthenticationException">urn:loginWithRememberMeOptionAuthenticationAdminAuthenticationException</faultActionMapping>
+            <faultActionMapping faultName="AuthenticationAdminAuthenticationException_Exception">urn:loginWithRememberMeOptionAuthenticationAdminAuthenticationException</faultActionMapping>
+        </operation>
+        <operation name="login" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://authentication.services.core.carbon.wso2.org">
+            <actionMapping>urn:login</actionMapping>
+            <outputActionMapping>urn:loginResponse</outputActionMapping>
+            <faultActionMapping faultName="AuthenticationAdminAuthenticationException">urn:loginAuthenticationAdminAuthenticationException</faultActionMapping>
+            <faultActionMapping faultName="AuthenticationAdminAuthenticationException_Exception">urn:loginAuthenticationAdminAuthenticationException</faultActionMapping>
+        </operation>
+        <operation name="getAuthenticatorName" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://authentication.services.core.carbon.wso2.org">
+            <actionMapping>urn:getAuthenticatorName</actionMapping>
+            <outputActionMapping>urn:getAuthenticatorNameResponse</outputActionMapping>
+        </operation>
+        <operation name="getPriority" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://authentication.services.core.carbon.wso2.org">
+            <actionMapping>urn:getPriority</actionMapping>
+            <outputActionMapping>urn:getPriorityResponse</outputActionMapping>
+        </operation>
+        <operation name="isDisabled" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://authentication.services.core.carbon.wso2.org">
+            <actionMapping>urn:isDisabled</actionMapping>
+            <outputActionMapping>urn:isDisabledResponse</outputActionMapping>
+        </operation>
+        <operation name="authenticateWithRememberMe" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://authentication.services.core.carbon.wso2.org">
+            <actionMapping>urn:authenticateWithRememberMe</actionMapping>
+            <outputActionMapping>urn:authenticateWithRememberMeResponse</outputActionMapping>
+        </operation>
+        <operation name="loginWithRememberMeCookie" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://authentication.services.core.carbon.wso2.org">
+            <actionMapping>urn:loginWithRememberMeCookie</actionMapping>
+            <outputActionMapping>urn:loginWithRememberMeCookieResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

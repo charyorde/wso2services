@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="LoggingAdmin">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.logging.service.LoggingAdminMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.logging.service.LoggingAdminMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.logging.service.LoggingAdminSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getAllLoggerData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:getAllLoggerData</actionMapping>
+            <outputActionMapping>urn:getAllLoggerDataResponse</outputActionMapping>
+        </operation>
+        <operation name="isStratosService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:isStratosService</actionMapping>
+            <outputActionMapping>urn:isStratosServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="LoggingAdminException">urn:isStratosServiceLoggingAdminException</faultActionMapping>
+            <faultActionMapping faultName="LoggingAdminException_Exception">urn:isStratosServiceLoggingAdminException</faultActionMapping>
+        </operation>
+        <operation name="updateSyslogConfig" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:updateSyslogConfig</actionMapping>
+            <faultActionMapping faultName="LoggingAdminLoggingAdminException">urn:updateSyslogConfigLoggingAdminLoggingAdminException</faultActionMapping>
+            <faultActionMapping faultName="LoggingAdminLoggingAdminException_Exception">urn:updateSyslogConfigLoggingAdminLoggingAdminException</faultActionMapping>
+        </operation>
+        <operation name="removeSyslogPattern" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:removeSyslogPattern</actionMapping>
+            <outputActionMapping>urn:removeSyslogPatternResponse</outputActionMapping>
+        </operation>
+        <operation name="getSyslogData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:getSyslogData</actionMapping>
+            <outputActionMapping>urn:getSyslogDataResponse</outputActionMapping>
+            <faultActionMapping faultName="LoggingAdminLoggingAdminException">urn:getSyslogDataLoggingAdminLoggingAdminException</faultActionMapping>
+            <faultActionMapping faultName="LoggingAdminLoggingAdminException_Exception">urn:getSyslogDataLoggingAdminLoggingAdminException</faultActionMapping>
+        </operation>
+        <operation name="restoreDefaults" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:restoreDefaults</actionMapping>
+            <faultActionMapping faultName="LoggingAdminException">urn:restoreDefaultsLoggingAdminException</faultActionMapping>
+            <faultActionMapping faultName="LoggingAdminException_Exception">urn:restoreDefaultsLoggingAdminException</faultActionMapping>
+        </operation>
+        <operation name="updateSystemLog" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:updateSystemLog</actionMapping>
+            <faultActionMapping faultName="LoggingAdminException">urn:updateSystemLogLoggingAdminException</faultActionMapping>
+            <faultActionMapping faultName="LoggingAdminException_Exception">urn:updateSystemLogLoggingAdminException</faultActionMapping>
+        </operation>
+        <operation name="getSystemLog" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:getSystemLog</actionMapping>
+            <outputActionMapping>urn:getSystemLogResponse</outputActionMapping>
+            <faultActionMapping faultName="LoggingAdminException">urn:getSystemLogLoggingAdminException</faultActionMapping>
+            <faultActionMapping faultName="LoggingAdminException_Exception">urn:getSystemLogLoggingAdminException</faultActionMapping>
+        </operation>
+        <operation name="getAppenderData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:getAppenderData</actionMapping>
+            <outputActionMapping>urn:getAppenderDataResponse</outputActionMapping>
+        </operation>
+        <operation name="updateAllAppenderData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:updateAllAppenderData</actionMapping>
+            <faultActionMapping faultName="LoggingAdminException">urn:updateAllAppenderDataLoggingAdminException</faultActionMapping>
+            <faultActionMapping faultName="LoggingAdminException_Exception">urn:updateAllAppenderDataLoggingAdminException</faultActionMapping>
+        </operation>
+        <operation name="getLoggerData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:getLoggerData</actionMapping>
+            <outputActionMapping>urn:getLoggerDataResponse</outputActionMapping>
+        </operation>
+        <operation name="updateLoggerData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.logging.carbon.wso2.org">
+            <actionMapping>urn:updateLoggerData</actionMapping>
+            <faultActionMapping faultName="LoggingAdminException">urn:updateLoggerDataLoggingAdminException</faultActionMapping>
+            <faultActionMapping faultName="LoggingAdminException_Exception">urn:updateLoggerDataLoggingAdminException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

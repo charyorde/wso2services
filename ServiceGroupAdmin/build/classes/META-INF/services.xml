@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="ServiceGroupAdmin">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.service.mgt.ServiceGroupAdminMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="org.wso2.carbon.service.mgt.ServiceGroupAdminMessageReceiverInOnly"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.service.mgt.ServiceGroupAdminMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.service.mgt.ServiceGroupAdminSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="listServiceGroup" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.service.carbon.wso2.org">
+            <actionMapping>urn:listServiceGroup</actionMapping>
+            <outputActionMapping>urn:listServiceGroupResponse</outputActionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminException">urn:listServiceGroupServiceGroupAdminException</faultActionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminException_Exception">urn:listServiceGroupServiceGroupAdminException</faultActionMapping>
+        </operation>
+        <operation name="setServiceGroupParameters" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://mgt.service.carbon.wso2.org">
+            <actionMapping>urn:setServiceGroupParameters</actionMapping>
+        </operation>
+        <operation name="getServiceGroupParameter" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.service.carbon.wso2.org">
+            <actionMapping>urn:getServiceGroupParameter</actionMapping>
+            <outputActionMapping>urn:getServiceGroupParameterResponse</outputActionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminServerException">urn:getServiceGroupParameterServiceGroupAdminServerException</faultActionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminServerException_Exception">urn:getServiceGroupParameterServiceGroupAdminServerException</faultActionMapping>
+        </operation>
+        <operation name="configureServiceGroupMTOM" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.service.carbon.wso2.org">
+            <actionMapping>urn:configureServiceGroupMTOM</actionMapping>
+            <outputActionMapping>urn:configureServiceGroupMTOMResponse</outputActionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminException">urn:configureServiceGroupMTOMServiceGroupAdminException</faultActionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminException_Exception">urn:configureServiceGroupMTOMServiceGroupAdminException</faultActionMapping>
+        </operation>
+        <operation name="removeServiceGroupParameter" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://mgt.service.carbon.wso2.org">
+            <actionMapping>urn:removeServiceGroupParameter</actionMapping>
+        </operation>
+        <operation name="updateServiceGroupParamters" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://mgt.service.carbon.wso2.org">
+            <actionMapping>urn:updateServiceGroupParamters</actionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminServerException">urn:updateServiceGroupParamtersServiceGroupAdminServerException</faultActionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminServerException_Exception">urn:updateServiceGroupParamtersServiceGroupAdminServerException</faultActionMapping>
+        </operation>
+        <operation name="dumpAAR" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.service.carbon.wso2.org">
+            <actionMapping>urn:dumpAAR</actionMapping>
+            <outputActionMapping>urn:dumpAARResponse</outputActionMapping>
+        </operation>
+        <operation name="setServiceGroupParameter" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://mgt.service.carbon.wso2.org">
+            <actionMapping>urn:setServiceGroupParameter</actionMapping>
+        </operation>
+        <operation name="updateServiceGroupParameter" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://mgt.service.carbon.wso2.org">
+            <actionMapping>urn:updateServiceGroupParameter</actionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminServerException">urn:updateServiceGroupParameterServiceGroupAdminServerException</faultActionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminServerException_Exception">urn:updateServiceGroupParameterServiceGroupAdminServerException</faultActionMapping>
+        </operation>
+        <operation name="listServiceGroups" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.service.carbon.wso2.org">
+            <actionMapping>urn:listServiceGroups</actionMapping>
+            <outputActionMapping>urn:listServiceGroupsResponse</outputActionMapping>
+        </operation>
+        <operation name="getServiceGroupParameters" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.service.carbon.wso2.org">
+            <actionMapping>urn:getServiceGroupParameters</actionMapping>
+            <outputActionMapping>urn:getServiceGroupParametersResponse</outputActionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminServerException">urn:getServiceGroupParametersServiceGroupAdminServerException</faultActionMapping>
+            <faultActionMapping faultName="ServiceGroupAdminServerException_Exception">urn:getServiceGroupParametersServiceGroupAdminServerException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

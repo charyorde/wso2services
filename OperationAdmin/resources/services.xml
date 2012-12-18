@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="OperationAdmin">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.operation.mgt.OperationAdminMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="org.wso2.carbon.operation.mgt.OperationAdminMessageReceiverInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.operation.mgt.OperationAdminSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="listOperationPhaseHandlers" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:listOperationPhaseHandlers</actionMapping>
+            <outputActionMapping>urn:listOperationPhaseHandlersResponse</outputActionMapping>
+        </operation>
+        <operation name="listOperationPhases" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:listOperationPhases</actionMapping>
+            <outputActionMapping>urn:listOperationPhasesResponse</outputActionMapping>
+        </operation>
+        <operation name="listControlOperations" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:listControlOperations</actionMapping>
+            <outputActionMapping>urn:listControlOperationsResponse</outputActionMapping>
+        </operation>
+        <operation name="getDeclaredOperationParameters" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:getDeclaredOperationParameters</actionMapping>
+            <outputActionMapping>urn:getDeclaredOperationParametersResponse</outputActionMapping>
+        </operation>
+        <operation name="listAllOperations" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:listAllOperations</actionMapping>
+            <outputActionMapping>urn:listAllOperationsResponse</outputActionMapping>
+        </operation>
+        <operation name="configureMTOM" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:configureMTOM</actionMapping>
+        </operation>
+        <operation name="getOperationMetaData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:getOperationMetaData</actionMapping>
+            <outputActionMapping>urn:getOperationMetaDataResponse</outputActionMapping>
+        </operation>
+        <operation name="getOperationParameters" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:getOperationParameters</actionMapping>
+            <outputActionMapping>urn:getOperationParametersResponse</outputActionMapping>
+        </operation>
+        <operation name="removeOperationParameter" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:removeOperationParameter</actionMapping>
+        </operation>
+        <operation name="getOperationStatistics" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:getOperationStatistics</actionMapping>
+            <outputActionMapping>urn:getOperationStatisticsResponse</outputActionMapping>
+        </operation>
+        <operation name="listPublishedOperations" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:listPublishedOperations</actionMapping>
+            <outputActionMapping>urn:listPublishedOperationsResponse</outputActionMapping>
+        </operation>
+        <operation name="setOperationParameters" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://mgt.operation.carbon.wso2.org">
+            <actionMapping>urn:setOperationParameters</actionMapping>
+        </operation>
+    </service>
+</serviceGroup>

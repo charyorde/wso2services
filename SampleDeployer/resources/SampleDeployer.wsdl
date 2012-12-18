@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://installer.sample.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://installer.sample.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ax2361="http://exceptions.core.registry.carbon.wso2.org/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ax2362="http://api.registry.carbon.wso2.org/xsd" xmlns:ax2365="http://beans.installer.sample.carbon.wso2.org/xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>SampleDeployer</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://beans.installer.sample.carbon.wso2.org/xsd">
+            <xs:complexType name="SampleInformation">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="fileName" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="installable" type="xs:boolean"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="requiredServices" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="sampleName" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="serviceEPRs" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://exceptions.core.registry.carbon.wso2.org/xsd" xmlns:ax2363="http://api.registry.carbon.wso2.org/xsd">
+            <xs:import namespace="http://api.registry.carbon.wso2.org/xsd"/>
+            <xs:complexType name="RegistryException">
+                <xs:complexContent>
+                    <xs:extension base="ax2363:RegistryException">
+                        <xs:sequence/>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://installer.sample.carbon.wso2.org" xmlns:ax2364="http://exceptions.core.registry.carbon.wso2.org/xsd" xmlns:ax2366="http://beans.installer.sample.carbon.wso2.org/xsd">
+            <xs:import namespace="http://exceptions.core.registry.carbon.wso2.org/xsd"/>
+            <xs:import namespace="http://beans.installer.sample.carbon.wso2.org/xsd"/>
+            <xs:element name="SampleDeployerRegistryException">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="RegistryException" nillable="true" type="ax2361:RegistryException"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="uploadSample">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="sampleName" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="uploadSampleResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="setPolicyPermission">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getSampleInformation">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getSampleInformationResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ax2366:SampleInformation"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deploySample">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="sampleName" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="tenantDomain" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deploySampleResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://api.registry.carbon.wso2.org/xsd">
+            <xs:complexType name="RegistryException">
+                <xs:sequence/>
+            </xs:complexType>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="uploadSampleResponse">
+    <wsdl:part name="parameters" element="ns:uploadSampleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setPolicyPermissionRequest">
+    <wsdl:part name="parameters" element="ns:setPolicyPermission">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deploySampleRequest">
+    <wsdl:part name="parameters" element="ns:deploySample">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSampleInformationResponse">
+    <wsdl:part name="parameters" element="ns:getSampleInformationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deploySampleResponse">
+    <wsdl:part name="parameters" element="ns:deploySampleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SampleDeployerRegistryException">
+    <wsdl:part name="parameters" element="ns:SampleDeployerRegistryException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="uploadSampleRequest">
+    <wsdl:part name="parameters" element="ns:uploadSample">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSampleInformationRequest">
+    <wsdl:part name="parameters" element="ns:getSampleInformation">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="SampleDeployerPortType">
+    <wsdl:operation name="getSampleInformation">
+      <wsdl:input message="ns:getSampleInformationRequest" wsaw:Action="urn:getSampleInformation">
+    </wsdl:input>
+      <wsdl:output message="ns:getSampleInformationResponse" wsaw:Action="urn:getSampleInformationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadSample">
+      <wsdl:input message="ns:uploadSampleRequest" wsaw:Action="urn:uploadSample">
+    </wsdl:input>
+      <wsdl:output message="ns:uploadSampleResponse" wsaw:Action="urn:uploadSampleResponse">
+    </wsdl:output>
+      <wsdl:fault name="SampleDeployerRegistryException" message="ns:SampleDeployerRegistryException" wsaw:Action="urn:uploadSampleSampleDeployerRegistryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deploySample">
+      <wsdl:input message="ns:deploySampleRequest" wsaw:Action="urn:deploySample">
+    </wsdl:input>
+      <wsdl:output message="ns:deploySampleResponse" wsaw:Action="urn:deploySampleResponse">
+    </wsdl:output>
+      <wsdl:fault name="SampleDeployerRegistryException" message="ns:SampleDeployerRegistryException" wsaw:Action="urn:deploySampleSampleDeployerRegistryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setPolicyPermission">
+      <wsdl:input message="ns:setPolicyPermissionRequest" wsaw:Action="urn:setPolicyPermission">
+    </wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SampleDeployerSoap12Binding" type="ns:SampleDeployerPortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getSampleInformation">
+      <soap12:operation soapAction="urn:getSampleInformation" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadSample">
+      <soap12:operation soapAction="urn:uploadSample" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SampleDeployerRegistryException">
+        <soap12:fault name="SampleDeployerRegistryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deploySample">
+      <soap12:operation soapAction="urn:deploySample" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SampleDeployerRegistryException">
+        <soap12:fault name="SampleDeployerRegistryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setPolicyPermission">
+      <soap12:operation soapAction="urn:setPolicyPermission" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SampleDeployerSoap11Binding" type="ns:SampleDeployerPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getSampleInformation">
+      <soap:operation soapAction="urn:getSampleInformation" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadSample">
+      <soap:operation soapAction="urn:uploadSample" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SampleDeployerRegistryException">
+        <soap:fault name="SampleDeployerRegistryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deploySample">
+      <soap:operation soapAction="urn:deploySample" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SampleDeployerRegistryException">
+        <soap:fault name="SampleDeployerRegistryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setPolicyPermission">
+      <soap:operation soapAction="urn:setPolicyPermission" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SampleDeployerHttpBinding" type="ns:SampleDeployerPortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="getSampleInformation">
+      <http:operation location="getSampleInformation"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadSample">
+      <http:operation location="uploadSample"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deploySample">
+      <http:operation location="deploySample"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setPolicyPermission">
+      <http:operation location="setPolicyPermission"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SampleDeployer">
+    <wsdl:port name="SampleDeployerHttpsSoap11Endpoint" binding="ns:SampleDeployerSoap11Binding">
+      <soap:address location="https://appserver.cloud-test.wso2.com:9446/services/SampleDeployer.SampleDeployerHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="SampleDeployerHttpsEndpoint" binding="ns:SampleDeployerHttpBinding">
+      <http:address location="https://appserver.cloud-test.wso2.com:9446/services/SampleDeployer.SampleDeployerHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="SampleDeployerHttpsSoap12Endpoint" binding="ns:SampleDeployerSoap12Binding">
+      <soap12:address location="https://appserver.cloud-test.wso2.com:9446/services/SampleDeployer.SampleDeployerHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

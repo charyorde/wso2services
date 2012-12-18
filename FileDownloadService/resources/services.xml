@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="FileDownloadService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.core.services.filedownload.FileDownloadServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.core.services.filedownload.FileDownloadServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="downloadFile" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://filedownload.services.core.carbon.wso2.org">
+            <actionMapping>urn:downloadFile</actionMapping>
+            <outputActionMapping>urn:downloadFileResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

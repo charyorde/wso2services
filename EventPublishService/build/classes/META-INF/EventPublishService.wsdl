@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ws.apache.org/axis2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.apache.org/axis2" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>EventPublishService</wsdl:documentation>
+  <wsdl:types>
+  </wsdl:types>
+  <wsdl:message name="publishRequest">
+  </wsdl:message>
+  <wsdl:message name="publishResponse">
+  </wsdl:message>
+  <wsdl:portType name="EventPublishServicePortType">
+    <wsdl:operation name="publish">
+      <wsdl:input message="tns:publishRequest" wsaw:Action="urn:publish">
+    </wsdl:input>
+      <wsdl:output message="tns:publishResponse" wsaw:Action="urn:publishResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EventPublishServiceSoap11Binding" type="tns:EventPublishServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="publish">
+      <soap:operation soapAction="urn:publish" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EventPublishServiceSoap12Binding" type="tns:EventPublishServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="publish">
+      <soap12:operation soapAction="urn:publish" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EventPublishServiceHttpBinding" type="tns:EventPublishServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="publish">
+      <http:operation location="publish"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EventPublishService">
+    <wsdl:port name="EventPublishServiceHttpEndpoint" binding="tns:EventPublishServiceHttpBinding">
+      <http:address location="http://appserver.cloud-test.wso2.com:9766/services/EventPublishService.EventPublishServiceHttpEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="EventPublishServiceHttpSoap11Endpoint" binding="tns:EventPublishServiceSoap11Binding">
+      <soap:address location="http://appserver.cloud-test.wso2.com:9766/services/EventPublishService.EventPublishServiceHttpSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="EventPublishServiceHttpSoap12Endpoint" binding="tns:EventPublishServiceSoap12Binding">
+      <soap12:address location="http://appserver.cloud-test.wso2.com:9766/services/EventPublishService.EventPublishServiceHttpSoap12Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

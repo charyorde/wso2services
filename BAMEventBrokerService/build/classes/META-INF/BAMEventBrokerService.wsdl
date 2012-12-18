@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ws.apache.org/axis2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.apache.org/axis2" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>BAMEventBrokerService</wsdl:documentation>
+  <wsdl:types>
+  </wsdl:types>
+  <wsdl:message name="getSubscriptionsRequest">
+  </wsdl:message>
+  <wsdl:message name="publishRequest">
+  </wsdl:message>
+  <wsdl:message name="subscribeRequest">
+  </wsdl:message>
+  <wsdl:message name="subscriptionEndRequest">
+  </wsdl:message>
+  <wsdl:message name="unsubscribeRequest">
+  </wsdl:message>
+  <wsdl:message name="installEventSinkResponse">
+  </wsdl:message>
+  <wsdl:message name="renewRequest">
+  </wsdl:message>
+  <wsdl:message name="subscriptionEndResponse">
+  </wsdl:message>
+  <wsdl:message name="unsubscribeResponse">
+  </wsdl:message>
+  <wsdl:message name="subscribeResponse">
+  </wsdl:message>
+  <wsdl:message name="publishResponse">
+  </wsdl:message>
+  <wsdl:message name="installEventSinkRequest">
+  </wsdl:message>
+  <wsdl:message name="getSubscriptionsResponse">
+  </wsdl:message>
+  <wsdl:message name="renewResponse">
+  </wsdl:message>
+  <wsdl:message name="getStatusRequest">
+  </wsdl:message>
+  <wsdl:message name="getStatusResponse">
+  </wsdl:message>
+  <wsdl:portType name="BAMEventBrokerServicePortType">
+    <wsdl:operation name="installEventSink">
+      <wsdl:input message="tns:installEventSinkRequest" wsaw:Action="http://schemas.xmlsoap.org/ws/2004/08/eventing/installEventSink">
+    </wsdl:input>
+      <wsdl:output message="tns:installEventSinkResponse" wsaw:Action="http://schemas.xmlsoap.org/ws/2004/08/eventing/installEventSinkResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="subscriptionEnd">
+      <wsdl:input message="tns:subscriptionEndRequest" wsaw:Action="http://schemas.xmlsoap.org/ws/2004/08/eventing/SubscriptionEnd">
+    </wsdl:input>
+      <wsdl:output message="tns:subscriptionEndResponse" wsaw:Action="urn:subscriptionEndResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unsubscribe">
+      <wsdl:input message="tns:unsubscribeRequest" wsaw:Action="http://schemas.xmlsoap.org/ws/2004/08/eventing/Unsubscribe">
+    </wsdl:input>
+      <wsdl:output message="tns:unsubscribeResponse" wsaw:Action="http://schemas.xmlsoap.org/ws/2004/08/eventing/UnsubscribeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSubscriptions">
+      <wsdl:input message="tns:getSubscriptionsRequest" wsaw:Action="http://ws.apache.org/ws/2007/05/eventing-extended/getSubscriptions">
+    </wsdl:input>
+      <wsdl:output message="tns:getSubscriptionsResponse" wsaw:Action="http://ws.apache.org/ws/2007/05/eventing-extended/getSubscriptionsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="renew">
+      <wsdl:input message="tns:renewRequest" wsaw:Action="http://schemas.xmlsoap.org/ws/2004/08/eventing/Renew">
+    </wsdl:input>
+      <wsdl:output message="tns:renewResponse" wsaw:Action="http://schemas.xmlsoap.org/ws/2004/08/eventing/RenewResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStatus">
+      <wsdl:input message="tns:getStatusRequest" wsaw:Action="http://schemas.xmlsoap.org/ws/2004/08/eventing/GetStatus">
+    </wsdl:input>
+      <wsdl:output message="tns:getStatusResponse" wsaw:Action="http://schemas.xmlsoap.org/ws/2004/08/eventing/GetStatusResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="subscribe">
+      <wsdl:input message="tns:subscribeRequest" wsaw:Action="http://schemas.xmlsoap.org/ws/2004/08/eventing/Subscribe">
+    </wsdl:input>
+      <wsdl:output message="tns:subscribeResponse" wsaw:Action="http://schemas.xmlsoap.org/ws/2004/08/eventing/SubscribeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="publish">
+      <wsdl:input message="tns:publishRequest" wsaw:Action="urn:publish">
+    </wsdl:input>
+      <wsdl:output message="tns:publishResponse" wsaw:Action="urn:publishResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BAMEventBrokerServiceSoap11Binding" type="tns:BAMEventBrokerServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="subscriptionEnd">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="installEventSink">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unsubscribe">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSubscriptions">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="renew">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStatus">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="subscribe">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="publish">
+      <soap:operation soapAction="urn:publish" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BAMEventBrokerServiceHttpBinding" type="tns:BAMEventBrokerServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="subscriptionEnd">
+      <http:operation location="subscriptionEnd"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="installEventSink">
+      <http:operation location="installEventSink"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unsubscribe">
+      <http:operation location="unsubscribe"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSubscriptions">
+      <http:operation location="getSubscriptions"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="renew">
+      <http:operation location="renew"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStatus">
+      <http:operation location="getStatus"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="subscribe">
+      <http:operation location="subscribe"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="publish">
+      <http:operation location="publish"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BAMEventBrokerServiceSoap12Binding" type="tns:BAMEventBrokerServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="subscriptionEnd">
+      <soap12:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="installEventSink">
+      <soap12:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unsubscribe">
+      <soap12:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSubscriptions">
+      <soap12:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="renew">
+      <soap12:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStatus">
+      <soap12:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="subscribe">
+      <soap12:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="publish">
+      <soap12:operation soapAction="urn:publish" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BAMEventBrokerService">
+    <wsdl:port name="BAMEventBrokerServiceHttpsEndpoint" binding="tns:BAMEventBrokerServiceHttpBinding">
+      <http:address location="https://appserver.cloud-test.wso2.com:9446/services/BAMEventBrokerService.BAMEventBrokerServiceHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="BAMEventBrokerServiceHttpsSoap11Endpoint" binding="tns:BAMEventBrokerServiceSoap11Binding">
+      <soap:address location="https://appserver.cloud-test.wso2.com:9446/services/BAMEventBrokerService.BAMEventBrokerServiceHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="BAMEventBrokerServiceHttpsSoap12Endpoint" binding="tns:BAMEventBrokerServiceSoap12Binding">
+      <soap12:address location="https://appserver.cloud-test.wso2.com:9446/services/BAMEventBrokerService.BAMEventBrokerServiceHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
