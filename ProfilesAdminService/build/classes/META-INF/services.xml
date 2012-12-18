@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="ProfilesAdminService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.registry.profiles.services.ProfilesAdminServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.registry.profiles.services.ProfilesAdminServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getUserProfile" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.profiles.registry.carbon.wso2.org">
+            <actionMapping>urn:getUserProfile</actionMapping>
+            <outputActionMapping>urn:getUserProfileResponse</outputActionMapping>
+            <faultActionMapping faultName="ProfilesAdminServiceUserStoreException">urn:getUserProfileProfilesAdminServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="ProfilesAdminServiceUserStoreException_Exception">urn:getUserProfileProfilesAdminServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="ProfilesAdminServiceRegistryException">urn:getUserProfileProfilesAdminServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="ProfilesAdminServiceRegistryException_Exception">urn:getUserProfileProfilesAdminServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="putUserProfile" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.profiles.registry.carbon.wso2.org">
+            <actionMapping>urn:putUserProfile</actionMapping>
+            <outputActionMapping>urn:putUserProfileResponse</outputActionMapping>
+            <faultActionMapping faultName="ProfilesAdminServiceUserStoreException">urn:putUserProfileProfilesAdminServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="ProfilesAdminServiceUserStoreException_Exception">urn:putUserProfileProfilesAdminServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="ProfilesAdminServiceRegistryException">urn:putUserProfileProfilesAdminServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="ProfilesAdminServiceRegistryException_Exception">urn:putUserProfileProfilesAdminServiceRegistryException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

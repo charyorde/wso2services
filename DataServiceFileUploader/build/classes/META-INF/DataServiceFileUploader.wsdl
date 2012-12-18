@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://admin.core.dataservices.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://admin.core.dataservices.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>DataServiceFileUploader</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://admin.core.dataservices.carbon.wso2.org">
+            <xs:element name="DataServiceFileUploaderException">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="DataServiceFileUploaderException" nillable="true" type="ns:Exception"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="Exception">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="urlWsdlUpload">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="url" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="urlWsdlUploadResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="uploadWSDL">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="fileName" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="dataHandler" nillable="true" type="xs:base64Binary"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="uploadWSDLResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="uploadService">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="fileName" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="serviceHierarchy" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="dataHandler" nillable="true" type="xs:base64Binary"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="uploadServiceResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="uploadServiceResponse">
+    <wsdl:part name="parameters" element="ns:uploadServiceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="uploadWSDLRequest">
+    <wsdl:part name="parameters" element="ns:uploadWSDL">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DataServiceFileUploaderException">
+    <wsdl:part name="parameters" element="ns:DataServiceFileUploaderException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="urlWsdlUploadRequest">
+    <wsdl:part name="parameters" element="ns:urlWsdlUpload">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="uploadWSDLResponse">
+    <wsdl:part name="parameters" element="ns:uploadWSDLResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="urlWsdlUploadResponse">
+    <wsdl:part name="parameters" element="ns:urlWsdlUploadResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="uploadServiceRequest">
+    <wsdl:part name="parameters" element="ns:uploadService">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="DataServiceFileUploaderPortType">
+    <wsdl:operation name="urlWsdlUpload">
+      <wsdl:input message="ns:urlWsdlUploadRequest" wsaw:Action="urn:urlWsdlUpload">
+    </wsdl:input>
+      <wsdl:output message="ns:urlWsdlUploadResponse" wsaw:Action="urn:urlWsdlUploadResponse">
+    </wsdl:output>
+      <wsdl:fault name="DataServiceFileUploaderException" message="ns:DataServiceFileUploaderException" wsaw:Action="urn:urlWsdlUploadDataServiceFileUploaderException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="uploadWSDL">
+      <wsdl:input message="ns:uploadWSDLRequest" wsaw:Action="urn:uploadWSDL">
+    </wsdl:input>
+      <wsdl:output message="ns:uploadWSDLResponse" wsaw:Action="urn:uploadWSDLResponse">
+    </wsdl:output>
+      <wsdl:fault name="DataServiceFileUploaderException" message="ns:DataServiceFileUploaderException" wsaw:Action="urn:uploadWSDLDataServiceFileUploaderException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="uploadService">
+      <wsdl:input message="ns:uploadServiceRequest" wsaw:Action="urn:uploadService">
+    </wsdl:input>
+      <wsdl:output message="ns:uploadServiceResponse" wsaw:Action="urn:uploadServiceResponse">
+    </wsdl:output>
+      <wsdl:fault name="DataServiceFileUploaderException" message="ns:DataServiceFileUploaderException" wsaw:Action="urn:uploadServiceDataServiceFileUploaderException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DataServiceFileUploaderSoap11Binding" type="ns:DataServiceFileUploaderPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="urlWsdlUpload">
+      <soap:operation soapAction="urn:urlWsdlUpload" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DataServiceFileUploaderException">
+        <soap:fault name="DataServiceFileUploaderException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="uploadWSDL">
+      <soap:operation soapAction="urn:uploadWSDL" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DataServiceFileUploaderException">
+        <soap:fault name="DataServiceFileUploaderException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="uploadService">
+      <soap:operation soapAction="urn:uploadService" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DataServiceFileUploaderException">
+        <soap:fault name="DataServiceFileUploaderException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataServiceFileUploaderSoap12Binding" type="ns:DataServiceFileUploaderPortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="urlWsdlUpload">
+      <soap12:operation soapAction="urn:urlWsdlUpload" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DataServiceFileUploaderException">
+        <soap12:fault name="DataServiceFileUploaderException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="uploadWSDL">
+      <soap12:operation soapAction="urn:uploadWSDL" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DataServiceFileUploaderException">
+        <soap12:fault name="DataServiceFileUploaderException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="uploadService">
+      <soap12:operation soapAction="urn:uploadService" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DataServiceFileUploaderException">
+        <soap12:fault name="DataServiceFileUploaderException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataServiceFileUploaderHttpBinding" type="ns:DataServiceFileUploaderPortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="urlWsdlUpload">
+      <http:operation location="urlWsdlUpload"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadWSDL">
+      <http:operation location="uploadWSDL"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadService">
+      <http:operation location="uploadService"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataServiceFileUploader">
+    <wsdl:port name="DataServiceFileUploaderHttpsEndpoint" binding="ns:DataServiceFileUploaderHttpBinding">
+      <http:address location="https://data.cloud-test.wso2.com:9448/services/DataServiceFileUploader.DataServiceFileUploaderHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="DataServiceFileUploaderHttpsSoap12Endpoint" binding="ns:DataServiceFileUploaderSoap12Binding">
+      <soap12:address location="https://data.cloud-test.wso2.com:9448/services/DataServiceFileUploader.DataServiceFileUploaderHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="DataServiceFileUploaderHttpsSoap11Endpoint" binding="ns:DataServiceFileUploaderSoap11Binding">
+      <soap:address location="https://data.cloud-test.wso2.com:9448/services/DataServiceFileUploader.DataServiceFileUploaderHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

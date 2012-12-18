@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="TransportStatisticsAdmin">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.statistics.transport.services.TransportStatisticsAdminMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.statistics.transport.services.TransportStatisticsAdminSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getTransportStatistic" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getTransportStatistic</actionMapping>
+            <outputActionMapping>urn:getTransportStatisticResponse</outputActionMapping>
+        </operation>
+        <operation name="getBytesSent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getBytesSent</actionMapping>
+            <outputActionMapping>urn:getBytesSentResponse</outputActionMapping>
+        </operation>
+        <operation name="getLatencyViewStatistics" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getLatencyViewStatistics</actionMapping>
+            <outputActionMapping>urn:getLatencyViewStatisticsResponse</outputActionMapping>
+        </operation>
+        <operation name="getTransportClassName" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getTransportClassName</actionMapping>
+            <outputActionMapping>urn:getTransportClassNameResponse</outputActionMapping>
+        </operation>
+        <operation name="getTimeoutsReceiving" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getTimeoutsReceiving</actionMapping>
+            <outputActionMapping>urn:getTimeoutsReceivingResponse</outputActionMapping>
+        </operation>
+        <operation name="getAllTransportStatistics" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getAllTransportStatistics</actionMapping>
+            <outputActionMapping>urn:getAllTransportStatisticsResponse</outputActionMapping>
+        </operation>
+        <operation name="getBytesReceived" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getBytesReceived</actionMapping>
+            <outputActionMapping>urn:getBytesReceivedResponse</outputActionMapping>
+        </operation>
+        <operation name="getAvgSizeSent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getAvgSizeSent</actionMapping>
+            <outputActionMapping>urn:getAvgSizeSentResponse</outputActionMapping>
+        </operation>
+        <operation name="getAvgSizeReceived" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getAvgSizeReceived</actionMapping>
+            <outputActionMapping>urn:getAvgSizeReceivedResponse</outputActionMapping>
+        </operation>
+        <operation name="getFaultsSending" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getFaultsSending</actionMapping>
+            <outputActionMapping>urn:getFaultsSendingResponse</outputActionMapping>
+        </operation>
+        <operation name="getMessagesSent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMessagesSent</actionMapping>
+            <outputActionMapping>urn:getMessagesSentResponse</outputActionMapping>
+        </operation>
+        <operation name="getExposedTransports" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getExposedTransports</actionMapping>
+            <outputActionMapping>urn:getExposedTransportsResponse</outputActionMapping>
+        </operation>
+        <operation name="getMessagesReceived" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMessagesReceived</actionMapping>
+            <outputActionMapping>urn:getMessagesReceivedResponse</outputActionMapping>
+        </operation>
+        <operation name="getMinSizeSent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMinSizeSent</actionMapping>
+            <outputActionMapping>urn:getMinSizeSentResponse</outputActionMapping>
+        </operation>
+        <operation name="getMaxSizeReceived" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMaxSizeReceived</actionMapping>
+            <outputActionMapping>urn:getMaxSizeReceivedResponse</outputActionMapping>
+        </operation>
+        <operation name="getTimeoutsSending" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getTimeoutsSending</actionMapping>
+            <outputActionMapping>urn:getTimeoutsSendingResponse</outputActionMapping>
+        </operation>
+        <operation name="getThreadViewStatistics" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getThreadViewStatistics</actionMapping>
+            <outputActionMapping>urn:getThreadViewStatisticsResponse</outputActionMapping>
+        </operation>
+        <operation name="getMetricsWindow" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMetricsWindow</actionMapping>
+            <outputActionMapping>urn:getMetricsWindowResponse</outputActionMapping>
+        </operation>
+        <operation name="getQueueSize" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getQueueSize</actionMapping>
+            <outputActionMapping>urn:getQueueSizeResponse</outputActionMapping>
+        </operation>
+        <operation name="getFaultsReceiving" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getFaultsReceiving</actionMapping>
+            <outputActionMapping>urn:getFaultsReceivingResponse</outputActionMapping>
+        </operation>
+        <operation name="getLastResetTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getLastResetTime</actionMapping>
+            <outputActionMapping>urn:getLastResetTimeResponse</outputActionMapping>
+        </operation>
+        <operation name="getActiveThreadCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getActiveThreadCount</actionMapping>
+            <outputActionMapping>urn:getActiveThreadCountResponse</outputActionMapping>
+        </operation>
+        <operation name="getMinSizeReceived" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMinSizeReceived</actionMapping>
+            <outputActionMapping>urn:getMinSizeReceivedResponse</outputActionMapping>
+        </operation>
+        <operation name="getMaxSizeSent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.transport.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMaxSizeSent</actionMapping>
+            <outputActionMapping>urn:getMaxSizeSentResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

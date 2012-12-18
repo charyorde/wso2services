@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="SynapseApplicationAdmin">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.application.mgt.synapse.SynapseApplicationAdminMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.application.mgt.synapse.SynapseApplicationAdminSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getSynapseAppData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://synapse.mgt.application.carbon.wso2.org">
+            <actionMapping>urn:getSynapseAppData</actionMapping>
+            <outputActionMapping>urn:getSynapseAppDataResponse</outputActionMapping>
+            <faultActionMapping faultName="SynapseApplicationAdminException">urn:getSynapseAppDataSynapseApplicationAdminException</faultActionMapping>
+            <faultActionMapping faultName="SynapseApplicationAdminException_Exception">urn:getSynapseAppDataSynapseApplicationAdminException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

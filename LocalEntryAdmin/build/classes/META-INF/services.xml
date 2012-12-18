@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="LocalEntryAdmin">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.localentry.service.LocalEntryAdminMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.localentry.service.LocalEntryAdminSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="paginatedEntryData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.localentry.carbon.wso2.org">
+            <actionMapping>urn:paginatedEntryData</actionMapping>
+            <outputActionMapping>urn:paginatedEntryDataResponse</outputActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException">urn:paginatedEntryDataLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException_Exception">urn:paginatedEntryDataLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+        </operation>
+        <operation name="getEntryNamesString" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.localentry.carbon.wso2.org">
+            <actionMapping>urn:getEntryNamesString</actionMapping>
+            <outputActionMapping>urn:getEntryNamesStringResponse</outputActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException">urn:getEntryNamesStringLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException_Exception">urn:getEntryNamesStringLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+        </operation>
+        <operation name="getEntryNames" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.localentry.carbon.wso2.org">
+            <actionMapping>urn:getEntryNames</actionMapping>
+            <outputActionMapping>urn:getEntryNamesResponse</outputActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException">urn:getEntryNamesLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException_Exception">urn:getEntryNamesLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+        </operation>
+        <operation name="addEntry" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.localentry.carbon.wso2.org">
+            <actionMapping>urn:addEntry</actionMapping>
+            <outputActionMapping>urn:addEntryResponse</outputActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException">urn:addEntryLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException_Exception">urn:addEntryLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+        </operation>
+        <operation name="getDependents" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.localentry.carbon.wso2.org">
+            <actionMapping>urn:getDependents</actionMapping>
+            <outputActionMapping>urn:getDependentsResponse</outputActionMapping>
+        </operation>
+        <operation name="saveEntry" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.localentry.carbon.wso2.org">
+            <actionMapping>urn:saveEntry</actionMapping>
+            <outputActionMapping>urn:saveEntryResponse</outputActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException">urn:saveEntryLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException_Exception">urn:saveEntryLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+        </operation>
+        <operation name="entryData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.localentry.carbon.wso2.org">
+            <actionMapping>urn:entryData</actionMapping>
+            <outputActionMapping>urn:entryDataResponse</outputActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException">urn:entryDataLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException_Exception">urn:entryDataLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+        </operation>
+        <operation name="getEntry" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.localentry.carbon.wso2.org">
+            <actionMapping>urn:getEntry</actionMapping>
+            <outputActionMapping>urn:getEntryResponse</outputActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException">urn:getEntryLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException_Exception">urn:getEntryLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+        </operation>
+        <operation name="getEntryDataCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.localentry.carbon.wso2.org">
+            <actionMapping>urn:getEntryDataCount</actionMapping>
+            <outputActionMapping>urn:getEntryDataCountResponse</outputActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException">urn:getEntryDataCountLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException_Exception">urn:getEntryDataCountLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+        </operation>
+        <operation name="deleteEntry" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.localentry.carbon.wso2.org">
+            <actionMapping>urn:deleteEntry</actionMapping>
+            <outputActionMapping>urn:deleteEntryResponse</outputActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException">urn:deleteEntryLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+            <faultActionMapping faultName="LocalEntryAdminLocalEntryAdminException_Exception">urn:deleteEntryLocalEntryAdminLocalEntryAdminException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

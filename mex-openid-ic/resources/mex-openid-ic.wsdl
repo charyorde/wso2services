@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://mex.sts.identity.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://mex.sts.identity.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>mex-openid-ic</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://mex.sts.identity.carbon.wso2.org">
+            <xs:element name="get">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="get" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getResponse">
+    <wsdl:part name="parameters" element="ns:getResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRequest">
+    <wsdl:part name="parameters" element="ns:get">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="mex-openid-icPortType">
+    <wsdl:operation name="get">
+      <wsdl:input message="ns:getRequest" wsaw:Action="urn:get">
+    </wsdl:input>
+      <wsdl:output message="ns:getResponse" wsaw:Action="urn:getResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="mex-openid-icSoap11Binding" type="ns:mex-openid-icPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="get">
+      <soap:operation soapAction="urn:get" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="mex-openid-icSoap12Binding" type="ns:mex-openid-icPortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="get">
+      <soap12:operation soapAction="urn:get" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="mex-openid-icHttpBinding" type="ns:mex-openid-icPortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="get">
+      <http:operation location="get"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="mex-openid-ic">
+    <wsdl:port name="mex-openid-icHttpsSoap11Endpoint" binding="ns:mex-openid-icSoap11Binding">
+      <soap:address location="https://identity.cloud-test.wso2.com:9444/services/mex-openid-ic.mex-openid-icHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="mex-openid-icHttpSoap12Endpoint" binding="ns:mex-openid-icSoap12Binding">
+      <soap12:address location="http://identity.cloud-test.wso2.com:9764/services/mex-openid-ic.mex-openid-icHttpSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="mex-openid-icHttpEndpoint" binding="ns:mex-openid-icHttpBinding">
+      <http:address location="http://identity.cloud-test.wso2.com:9764/services/mex-openid-ic.mex-openid-icHttpEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="mex-openid-icHttpSoap11Endpoint" binding="ns:mex-openid-icSoap11Binding">
+      <soap:address location="http://identity.cloud-test.wso2.com:9764/services/mex-openid-ic.mex-openid-icHttpSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="mex-openid-icHttpsSoap12Endpoint" binding="ns:mex-openid-icSoap12Binding">
+      <soap12:address location="https://identity.cloud-test.wso2.com:9444/services/mex-openid-ic.mex-openid-icHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="mex-openid-icHttpsEndpoint" binding="ns:mex-openid-icHttpBinding">
+      <http:address location="https://identity.cloud-test.wso2.com:9444/services/mex-openid-ic.mex-openid-icHttpsEndpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

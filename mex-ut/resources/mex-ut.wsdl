@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://mex.sts.identity.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://mex.sts.identity.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>mex-ut</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://mex.sts.identity.carbon.wso2.org">
+            <xs:element name="get">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="get" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getResponse">
+    <wsdl:part name="parameters" element="ns:getResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRequest">
+    <wsdl:part name="parameters" element="ns:get">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="mex-utPortType">
+    <wsdl:operation name="get">
+      <wsdl:input message="ns:getRequest" wsaw:Action="urn:get">
+    </wsdl:input>
+      <wsdl:output message="ns:getResponse" wsaw:Action="urn:getResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="mex-utHttpBinding" type="ns:mex-utPortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="get">
+      <http:operation location="get"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="mex-utSoap11Binding" type="ns:mex-utPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="get">
+      <soap:operation soapAction="urn:get" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="mex-utSoap12Binding" type="ns:mex-utPortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="get">
+      <soap12:operation soapAction="urn:get" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="mex-ut">
+    <wsdl:port name="mex-utHttpsEndpoint" binding="ns:mex-utHttpBinding">
+      <http:address location="https://identity.cloud-test.wso2.com:9444/services/mex-ut.mex-utHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="mex-utHttpsSoap11Endpoint" binding="ns:mex-utSoap11Binding">
+      <soap:address location="https://identity.cloud-test.wso2.com:9444/services/mex-ut.mex-utHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="mex-utHttpSoap12Endpoint" binding="ns:mex-utSoap12Binding">
+      <soap12:address location="http://identity.cloud-test.wso2.com:9764/services/mex-ut.mex-utHttpSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="mex-utHttpsSoap12Endpoint" binding="ns:mex-utSoap12Binding">
+      <soap12:address location="https://identity.cloud-test.wso2.com:9444/services/mex-ut.mex-utHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="mex-utHttpSoap11Endpoint" binding="ns:mex-utSoap11Binding">
+      <soap:address location="http://identity.cloud-test.wso2.com:9764/services/mex-ut.mex-utHttpSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="mex-utHttpEndpoint" binding="ns:mex-utHttpBinding">
+      <http:address location="http://identity.cloud-test.wso2.com:9764/services/mex-ut.mex-utHttpEndpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

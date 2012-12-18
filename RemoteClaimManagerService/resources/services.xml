@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="RemoteClaimManagerService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.um.ws.service.RemoteClaimManagerServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.um.ws.service.RemoteClaimManagerServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.um.ws.service.RemoteClaimManagerServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="addNewClaimMapping" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:addNewClaimMapping</actionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException">urn:addNewClaimMappingRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException_Exception">urn:addNewClaimMappingRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getAttributeName" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getAttributeName</actionMapping>
+            <outputActionMapping>urn:getAttributeNameResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException">urn:getAttributeNameRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException_Exception">urn:getAttributeNameRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="updateClaimMapping" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:updateClaimMapping</actionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException">urn:updateClaimMappingRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException_Exception">urn:updateClaimMappingRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getClaimMapping" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getClaimMapping</actionMapping>
+            <outputActionMapping>urn:getClaimMappingResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException">urn:getClaimMappingRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException_Exception">urn:getClaimMappingRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getAllClaims" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getAllClaims</actionMapping>
+            <outputActionMapping>urn:getAllClaimsResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException">urn:getAllClaimsRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException_Exception">urn:getAllClaimsRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getClaim" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getClaim</actionMapping>
+            <outputActionMapping>urn:getClaimResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException">urn:getClaimRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException_Exception">urn:getClaimRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getAllClaimUris" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getAllClaimUris</actionMapping>
+            <outputActionMapping>urn:getAllClaimUrisResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException">urn:getAllClaimUrisRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException_Exception">urn:getAllClaimUrisRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getAllSupportClaimsByDefault" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getAllSupportClaimsByDefault</actionMapping>
+            <outputActionMapping>urn:getAllSupportClaimsByDefaultResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException">urn:getAllSupportClaimsByDefaultRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException_Exception">urn:getAllSupportClaimsByDefaultRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getAllRequiredClaims" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getAllRequiredClaims</actionMapping>
+            <outputActionMapping>urn:getAllRequiredClaimsResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException">urn:getAllRequiredClaimsRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException_Exception">urn:getAllRequiredClaimsRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="deleteClaimMapping" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:deleteClaimMapping</actionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException">urn:deleteClaimMappingRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteClaimManagerServiceUserStoreException_Exception">urn:deleteClaimMappingRemoteClaimManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

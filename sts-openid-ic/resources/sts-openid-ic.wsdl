@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ws.apache.org/axis2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.apache.org/axis2" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>sts-openid-ic</wsdl:documentation>
+  <wsdl:types>
+  </wsdl:types>
+  <wsdl:message name="IssueTokenResponse">
+  </wsdl:message>
+  <wsdl:message name="IssueTokenRequest">
+  </wsdl:message>
+  <wsdl:portType name="sts-openid-icPortType">
+    <wsdl:operation name="IssueToken">
+      <wsdl:input message="tns:IssueTokenRequest" wsaw:Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT">
+    </wsdl:input>
+      <wsdl:output message="tns:IssueTokenResponse" wsaw:Action="urn:IssueTokenResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sts-openid-icSoap12Binding" type="tns:sts-openid-icPortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="IssueToken">
+      <soap12:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="sts-openid-icSoap11Binding" type="tns:sts-openid-icPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="IssueToken">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="sts-openid-icHttpBinding" type="tns:sts-openid-icPortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="IssueToken">
+      <http:operation location="IssueToken"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sts-openid-ic">
+    <wsdl:port name="sts-openid-icHttpsEndpoint" binding="tns:sts-openid-icHttpBinding">
+      <http:address location="https://identity.cloud-test.wso2.com:9444/services/sts-openid-ic.sts-openid-icHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="sts-openid-icHttpSoap11Endpoint" binding="tns:sts-openid-icSoap11Binding">
+      <soap:address location="http://identity.cloud-test.wso2.com:9764/services/sts-openid-ic.sts-openid-icHttpSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="sts-openid-icHttpEndpoint" binding="tns:sts-openid-icHttpBinding">
+      <http:address location="http://identity.cloud-test.wso2.com:9764/services/sts-openid-ic.sts-openid-icHttpEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="sts-openid-icHttpsSoap12Endpoint" binding="tns:sts-openid-icSoap12Binding">
+      <soap12:address location="https://identity.cloud-test.wso2.com:9444/services/sts-openid-ic.sts-openid-icHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="sts-openid-icHttpsSoap11Endpoint" binding="tns:sts-openid-icSoap11Binding">
+      <soap:address location="https://identity.cloud-test.wso2.com:9444/services/sts-openid-ic.sts-openid-icHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="sts-openid-icHttpSoap12Endpoint" binding="tns:sts-openid-icSoap12Binding">
+      <soap12:address location="http://identity.cloud-test.wso2.com:9764/services/sts-openid-ic.sts-openid-icHttpSoap12Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

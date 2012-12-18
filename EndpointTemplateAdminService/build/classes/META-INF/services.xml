@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="EndpointTemplateAdminService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.mediation.templates.services.EndpointTemplateAdminServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="org.wso2.carbon.mediation.templates.services.EndpointTemplateAdminServiceMessageReceiverInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.mediation.templates.services.EndpointTemplateAdminServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="saveEndpointTemplate" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://services.templates.mediation.carbon.wso2.org">
+            <actionMapping>urn:saveEndpointTemplate</actionMapping>
+        </operation>
+        <operation name="saveDynamicEndpointTemplate" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://services.templates.mediation.carbon.wso2.org">
+            <actionMapping>urn:saveDynamicEndpointTemplate</actionMapping>
+        </operation>
+        <operation name="getEndpointTemplatesCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.templates.mediation.carbon.wso2.org">
+            <actionMapping>urn:getEndpointTemplatesCount</actionMapping>
+            <outputActionMapping>urn:getEndpointTemplatesCountResponse</outputActionMapping>
+        </operation>
+        <operation name="deleteEndpointTemplate" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://services.templates.mediation.carbon.wso2.org">
+            <actionMapping>urn:deleteEndpointTemplate</actionMapping>
+        </operation>
+        <operation name="getDynamicEndpointTemplatesCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.templates.mediation.carbon.wso2.org">
+            <actionMapping>urn:getDynamicEndpointTemplatesCount</actionMapping>
+            <outputActionMapping>urn:getDynamicEndpointTemplatesCountResponse</outputActionMapping>
+        </operation>
+        <operation name="addEndpointTemplate" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://services.templates.mediation.carbon.wso2.org">
+            <actionMapping>urn:addEndpointTemplate</actionMapping>
+        </operation>
+        <operation name="deleteDynamicEndpointTemplate" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://services.templates.mediation.carbon.wso2.org">
+            <actionMapping>urn:deleteDynamicEndpointTemplate</actionMapping>
+        </operation>
+        <operation name="getDynamicEndpointTemplates" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.templates.mediation.carbon.wso2.org">
+            <actionMapping>urn:getDynamicEndpointTemplates</actionMapping>
+            <outputActionMapping>urn:getDynamicEndpointTemplatesResponse</outputActionMapping>
+        </operation>
+        <operation name="getTemplate" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.templates.mediation.carbon.wso2.org">
+            <actionMapping>urn:getTemplate</actionMapping>
+            <outputActionMapping>urn:getTemplateResponse</outputActionMapping>
+        </operation>
+        <operation name="getEndpointTemplates" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.templates.mediation.carbon.wso2.org">
+            <actionMapping>urn:getEndpointTemplates</actionMapping>
+            <outputActionMapping>urn:getEndpointTemplatesResponse</outputActionMapping>
+        </operation>
+        <operation name="addDynamicEndpointTemplate" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://services.templates.mediation.carbon.wso2.org">
+            <actionMapping>urn:addDynamicEndpointTemplate</actionMapping>
+        </operation>
+    </service>
+</serviceGroup>

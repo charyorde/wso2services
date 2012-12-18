@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://tracer.mediation.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://tracer.mediation.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ax2265="http://tracer.mediation.carbon.wso2.org/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>MediationTracerService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tracer.mediation.carbon.wso2.org" xmlns:ax2266="http://tracer.mediation.carbon.wso2.org/xsd">
+            <xs:import namespace="http://tracer.mediation.carbon.wso2.org/xsd"/>
+            <xs:element name="MediationTracerServiceMediationTracerException">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="MediationTracerException" nillable="true" type="ax2265:MediationTracerException"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="searchTraceLog">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="keyword" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="ignoreCase" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="searchTraceLogResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getTraceLogs">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getTraceLogsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getLogs">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getLogsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="clearTraceLogs">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="clearTraceLogsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tracer.mediation.carbon.wso2.org/xsd">
+            <xs:complexType name="MediationTracerException">
+                <xs:sequence/>
+            </xs:complexType>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="MediationTracerServiceMediationTracerException">
+    <wsdl:part name="parameters" element="ns:MediationTracerServiceMediationTracerException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="searchTraceLogResponse">
+    <wsdl:part name="parameters" element="ns:searchTraceLogResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLogsRequest">
+    <wsdl:part name="parameters" element="ns:getLogs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTraceLogsRequest">
+    <wsdl:part name="parameters" element="ns:getTraceLogs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTraceLogsResponse">
+    <wsdl:part name="parameters" element="ns:getTraceLogsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLogsResponse">
+    <wsdl:part name="parameters" element="ns:getLogsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="clearTraceLogsResponse">
+    <wsdl:part name="parameters" element="ns:clearTraceLogsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="clearTraceLogsRequest">
+    <wsdl:part name="parameters" element="ns:clearTraceLogs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="searchTraceLogRequest">
+    <wsdl:part name="parameters" element="ns:searchTraceLog">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MediationTracerServicePortType">
+    <wsdl:operation name="searchTraceLog">
+      <wsdl:input message="ns:searchTraceLogRequest" wsaw:Action="urn:searchTraceLog">
+    </wsdl:input>
+      <wsdl:output message="ns:searchTraceLogResponse" wsaw:Action="urn:searchTraceLogResponse">
+    </wsdl:output>
+      <wsdl:fault name="MediationTracerServiceMediationTracerException" message="ns:MediationTracerServiceMediationTracerException" wsaw:Action="urn:searchTraceLogMediationTracerServiceMediationTracerException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTraceLogs">
+      <wsdl:input message="ns:getTraceLogsRequest" wsaw:Action="urn:getTraceLogs">
+    </wsdl:input>
+      <wsdl:output message="ns:getTraceLogsResponse" wsaw:Action="urn:getTraceLogsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLogs">
+      <wsdl:input message="ns:getLogsRequest" wsaw:Action="urn:getLogs">
+    </wsdl:input>
+      <wsdl:output message="ns:getLogsResponse" wsaw:Action="urn:getLogsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="clearTraceLogs">
+      <wsdl:input message="ns:clearTraceLogsRequest" wsaw:Action="urn:clearTraceLogs">
+    </wsdl:input>
+      <wsdl:output message="ns:clearTraceLogsResponse" wsaw:Action="urn:clearTraceLogsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MediationTracerServiceHttpBinding" type="ns:MediationTracerServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="searchTraceLog">
+      <http:operation location="searchTraceLog"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTraceLogs">
+      <http:operation location="getTraceLogs"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLogs">
+      <http:operation location="getLogs"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="clearTraceLogs">
+      <http:operation location="clearTraceLogs"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MediationTracerServiceSoap12Binding" type="ns:MediationTracerServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="searchTraceLog">
+      <soap12:operation soapAction="urn:searchTraceLog" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="MediationTracerServiceMediationTracerException">
+        <soap12:fault name="MediationTracerServiceMediationTracerException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTraceLogs">
+      <soap12:operation soapAction="urn:getTraceLogs" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLogs">
+      <soap12:operation soapAction="urn:getLogs" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="clearTraceLogs">
+      <soap12:operation soapAction="urn:clearTraceLogs" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MediationTracerServiceSoap11Binding" type="ns:MediationTracerServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="searchTraceLog">
+      <soap:operation soapAction="urn:searchTraceLog" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="MediationTracerServiceMediationTracerException">
+        <soap:fault name="MediationTracerServiceMediationTracerException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTraceLogs">
+      <soap:operation soapAction="urn:getTraceLogs" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLogs">
+      <soap:operation soapAction="urn:getLogs" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="clearTraceLogs">
+      <soap:operation soapAction="urn:clearTraceLogs" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MediationTracerService">
+    <wsdl:port name="MediationTracerServiceHttpsSoap11Endpoint" binding="ns:MediationTracerServiceSoap11Binding">
+      <soap:address location="https://localhost:8243/services/MediationTracerService.MediationTracerServiceHttpsSoap11Endpoint"/>
+    </wsdl:port>
+    <wsdl:port name="MediationTracerServiceHttpsEndpoint" binding="ns:MediationTracerServiceHttpBinding">
+      <http:address location="https://localhost:8243/services/MediationTracerService.MediationTracerServiceHttpsEndpoint"/>
+    </wsdl:port>
+    <wsdl:port name="MediationTracerServiceHttpsSoap12Endpoint" binding="ns:MediationTracerServiceSoap12Binding">
+      <soap12:address location="https://localhost:8243/services/MediationTracerService.MediationTracerServiceHttpsSoap12Endpoint"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
