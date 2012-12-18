@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ws.apache.org/axis2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.apache.org/axis2" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>BAMEventPublishService</wsdl:documentation>
+  <wsdl:types>
+  </wsdl:types>
+  <wsdl:message name="publishRequest">
+  </wsdl:message>
+  <wsdl:message name="publishResponse">
+  </wsdl:message>
+  <wsdl:portType name="BAMEventPublishServicePortType">
+    <wsdl:operation name="publish">
+      <wsdl:input message="tns:publishRequest" wsaw:Action="urn:publish">
+    </wsdl:input>
+      <wsdl:output message="tns:publishResponse" wsaw:Action="urn:publishResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BAMEventPublishServiceHttpBinding" type="tns:BAMEventPublishServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="publish">
+      <http:operation location="publish"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BAMEventPublishServiceSoap11Binding" type="tns:BAMEventPublishServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="publish">
+      <soap:operation soapAction="urn:publish" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BAMEventPublishServiceSoap12Binding" type="tns:BAMEventPublishServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="publish">
+      <soap12:operation soapAction="urn:publish" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BAMEventPublishService">
+    <wsdl:port name="BAMEventPublishServiceHttpSoap11Endpoint" binding="tns:BAMEventPublishServiceSoap11Binding">
+      <soap:address location="http://appserver.cloud-test.wso2.com:9766/services/BAMEventPublishService.BAMEventPublishServiceHttpSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="BAMEventPublishServiceHttpSoap12Endpoint" binding="tns:BAMEventPublishServiceSoap12Binding">
+      <soap12:address location="http://appserver.cloud-test.wso2.com:9766/services/BAMEventPublishService.BAMEventPublishServiceHttpSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="BAMEventPublishServiceHttpEndpoint" binding="tns:BAMEventPublishServiceHttpBinding">
+      <http:address location="http://appserver.cloud-test.wso2.com:9766/services/BAMEventPublishService.BAMEventPublishServiceHttpEndpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="ActivationService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.activation.service.ActivationServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.activation.service.ActivationServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.activation.service.ActivationServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="isActive" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.activation.carbon.wso2.org">
+            <actionMapping>urn:isActive</actionMapping>
+            <outputActionMapping>urn:isActiveResponse</outputActionMapping>
+            <faultActionMapping faultName="ActivationServiceException">urn:isActiveActivationServiceException</faultActionMapping>
+            <faultActionMapping faultName="ActivationServiceException_Exception">urn:isActiveActivationServiceException</faultActionMapping>
+        </operation>
+        <operation name="updateActivation" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.activation.carbon.wso2.org">
+            <actionMapping>urn:updateActivation</actionMapping>
+            <faultActionMapping faultName="ActivationServiceException">urn:updateActivationActivationServiceException</faultActionMapping>
+            <faultActionMapping faultName="ActivationServiceException_Exception">urn:updateActivationActivationServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

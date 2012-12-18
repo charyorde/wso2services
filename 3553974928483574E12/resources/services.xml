@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="BAMSummaryQueryDS">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.ws.dataservice.BAMSummaryQueryDSMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.ws.dataservice.BAMSummaryQueryDSSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getOperationStatQuarterlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationStatQuarterlySummaries</actionMapping>
+            <outputActionMapping>urn:getOperationStatQuarterlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationStatQuarterlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationStatQuarterlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperationStatMonthlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationStatMonthlySummaries</actionMapping>
+            <outputActionMapping>urn:getOperationStatMonthlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationStatMonthlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationStatMonthlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getSequenceStatYearlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getSequenceStatYearlySummaries</actionMapping>
+            <outputActionMapping>urn:getSequenceStatYearlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getSequenceStatYearlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getSequenceStatYearlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getProxyStatMonthlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getProxyStatMonthlySummaries</actionMapping>
+            <outputActionMapping>urn:getProxyStatMonthlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getProxyStatMonthlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getProxyStatMonthlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getProxyStatHourlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getProxyStatHourlySummaries</actionMapping>
+            <outputActionMapping>urn:getProxyStatHourlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getProxyStatHourlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getProxyStatHourlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getSequenceStatMonthlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getSequenceStatMonthlySummaries</actionMapping>
+            <outputActionMapping>urn:getSequenceStatMonthlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getSequenceStatMonthlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getSequenceStatMonthlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getSequenceStatHourlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getSequenceStatHourlySummaries</actionMapping>
+            <outputActionMapping>urn:getSequenceStatHourlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getSequenceStatHourlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getSequenceStatHourlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getSequenceStatQuarterlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getSequenceStatQuarterlySummaries</actionMapping>
+            <outputActionMapping>urn:getSequenceStatQuarterlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getSequenceStatQuarterlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getSequenceStatQuarterlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServerStatDailySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServerStatDailySummaries</actionMapping>
+            <outputActionMapping>urn:getServerStatDailySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServerStatDailySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServerStatDailySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getEndpointStatHourlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getEndpointStatHourlySummaries</actionMapping>
+            <outputActionMapping>urn:getEndpointStatHourlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getEndpointStatHourlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getEndpointStatHourlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServiceStatHourlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServiceStatHourlySummaries</actionMapping>
+            <outputActionMapping>urn:getServiceStatHourlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServiceStatHourlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServiceStatHourlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServerStatYearlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServerStatYearlySummaries</actionMapping>
+            <outputActionMapping>urn:getServerStatYearlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServerStatYearlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServerStatYearlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperationStatYearlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationStatYearlySummaries</actionMapping>
+            <outputActionMapping>urn:getOperationStatYearlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationStatYearlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationStatYearlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getEndpointStatYearlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getEndpointStatYearlySummaries</actionMapping>
+            <outputActionMapping>urn:getEndpointStatYearlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getEndpointStatYearlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getEndpointStatYearlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServiceStatYearlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServiceStatYearlySummaries</actionMapping>
+            <outputActionMapping>urn:getServiceStatYearlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServiceStatYearlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServiceStatYearlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getProxyStatDailySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getProxyStatDailySummaries</actionMapping>
+            <outputActionMapping>urn:getProxyStatDailySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getProxyStatDailySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getProxyStatDailySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServiceStatMonthlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServiceStatMonthlySummaries</actionMapping>
+            <outputActionMapping>urn:getServiceStatMonthlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServiceStatMonthlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServiceStatMonthlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getProxyStatQuarterlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getProxyStatQuarterlySummaries</actionMapping>
+            <outputActionMapping>urn:getProxyStatQuarterlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getProxyStatQuarterlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getProxyStatQuarterlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getEndpointStatDailySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getEndpointStatDailySummaries</actionMapping>
+            <outputActionMapping>urn:getEndpointStatDailySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getEndpointStatDailySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getEndpointStatDailySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getEndpointStatMonthlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getEndpointStatMonthlySummaries</actionMapping>
+            <outputActionMapping>urn:getEndpointStatMonthlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getEndpointStatMonthlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getEndpointStatMonthlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServerStatMonthlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServerStatMonthlySummaries</actionMapping>
+            <outputActionMapping>urn:getServerStatMonthlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServerStatMonthlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServerStatMonthlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServiceStatDailySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServiceStatDailySummaries</actionMapping>
+            <outputActionMapping>urn:getServiceStatDailySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServiceStatDailySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServiceStatDailySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getSequenceStatDailySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getSequenceStatDailySummaries</actionMapping>
+            <outputActionMapping>urn:getSequenceStatDailySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getSequenceStatDailySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getSequenceStatDailySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperationStatDailySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationStatDailySummaries</actionMapping>
+            <outputActionMapping>urn:getOperationStatDailySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationStatDailySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationStatDailySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperationStatHourlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationStatHourlySummaries</actionMapping>
+            <outputActionMapping>urn:getOperationStatHourlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationStatHourlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationStatHourlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServerStatHourlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServerStatHourlySummaries</actionMapping>
+            <outputActionMapping>urn:getServerStatHourlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServerStatHourlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServerStatHourlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServerStatQuarterlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServerStatQuarterlySummaries</actionMapping>
+            <outputActionMapping>urn:getServerStatQuarterlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServerStatQuarterlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServerStatQuarterlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getProxyStatYearlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getProxyStatYearlySummaries</actionMapping>
+            <outputActionMapping>urn:getProxyStatYearlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getProxyStatYearlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getProxyStatYearlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServiceStatQuarterlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServiceStatQuarterlySummaries</actionMapping>
+            <outputActionMapping>urn:getServiceStatQuarterlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServiceStatQuarterlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServiceStatQuarterlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getEndpointStatQuarterlySummaries" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getEndpointStatQuarterlySummaries</actionMapping>
+            <outputActionMapping>urn:getEndpointStatQuarterlySummariesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getEndpointStatQuarterlySummariesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getEndpointStatQuarterlySummariesDataServiceFault</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

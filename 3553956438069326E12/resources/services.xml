@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="RemoteAuthorizationManagerService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.um.ws.service.RemoteAuthorizationManagerServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.um.ws.service.RemoteAuthorizationManagerServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.um.ws.service.RemoteAuthorizationManagerServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="isRoleAuthorized" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:isRoleAuthorized</actionMapping>
+            <outputActionMapping>urn:isRoleAuthorizedResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:isRoleAuthorizedRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:isRoleAuthorizedRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="clearResourceAuthorizations" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:clearResourceAuthorizations</actionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:clearResourceAuthorizationsRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:clearResourceAuthorizationsRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="clearAllUserAuthorization" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:clearAllUserAuthorization</actionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:clearAllUserAuthorizationRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:clearAllUserAuthorizationRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="isUserAuthorized" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:isUserAuthorized</actionMapping>
+            <outputActionMapping>urn:isUserAuthorizedResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:isUserAuthorizedRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:isUserAuthorizedRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="clearRoleActionOnAllResources" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:clearRoleActionOnAllResources</actionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:clearRoleActionOnAllResourcesRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:clearRoleActionOnAllResourcesRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="clearRoleAuthorization" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:clearRoleAuthorization</actionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:clearRoleAuthorizationRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:clearRoleAuthorizationRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="clearAllRoleAuthorization" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:clearAllRoleAuthorization</actionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:clearAllRoleAuthorizationRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:clearAllRoleAuthorizationRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getExplicitlyDeniedUsersForResource" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getExplicitlyDeniedUsersForResource</actionMapping>
+            <outputActionMapping>urn:getExplicitlyDeniedUsersForResourceResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:getExplicitlyDeniedUsersForResourceRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:getExplicitlyDeniedUsersForResourceRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="authorizeUser" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:authorizeUser</actionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:authorizeUserRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:authorizeUserRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getAllowedRolesForResource" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getAllowedRolesForResource</actionMapping>
+            <outputActionMapping>urn:getAllowedRolesForResourceResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:getAllowedRolesForResourceRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:getAllowedRolesForResourceRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="clearUserAuthorization" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:clearUserAuthorization</actionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:clearUserAuthorizationRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:clearUserAuthorizationRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getDeniedRolesForResource" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getDeniedRolesForResource</actionMapping>
+            <outputActionMapping>urn:getDeniedRolesForResourceResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:getDeniedRolesForResourceRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:getDeniedRolesForResourceRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getAllowedUIResourcesForUser" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getAllowedUIResourcesForUser</actionMapping>
+            <outputActionMapping>urn:getAllowedUIResourcesForUserResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:getAllowedUIResourcesForUserRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:getAllowedUIResourcesForUserRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="resetPermissionOnUpdateRole" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:resetPermissionOnUpdateRole</actionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:resetPermissionOnUpdateRoleRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:resetPermissionOnUpdateRoleRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="denyRole" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:denyRole</actionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:denyRoleRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:denyRoleRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getExplicitlyAllowedUsersForResource" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getExplicitlyAllowedUsersForResource</actionMapping>
+            <outputActionMapping>urn:getExplicitlyAllowedUsersForResourceResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:getExplicitlyAllowedUsersForResourceRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:getExplicitlyAllowedUsersForResourceRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="denyUser" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:denyUser</actionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:denyUserRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:denyUserRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="authorizeRole" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:authorizeRole</actionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException">urn:authorizeRoleRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteAuthorizationManagerServiceUserStoreException_Exception">urn:authorizeRoleRemoteAuthorizationManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

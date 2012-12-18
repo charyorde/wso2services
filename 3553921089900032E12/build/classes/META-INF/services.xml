@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="ServiceUploader">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.aarservices.ServiceUploaderMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.aarservices.ServiceUploaderSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="uploadService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://aarservices.carbon.wso2.org">
+            <actionMapping>urn:uploadService</actionMapping>
+            <outputActionMapping>urn:uploadServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="ServiceUploaderException">urn:uploadServiceServiceUploaderException</faultActionMapping>
+            <faultActionMapping faultName="ServiceUploaderException_Exception">urn:uploadServiceServiceUploaderException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

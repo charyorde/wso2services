@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="IdentitySAMLSSOConfigService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.identity.sso.saml.IdentitySAMLSSOConfigServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.identity.sso.saml.IdentitySAMLSSOConfigServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="removeServiceProvider" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://saml.sso.identity.carbon.wso2.org">
+            <actionMapping>urn:removeServiceProvider</actionMapping>
+            <outputActionMapping>urn:removeServiceProviderResponse</outputActionMapping>
+            <faultActionMapping faultName="IdentitySAMLSSOConfigServiceIdentityException">urn:removeServiceProviderIdentitySAMLSSOConfigServiceIdentityException</faultActionMapping>
+            <faultActionMapping faultName="IdentitySAMLSSOConfigServiceIdentityException_Exception">urn:removeServiceProviderIdentitySAMLSSOConfigServiceIdentityException</faultActionMapping>
+        </operation>
+        <operation name="getServiceProviders" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://saml.sso.identity.carbon.wso2.org">
+            <actionMapping>urn:getServiceProviders</actionMapping>
+            <outputActionMapping>urn:getServiceProvidersResponse</outputActionMapping>
+            <faultActionMapping faultName="IdentitySAMLSSOConfigServiceIdentityException">urn:getServiceProvidersIdentitySAMLSSOConfigServiceIdentityException</faultActionMapping>
+            <faultActionMapping faultName="IdentitySAMLSSOConfigServiceIdentityException_Exception">urn:getServiceProvidersIdentitySAMLSSOConfigServiceIdentityException</faultActionMapping>
+        </operation>
+        <operation name="getCertAliasOfPrimaryKeyStore" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://saml.sso.identity.carbon.wso2.org">
+            <actionMapping>urn:getCertAliasOfPrimaryKeyStore</actionMapping>
+            <outputActionMapping>urn:getCertAliasOfPrimaryKeyStoreResponse</outputActionMapping>
+            <faultActionMapping faultName="IdentitySAMLSSOConfigServiceIdentityException">urn:getCertAliasOfPrimaryKeyStoreIdentitySAMLSSOConfigServiceIdentityException</faultActionMapping>
+            <faultActionMapping faultName="IdentitySAMLSSOConfigServiceIdentityException_Exception">urn:getCertAliasOfPrimaryKeyStoreIdentitySAMLSSOConfigServiceIdentityException</faultActionMapping>
+        </operation>
+        <operation name="addRPServiceProvider" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://saml.sso.identity.carbon.wso2.org">
+            <actionMapping>urn:addRPServiceProvider</actionMapping>
+            <outputActionMapping>urn:addRPServiceProviderResponse</outputActionMapping>
+            <faultActionMapping faultName="IdentitySAMLSSOConfigServiceIdentityException">urn:addRPServiceProviderIdentitySAMLSSOConfigServiceIdentityException</faultActionMapping>
+            <faultActionMapping faultName="IdentitySAMLSSOConfigServiceIdentityException_Exception">urn:addRPServiceProviderIdentitySAMLSSOConfigServiceIdentityException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

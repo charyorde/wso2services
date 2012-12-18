@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="ReportingResourcesSupplier">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.reporting.core.services.ReportingResourcesSupplierMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.reporting.core.services.ReportingResourcesSupplierMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.reporting.core.services.ReportingResourcesSupplierSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="deleteReportTemplate" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://services.core.reporting.carbon.wso2.org">
+            <actionMapping>urn:deleteReportTemplate</actionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierReportingException">urn:deleteReportTemplateReportingResourcesSupplierReportingException</faultActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierReportingException_Exception">urn:deleteReportTemplateReportingResourcesSupplierReportingException</faultActionMapping>
+        </operation>
+        <operation name="getReportParam" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.reporting.carbon.wso2.org">
+            <actionMapping>urn:getReportParam</actionMapping>
+            <outputActionMapping>urn:getReportParamResponse</outputActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierReportingException">urn:getReportParamReportingResourcesSupplierReportingException</faultActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierReportingException_Exception">urn:getReportParamReportingResourcesSupplierReportingException</faultActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierXMLStreamException">urn:getReportParamReportingResourcesSupplierXMLStreamException</faultActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierXMLStreamException_Exception">urn:getReportParamReportingResourcesSupplierXMLStreamException</faultActionMapping>
+        </operation>
+        <operation name="updateReport" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.reporting.carbon.wso2.org">
+            <actionMapping>urn:updateReport</actionMapping>
+            <outputActionMapping>urn:updateReportResponse</outputActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierReportingException">urn:updateReportReportingResourcesSupplierReportingException</faultActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierReportingException_Exception">urn:updateReportReportingResourcesSupplierReportingException</faultActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierJRException">urn:updateReportReportingResourcesSupplierJRException</faultActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierJRException_Exception">urn:updateReportReportingResourcesSupplierJRException</faultActionMapping>
+        </operation>
+        <operation name="getReportResources" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.reporting.carbon.wso2.org">
+            <actionMapping>urn:getReportResources</actionMapping>
+            <outputActionMapping>urn:getReportResourcesResponse</outputActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierReportingException">urn:getReportResourcesReportingResourcesSupplierReportingException</faultActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierReportingException_Exception">urn:getReportResourcesReportingResourcesSupplierReportingException</faultActionMapping>
+        </operation>
+        <operation name="getAllReports" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.reporting.carbon.wso2.org">
+            <actionMapping>urn:getAllReports</actionMapping>
+            <outputActionMapping>urn:getAllReportsResponse</outputActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierReportingException">urn:getAllReportsReportingResourcesSupplierReportingException</faultActionMapping>
+            <faultActionMapping faultName="ReportingResourcesSupplierReportingException_Exception">urn:getAllReportsReportingResourcesSupplierReportingException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

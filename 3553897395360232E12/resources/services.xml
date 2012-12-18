@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="StatisticsAdmin">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.statistics.services.StatisticsAdminMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="org.wso2.carbon.statistics.services.StatisticsAdminMessageReceiverInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.statistics.services.StatisticsAdminSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getMaxServiceResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMaxServiceResponseTime</actionMapping>
+            <outputActionMapping>urn:getMaxServiceResponseTimeResponse</outputActionMapping>
+        </operation>
+        <operation name="getServiceRequestCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getServiceRequestCount</actionMapping>
+            <outputActionMapping>urn:getServiceRequestCountResponse</outputActionMapping>
+        </operation>
+        <operation name="getSystemResponseCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getSystemResponseCount</actionMapping>
+            <outputActionMapping>urn:getSystemResponseCountResponse</outputActionMapping>
+        </operation>
+        <operation name="getOperationResponseCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getOperationResponseCount</actionMapping>
+            <outputActionMapping>urn:getOperationResponseCountResponse</outputActionMapping>
+        </operation>
+        <operation name="getAvgOperationResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getAvgOperationResponseTime</actionMapping>
+            <outputActionMapping>urn:getAvgOperationResponseTimeResponse</outputActionMapping>
+        </operation>
+        <operation name="getOperationStatistics" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getOperationStatistics</actionMapping>
+            <outputActionMapping>urn:getOperationStatisticsResponse</outputActionMapping>
+        </operation>
+        <operation name="getMinSystemResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMinSystemResponseTime</actionMapping>
+            <outputActionMapping>urn:getMinSystemResponseTimeResponse</outputActionMapping>
+        </operation>
+        <operation name="getSystemFaultCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getSystemFaultCount</actionMapping>
+            <outputActionMapping>urn:getSystemFaultCountResponse</outputActionMapping>
+        </operation>
+        <operation name="getMaxSystemResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMaxSystemResponseTime</actionMapping>
+            <outputActionMapping>urn:getMaxSystemResponseTimeResponse</outputActionMapping>
+        </operation>
+        <operation name="getServiceFaultCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getServiceFaultCount</actionMapping>
+            <outputActionMapping>urn:getServiceFaultCountResponse</outputActionMapping>
+        </operation>
+        <operation name="getMinServiceResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMinServiceResponseTime</actionMapping>
+            <outputActionMapping>urn:getMinServiceResponseTimeResponse</outputActionMapping>
+        </operation>
+        <operation name="getMaxOperationResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMaxOperationResponseTime</actionMapping>
+            <outputActionMapping>urn:getMaxOperationResponseTimeResponse</outputActionMapping>
+        </operation>
+        <operation name="getServiceStatistics" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getServiceStatistics</actionMapping>
+            <outputActionMapping>urn:getServiceStatisticsResponse</outputActionMapping>
+        </operation>
+        <operation name="getOperationFaultCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getOperationFaultCount</actionMapping>
+            <outputActionMapping>urn:getOperationFaultCountResponse</outputActionMapping>
+        </operation>
+        <operation name="getAvgServiceResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getAvgServiceResponseTime</actionMapping>
+            <outputActionMapping>urn:getAvgServiceResponseTimeResponse</outputActionMapping>
+        </operation>
+        <operation name="getServiceResponseCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getServiceResponseCount</actionMapping>
+            <outputActionMapping>urn:getServiceResponseCountResponse</outputActionMapping>
+        </operation>
+        <operation name="getSystemRequestCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getSystemRequestCount</actionMapping>
+            <outputActionMapping>urn:getSystemRequestCountResponse</outputActionMapping>
+        </operation>
+        <operation name="setConfigurationContext" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:setConfigurationContext</actionMapping>
+        </operation>
+        <operation name="getMinOperationResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getMinOperationResponseTime</actionMapping>
+            <outputActionMapping>urn:getMinOperationResponseTimeResponse</outputActionMapping>
+        </operation>
+        <operation name="getAvgSystemResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getAvgSystemResponseTime</actionMapping>
+            <outputActionMapping>urn:getAvgSystemResponseTimeResponse</outputActionMapping>
+        </operation>
+        <operation name="getSystemStatistics" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getSystemStatistics</actionMapping>
+            <outputActionMapping>urn:getSystemStatisticsResponse</outputActionMapping>
+        </operation>
+        <operation name="getOperationRequestCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.statistics.carbon.wso2.org">
+            <actionMapping>urn:getOperationRequestCount</actionMapping>
+            <outputActionMapping>urn:getOperationRequestCountResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

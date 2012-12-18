@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="BAMEventBrokerService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.apache.ws.axis2.BAMEventBrokerServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.apache.ws.axis2.BAMEventBrokerServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="renew" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apache.org/axis2">
+            <actionMapping>http://schemas.xmlsoap.org/ws/2004/08/eventing/Renew</actionMapping>
+            <outputActionMapping>http://schemas.xmlsoap.org/ws/2004/08/eventing/RenewResponse</outputActionMapping>
+        </operation>
+        <operation name="installEventSink" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apache.org/axis2">
+            <actionMapping>http://schemas.xmlsoap.org/ws/2004/08/eventing/installEventSink</actionMapping>
+            <outputActionMapping>http://schemas.xmlsoap.org/ws/2004/08/eventing/installEventSinkResponse</outputActionMapping>
+        </operation>
+        <operation name="getSubscriptions" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apache.org/axis2">
+            <actionMapping>http://ws.apache.org/ws/2007/05/eventing-extended/getSubscriptions</actionMapping>
+            <outputActionMapping>http://ws.apache.org/ws/2007/05/eventing-extended/getSubscriptionsResponse</outputActionMapping>
+        </operation>
+        <operation name="publish" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apache.org/axis2">
+            <actionMapping>urn:publish</actionMapping>
+            <outputActionMapping>urn:publishResponse</outputActionMapping>
+        </operation>
+        <operation name="getStatus" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apache.org/axis2">
+            <actionMapping>http://schemas.xmlsoap.org/ws/2004/08/eventing/GetStatus</actionMapping>
+            <outputActionMapping>http://schemas.xmlsoap.org/ws/2004/08/eventing/GetStatusResponse</outputActionMapping>
+        </operation>
+        <operation name="subscriptionEnd" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apache.org/axis2">
+            <actionMapping>http://schemas.xmlsoap.org/ws/2004/08/eventing/SubscriptionEnd</actionMapping>
+            <outputActionMapping>urn:subscriptionEndResponse</outputActionMapping>
+        </operation>
+        <operation name="subscribe" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apache.org/axis2">
+            <actionMapping>http://schemas.xmlsoap.org/ws/2004/08/eventing/Subscribe</actionMapping>
+            <outputActionMapping>http://schemas.xmlsoap.org/ws/2004/08/eventing/SubscribeResponse</outputActionMapping>
+        </operation>
+        <operation name="unsubscribe" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apache.org/axis2">
+            <actionMapping>http://schemas.xmlsoap.org/ws/2004/08/eventing/Unsubscribe</actionMapping>
+            <outputActionMapping>http://schemas.xmlsoap.org/ws/2004/08/eventing/UnsubscribeResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

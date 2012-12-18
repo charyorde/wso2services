@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://service.activation.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://service.activation.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>ActivationService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://service.activation.carbon.wso2.org">
+            <xs:element name="ActivationServiceException">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="ActivationServiceException" nillable="true" type="ns:Exception"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="Exception">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="updateActivation">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="tenantId" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="isActive">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="tenantId" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="isActiveResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ActivationServiceException">
+    <wsdl:part name="parameters" element="ns:ActivationServiceException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isActiveRequest">
+    <wsdl:part name="parameters" element="ns:isActive">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateActivationRequest">
+    <wsdl:part name="parameters" element="ns:updateActivation">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isActiveResponse">
+    <wsdl:part name="parameters" element="ns:isActiveResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ActivationServicePortType">
+    <wsdl:operation name="isActive">
+      <wsdl:input message="ns:isActiveRequest" wsaw:Action="urn:isActive">
+    </wsdl:input>
+      <wsdl:output message="ns:isActiveResponse" wsaw:Action="urn:isActiveResponse">
+    </wsdl:output>
+      <wsdl:fault name="ActivationServiceException" message="ns:ActivationServiceException" wsaw:Action="urn:isActiveActivationServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateActivation">
+      <wsdl:input message="ns:updateActivationRequest" wsaw:Action="urn:updateActivation">
+    </wsdl:input>
+      <wsdl:fault name="ActivationServiceException" message="ns:ActivationServiceException" wsaw:Action="urn:updateActivationActivationServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ActivationServiceSoap11Binding" type="ns:ActivationServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="isActive">
+      <soap:operation soapAction="urn:isActive" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ActivationServiceException">
+        <soap:fault name="ActivationServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateActivation">
+      <soap:operation soapAction="urn:updateActivation" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="ActivationServiceException">
+        <soap:fault name="ActivationServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ActivationServiceHttpBinding" type="ns:ActivationServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="isActive">
+      <http:operation location="isActive"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateActivation">
+      <http:operation location="updateActivation"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ActivationServiceSoap12Binding" type="ns:ActivationServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="isActive">
+      <soap12:operation soapAction="urn:isActive" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ActivationServiceException">
+        <soap12:fault name="ActivationServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateActivation">
+      <soap12:operation soapAction="urn:updateActivation" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="ActivationServiceException">
+        <soap12:fault name="ActivationServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ActivationService">
+    <wsdl:port name="ActivationServiceHttpsEndpoint" binding="ns:ActivationServiceHttpBinding">
+      <http:address location="https://appserver.cloud-test.wso2.com:9446/services/ActivationService.ActivationServiceHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="ActivationServiceHttpsSoap12Endpoint" binding="ns:ActivationServiceSoap12Binding">
+      <soap12:address location="https://appserver.cloud-test.wso2.com:9446/services/ActivationService.ActivationServiceHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="ActivationServiceHttpsSoap11Endpoint" binding="ns:ActivationServiceSoap11Binding">
+      <soap:address location="https://appserver.cloud-test.wso2.com:9446/services/ActivationService.ActivationServiceHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

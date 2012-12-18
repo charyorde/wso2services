@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="RemoteUserStoreManagerService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.um.ws.service.RemoteUserStoreManagerServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.um.ws.service.RemoteUserStoreManagerServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.um.ws.service.RemoteUserStoreManagerServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="setUserClaimValues" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:setUserClaimValues</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:setUserClaimValuesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:setUserClaimValuesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getUserClaimValuesForClaims" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getUserClaimValuesForClaims</actionMapping>
+            <outputActionMapping>urn:getUserClaimValuesForClaimsResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getUserClaimValuesForClaimsRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getUserClaimValuesForClaimsRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="deleteUser" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:deleteUser</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:deleteUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:deleteUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="isExistingRole" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:isExistingRole</actionMapping>
+            <outputActionMapping>urn:isExistingRoleResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:isExistingRoleRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:isExistingRoleRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="updateRoleListOfUser" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:updateRoleListOfUser</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:updateRoleListOfUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:updateRoleListOfUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="addRole" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:addRole</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:addRoleRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:addRoleRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getAllProfileNames" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getAllProfileNames</actionMapping>
+            <outputActionMapping>urn:getAllProfileNamesResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getAllProfileNamesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getAllProfileNamesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="isExistingUser" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:isExistingUser</actionMapping>
+            <outputActionMapping>urn:isExistingUserResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:isExistingUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:isExistingUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="addUser" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:addUser</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:addUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:addUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="deleteUserClaimValue" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:deleteUserClaimValue</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:deleteUserClaimValueRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:deleteUserClaimValueRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getRoleNames" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getRoleNames</actionMapping>
+            <outputActionMapping>urn:getRoleNamesResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getRoleNamesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getRoleNamesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getProfileNames" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getProfileNames</actionMapping>
+            <outputActionMapping>urn:getProfileNamesResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getProfileNamesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getProfileNamesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="updateUserListOfRole" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:updateUserListOfRole</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:updateUserListOfRoleRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:updateUserListOfRoleRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="updateRoleName" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:updateRoleName</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:updateRoleNameRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:updateRoleNameRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getHybridRoles" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getHybridRoles</actionMapping>
+            <outputActionMapping>urn:getHybridRolesResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getHybridRolesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getHybridRolesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="deleteUserClaimValues" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:deleteUserClaimValues</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:deleteUserClaimValuesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:deleteUserClaimValuesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="authenticate" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:authenticate</actionMapping>
+            <outputActionMapping>urn:authenticateResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:authenticateRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:authenticateRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getUserId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getUserId</actionMapping>
+            <outputActionMapping>urn:getUserIdResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getUserIdRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getUserIdRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="deleteRole" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:deleteRole</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:deleteRoleRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:deleteRoleRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getUserClaimValues" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getUserClaimValues</actionMapping>
+            <outputActionMapping>urn:getUserClaimValuesResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getUserClaimValuesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getUserClaimValuesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getUserListOfRole" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getUserListOfRole</actionMapping>
+            <outputActionMapping>urn:getUserListOfRoleResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getUserListOfRoleRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getUserListOfRoleRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getRoleListOfUser" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getRoleListOfUser</actionMapping>
+            <outputActionMapping>urn:getRoleListOfUserResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getRoleListOfUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getRoleListOfUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="setUserClaimValue" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:setUserClaimValue</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:setUserClaimValueRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:setUserClaimValueRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="updateCredential" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:updateCredential</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:updateCredentialRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:updateCredentialRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getProperties" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getProperties</actionMapping>
+            <outputActionMapping>urn:getPropertiesResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getPropertiesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getPropertiesRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="isReadOnly" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:isReadOnly</actionMapping>
+            <outputActionMapping>urn:isReadOnlyResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:isReadOnlyRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:isReadOnlyRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getUserClaimValue" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getUserClaimValue</actionMapping>
+            <outputActionMapping>urn:getUserClaimValueResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getUserClaimValueRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getUserClaimValueRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getTenantIdofUser" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getTenantIdofUser</actionMapping>
+            <outputActionMapping>urn:getTenantIdofUserResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getTenantIdofUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getTenantIdofUserRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="listUsers" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:listUsers</actionMapping>
+            <outputActionMapping>urn:listUsersResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:listUsersRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:listUsersRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getPasswordExpirationTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getPasswordExpirationTime</actionMapping>
+            <outputActionMapping>urn:getPasswordExpirationTimeResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getPasswordExpirationTimeRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getPasswordExpirationTimeRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="updateCredentialByAdmin" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:updateCredentialByAdmin</actionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:updateCredentialByAdminRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:updateCredentialByAdminRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getTenantId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.ws.um.carbon.wso2.org">
+            <actionMapping>urn:getTenantId</actionMapping>
+            <outputActionMapping>urn:getTenantIdResponse</outputActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException">urn:getTenantIdRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="RemoteUserStoreManagerServiceUserStoreException_Exception">urn:getTenantIdRemoteUserStoreManagerServiceUserStoreException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

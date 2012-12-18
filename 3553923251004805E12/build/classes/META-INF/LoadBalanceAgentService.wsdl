@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://agent.balance.load.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://agent.balance.load.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>LoadBalanceAgentService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://agent.balance.load.carbon.wso2.org">
+            <xs:element name="getLoadAverage">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getLoadAverageResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:double"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getLoadAverageResponse">
+    <wsdl:part name="parameters" element="ns:getLoadAverageResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLoadAverageRequest">
+    <wsdl:part name="parameters" element="ns:getLoadAverage">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="LoadBalanceAgentServicePortType">
+    <wsdl:operation name="getLoadAverage">
+      <wsdl:input message="ns:getLoadAverageRequest" wsaw:Action="urn:getLoadAverage">
+    </wsdl:input>
+      <wsdl:output message="ns:getLoadAverageResponse" wsaw:Action="urn:getLoadAverageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LoadBalanceAgentServiceSoap11Binding" type="ns:LoadBalanceAgentServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getLoadAverage">
+      <soap:operation soapAction="urn:getLoadAverage" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoadBalanceAgentServiceHttpBinding" type="ns:LoadBalanceAgentServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="getLoadAverage">
+      <http:operation location="getLoadAverage"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoadBalanceAgentServiceSoap12Binding" type="ns:LoadBalanceAgentServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getLoadAverage">
+      <soap12:operation soapAction="urn:getLoadAverage" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LoadBalanceAgentService">
+    <wsdl:port name="LoadBalanceAgentServiceHttpsSoap12Endpoint" binding="ns:LoadBalanceAgentServiceSoap12Binding">
+      <soap12:address location="https://appserver.cloud-test.wso2.com:9446/services/LoadBalanceAgentService.LoadBalanceAgentServiceHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="LoadBalanceAgentServiceHttpsEndpoint" binding="ns:LoadBalanceAgentServiceHttpBinding">
+      <http:address location="https://appserver.cloud-test.wso2.com:9446/services/LoadBalanceAgentService.LoadBalanceAgentServiceHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="LoadBalanceAgentServiceHttpsSoap11Endpoint" binding="ns:LoadBalanceAgentServiceSoap11Binding">
+      <soap:address location="https://appserver.cloud-test.wso2.com:9446/services/LoadBalanceAgentService.LoadBalanceAgentServiceHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

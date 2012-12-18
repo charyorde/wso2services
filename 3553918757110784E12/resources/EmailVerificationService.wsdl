@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://services.verification.email.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://services.verification.email.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ax2112="http://util.verification.email.carbon.wso2.org/xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>EmailVerificationService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://util.verification.email.carbon.wso2.org/xsd">
+            <xs:complexType name="ConfirmationBean">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="data" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="redirectPath" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://services.verification.email.carbon.wso2.org" xmlns:ax2113="http://util.verification.email.carbon.wso2.org/xsd">
+            <xs:import namespace="http://util.verification.email.carbon.wso2.org/xsd"/>
+            <xs:element name="EmailVerificationServiceException">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="EmailVerificationServiceException" nillable="true" type="ns:Exception"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="Exception">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="confirmUser">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="secretKey" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="confirmUserResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ax2113:ConfirmationBean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="confirmUserResponse">
+    <wsdl:part name="parameters" element="ns:confirmUserResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="confirmUserRequest">
+    <wsdl:part name="parameters" element="ns:confirmUser">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="EmailVerificationServiceException">
+    <wsdl:part name="parameters" element="ns:EmailVerificationServiceException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="EmailVerificationServicePortType">
+    <wsdl:operation name="confirmUser">
+      <wsdl:input message="ns:confirmUserRequest" wsaw:Action="urn:confirmUser">
+    </wsdl:input>
+      <wsdl:output message="ns:confirmUserResponse" wsaw:Action="urn:confirmUserResponse">
+    </wsdl:output>
+      <wsdl:fault name="EmailVerificationServiceException" message="ns:EmailVerificationServiceException" wsaw:Action="urn:confirmUserEmailVerificationServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EmailVerificationServiceSoap12Binding" type="ns:EmailVerificationServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="confirmUser">
+      <soap12:operation soapAction="urn:confirmUser" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="EmailVerificationServiceException">
+        <soap12:fault name="EmailVerificationServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EmailVerificationServiceSoap11Binding" type="ns:EmailVerificationServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="confirmUser">
+      <soap:operation soapAction="urn:confirmUser" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="EmailVerificationServiceException">
+        <soap:fault name="EmailVerificationServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EmailVerificationServiceHttpBinding" type="ns:EmailVerificationServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="confirmUser">
+      <http:operation location="confirmUser"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmailVerificationService">
+    <wsdl:port name="EmailVerificationServiceHttpsSoap11Endpoint" binding="ns:EmailVerificationServiceSoap11Binding">
+      <soap:address location="https://appserver.cloud-test.wso2.com:9446/services/EmailVerificationService.EmailVerificationServiceHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="EmailVerificationServiceHttpsEndpoint" binding="ns:EmailVerificationServiceHttpBinding">
+      <http:address location="https://appserver.cloud-test.wso2.com:9446/services/EmailVerificationService.EmailVerificationServiceHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="EmailVerificationServiceHttpsSoap12Endpoint" binding="ns:EmailVerificationServiceSoap12Binding">
+      <soap12:address location="https://appserver.cloud-test.wso2.com:9446/services/EmailVerificationService.EmailVerificationServiceHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="SampleDeployer">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.sample.installer.SampleDeployerMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="org.wso2.carbon.sample.installer.SampleDeployerMessageReceiverInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.sample.installer.SampleDeployerSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="deploySample" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://installer.sample.carbon.wso2.org">
+            <actionMapping>urn:deploySample</actionMapping>
+            <outputActionMapping>urn:deploySampleResponse</outputActionMapping>
+            <faultActionMapping faultName="SampleDeployerRegistryException">urn:deploySampleSampleDeployerRegistryException</faultActionMapping>
+            <faultActionMapping faultName="SampleDeployerRegistryException_Exception">urn:deploySampleSampleDeployerRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getSampleInformation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://installer.sample.carbon.wso2.org">
+            <actionMapping>urn:getSampleInformation</actionMapping>
+            <outputActionMapping>urn:getSampleInformationResponse</outputActionMapping>
+        </operation>
+        <operation name="uploadSample" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://installer.sample.carbon.wso2.org">
+            <actionMapping>urn:uploadSample</actionMapping>
+            <outputActionMapping>urn:uploadSampleResponse</outputActionMapping>
+            <faultActionMapping faultName="SampleDeployerRegistryException">urn:uploadSampleSampleDeployerRegistryException</faultActionMapping>
+            <faultActionMapping faultName="SampleDeployerRegistryException_Exception">urn:uploadSampleSampleDeployerRegistryException</faultActionMapping>
+        </operation>
+        <operation name="setPolicyPermission" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://installer.sample.carbon.wso2.org">
+            <actionMapping>urn:setPolicyPermission</actionMapping>
+        </operation>
+    </service>
+</serviceGroup>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="MessageStoreAdminService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.message.store.service.MessageStoreAdminServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="org.wso2.carbon.message.store.service.MessageStoreAdminServiceMessageReceiverInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.message.store.service.MessageStoreAdminServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="modifyMessageStore" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:modifyMessageStore</actionMapping>
+        </operation>
+        <operation name="getMessageStore" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:getMessageStore</actionMapping>
+            <outputActionMapping>urn:getMessageStoreResponse</outputActionMapping>
+        </operation>
+        <operation name="getClassName" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:getClassName</actionMapping>
+            <outputActionMapping>urn:getClassNameResponse</outputActionMapping>
+        </operation>
+        <operation name="deleteMessage" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:deleteMessage</actionMapping>
+        </operation>
+        <operation name="getPaginatedMessages" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:getPaginatedMessages</actionMapping>
+            <outputActionMapping>urn:getPaginatedMessagesResponse</outputActionMapping>
+        </operation>
+        <operation name="getEnvelope" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:getEnvelope</actionMapping>
+            <outputActionMapping>urn:getEnvelopeResponse</outputActionMapping>
+        </operation>
+        <operation name="getSize" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:getSize</actionMapping>
+            <outputActionMapping>urn:getSizeResponse</outputActionMapping>
+        </operation>
+        <operation name="deleteMessageStore" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:deleteMessageStore</actionMapping>
+        </operation>
+        <operation name="getMessageStoreNames" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:getMessageStoreNames</actionMapping>
+            <outputActionMapping>urn:getMessageStoreNamesResponse</outputActionMapping>
+        </operation>
+        <operation name="getAllMessages" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:getAllMessages</actionMapping>
+            <outputActionMapping>urn:getAllMessagesResponse</outputActionMapping>
+        </operation>
+        <operation name="deleteAllMessages" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:deleteAllMessages</actionMapping>
+        </operation>
+        <operation name="addMessageStore" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://service.store.message.carbon.wso2.org">
+            <actionMapping>urn:addMessageStore</actionMapping>
+        </operation>
+    </service>
+</serviceGroup>

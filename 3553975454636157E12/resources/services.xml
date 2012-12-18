@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="BAMStatQueryDS">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.ws.dataservice.BAMStatQueryDSMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.ws.dataservice.BAMStatQueryDSMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.ws.dataservice.BAMStatQueryDSSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getLatestOutFaultCountForProxy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestOutFaultCountForProxy</actionMapping>
+            <outputActionMapping>urn:getLatestOutFaultCountForProxyResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestOutFaultCountForProxyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestOutFaultCountForProxyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperationsForOperationID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationsForOperationID</actionMapping>
+            <outputActionMapping>urn:getOperationsForOperationIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationsForOperationIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationsForOperationIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllOperationsForTimeRange" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllOperationsForTimeRange</actionMapping>
+            <outputActionMapping>urn:getAllOperationsForTimeRangeResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllOperationsForTimeRangeDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllOperationsForTimeRangeDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestMinimumResponseTimeForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestMinimumResponseTimeForOperation</actionMapping>
+            <outputActionMapping>urn:getLatestMinimumResponseTimeForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestMinimumResponseTimeForOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestMinimumResponseTimeForOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getActivityDetailsForActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getActivityDetailsForActivity</actionMapping>
+            <outputActionMapping>urn:getActivityDetailsForActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getActivityDetailsForActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getActivityDetailsForActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestMinimumResponseTimeForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestMinimumResponseTimeForServer</actionMapping>
+            <outputActionMapping>urn:getLatestMinimumResponseTimeForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestMinimumResponseTimeForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestMinimumResponseTimeForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestMaximumResponseTimeForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestMaximumResponseTimeForServer</actionMapping>
+            <outputActionMapping>urn:getLatestMaximumResponseTimeForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestMaximumResponseTimeForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestMaximumResponseTimeForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInFaultCountForSequence" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInFaultCountForSequence</actionMapping>
+            <outputActionMapping>urn:getLatestInFaultCountForSequenceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInFaultCountForSequenceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInFaultCountForSequenceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServerIdForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServerIdForServer</actionMapping>
+            <outputActionMapping>urn:getServerIdForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServerIdForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServerIdForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getCountofChildrenFailedMessages" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getCountofChildrenFailedMessages</actionMapping>
+            <outputActionMapping>urn:getCountofChildrenFailedMessagesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getCountofChildrenFailedMessagesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getCountofChildrenFailedMessagesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllMessagesForTimeRangeAndActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllMessagesForTimeRangeAndActivity</actionMapping>
+            <outputActionMapping>urn:getAllMessagesForTimeRangeAndActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllMessagesForTimeRangeAndActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllMessagesForTimeRangeAndActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperationIDForMessageID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationIDForMessageID</actionMapping>
+            <outputActionMapping>urn:getOperationIDForMessageIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationIDForMessageIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationIDForMessageIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestMaximumResponseTimeForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestMaximumResponseTimeForOperation</actionMapping>
+            <outputActionMapping>urn:getLatestMaximumResponseTimeForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestMaximumResponseTimeForOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestMaximumResponseTimeForOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperations" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperations</actionMapping>
+            <outputActionMapping>urn:getOperationsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInMinimumProcessingTimeForEndpoint" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInMinimumProcessingTimeForEndpoint</actionMapping>
+            <outputActionMapping>urn:getLatestInMinimumProcessingTimeForEndpointResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInMinimumProcessingTimeForEndpointDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInMinimumProcessingTimeForEndpointDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestResponseCountForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestResponseCountForOperation</actionMapping>
+            <outputActionMapping>urn:getLatestResponseCountForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestResponseCountForOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestResponseCountForOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMaximumOperationsForAnActivityID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMaximumOperationsForAnActivityID</actionMapping>
+            <outputActionMapping>urn:getMaximumOperationsForAnActivityIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMaximumOperationsForAnActivityIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMaximumOperationsForAnActivityIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="gettimestampForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:gettimestampForOperation</actionMapping>
+            <outputActionMapping>urn:gettimestampForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:gettimestampForOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:gettimestampForOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="setParentStatus" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:setParentStatus</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:setParentStatusDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:setParentStatusDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getJMXMetricsWindow" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getJMXMetricsWindow</actionMapping>
+            <outputActionMapping>urn:getJMXMetricsWindowResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getJMXMetricsWindowDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getJMXMetricsWindowDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInFaultCountForProxy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInFaultCountForProxy</actionMapping>
+            <outputActionMapping>urn:getLatestInFaultCountForProxyResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInFaultCountForProxyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInFaultCountForProxyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAleauditFailCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAleauditFailCount</actionMapping>
+            <outputActionMapping>urn:getAleauditFailCountResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAleauditFailCountDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAleauditFailCountDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInMaximumProcessingTimeForProxy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInMaximumProcessingTimeForProxy</actionMapping>
+            <outputActionMapping>urn:getLatestInMaximumProcessingTimeForProxyResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInMaximumProcessingTimeForProxyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInMaximumProcessingTimeForProxyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestAverageResponseTimeForService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestAverageResponseTimeForService</actionMapping>
+            <outputActionMapping>urn:getLatestAverageResponseTimeForServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestAverageResponseTimeForServiceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestAverageResponseTimeForServiceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getPropertyChildrenForActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getPropertyChildrenForActivity</actionMapping>
+            <outputActionMapping>urn:getPropertyChildrenForActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getPropertyChildrenForActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getPropertyChildrenForActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestDataForService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestDataForService</actionMapping>
+            <outputActionMapping>urn:getLatestDataForServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestDataForServiceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestDataForServiceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getActivityDetailsForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getActivityDetailsForServer</actionMapping>
+            <outputActionMapping>urn:getActivityDetailsForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getActivityDetailsForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getActivityDetailsForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getDetailsForActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getDetailsForActivity</actionMapping>
+            <outputActionMapping>urn:getDetailsForActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getDetailsForActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getDetailsForActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getEndpoints" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getEndpoints</actionMapping>
+            <outputActionMapping>urn:getEndpointsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getEndpointsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getEndpointsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestOutMinimumProcessingTimeForSequence" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestOutMinimumProcessingTimeForSequence</actionMapping>
+            <outputActionMapping>urn:getLatestOutMinimumProcessingTimeForSequenceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestOutMinimumProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestOutMinimumProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getActivityDetailsForTimeRange" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getActivityDetailsForTimeRange</actionMapping>
+            <outputActionMapping>urn:getActivityDetailsForTimeRangeResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getActivityDetailsForTimeRangeDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getActivityDetailsForTimeRangeDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestOutMinimumProcessingTimeForProxy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestOutMinimumProcessingTimeForProxy</actionMapping>
+            <outputActionMapping>urn:getLatestOutMinimumProcessingTimeForProxyResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestOutMinimumProcessingTimeForProxyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestOutMinimumProcessingTimeForProxyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAleauditMessagesForSAP" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAleauditMessagesForSAP</actionMapping>
+            <outputActionMapping>urn:getAleauditMessagesForSAPResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAleauditMessagesForSAPDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAleauditMessagesForSAPDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInAverageProcessingTimeForProxy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInAverageProcessingTimeForProxy</actionMapping>
+            <outputActionMapping>urn:getLatestInAverageProcessingTimeForProxyResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInAverageProcessingTimeForProxyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInAverageProcessingTimeForProxyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServerListForActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServerListForActivity</actionMapping>
+            <outputActionMapping>urn:getServerListForActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServerListForActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServerListForActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMessageCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMessageCount</actionMapping>
+            <outputActionMapping>urn:getMessageCountResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMessageCountDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMessageCountDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getpropertyBagForActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getpropertyBagForActivity</actionMapping>
+            <outputActionMapping>urn:getpropertyBagForActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getpropertyBagForActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getpropertyBagForActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLastMinuteRequestCountSystem" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLastMinuteRequestCountSystem</actionMapping>
+            <outputActionMapping>urn:getLastMinuteRequestCountSystemResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLastMinuteRequestCountSystemDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLastMinuteRequestCountSystemDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInMinimumProcessingTimeForSequence" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInMinimumProcessingTimeForSequence</actionMapping>
+            <outputActionMapping>urn:getLatestInMinimumProcessingTimeForSequenceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInMinimumProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInMinimumProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getPropertyValueForStatus" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getPropertyValueForStatus</actionMapping>
+            <outputActionMapping>urn:getPropertyValueForStatusResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getPropertyValueForStatusDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getPropertyValueForStatusDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMessagesForStatus" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMessagesForStatus</actionMapping>
+            <outputActionMapping>urn:getMessagesForStatusResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMessagesForStatusDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMessagesForStatusDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestOutMaximumProcessingTimeForSequence" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestOutMaximumProcessingTimeForSequence</actionMapping>
+            <outputActionMapping>urn:getLatestOutMaximumProcessingTimeForSequenceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestOutMaximumProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestOutMaximumProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestResponseCountForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestResponseCountForServer</actionMapping>
+            <outputActionMapping>urn:getLatestResponseCountForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestResponseCountForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestResponseCountForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMaxResponseTimeSystem" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMaxResponseTimeSystem</actionMapping>
+            <outputActionMapping>urn:getMaxResponseTimeSystemResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMaxResponseTimeSystemDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMaxResponseTimeSystemDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestRequestCountForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestRequestCountForServer</actionMapping>
+            <outputActionMapping>urn:getLatestRequestCountForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestRequestCountForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestRequestCountForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllActivityDataForTimeRange" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllActivityDataForTimeRange</actionMapping>
+            <outputActionMapping>urn:getAllActivityDataForTimeRangeResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllActivityDataForTimeRangeDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllActivityDataForTimeRangeDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestResponseCountForService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestResponseCountForService</actionMapping>
+            <outputActionMapping>urn:getLatestResponseCountForServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestResponseCountForServiceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestResponseCountForServiceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getDirectionForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getDirectionForOperation</actionMapping>
+            <outputActionMapping>urn:getDirectionForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getDirectionForOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getDirectionForOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllIpAddressForTimeRange" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllIpAddressForTimeRange</actionMapping>
+            <outputActionMapping>urn:getAllIpAddressForTimeRangeResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllIpAddressForTimeRangeDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllIpAddressForTimeRangeDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getReqResFaultCountForServices" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getReqResFaultCountForServices</actionMapping>
+            <outputActionMapping>urn:getReqResFaultCountForServicesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getReqResFaultCountForServicesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getReqResFaultCountForServicesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMessageForMessageID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMessageForMessageID</actionMapping>
+            <outputActionMapping>urn:getMessageForMessageIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMessageForMessageIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMessageForMessageIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMessagesCountForOperationIDAndActivityID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMessagesCountForOperationIDAndActivityID</actionMapping>
+            <outputActionMapping>urn:getMessagesCountForOperationIDAndActivityIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMessagesCountForOperationIDAndActivityIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMessagesCountForOperationIDAndActivityIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestFaultCountForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestFaultCountForOperation</actionMapping>
+            <outputActionMapping>urn:getLatestFaultCountForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestFaultCountForOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestFaultCountForOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getPropertyList" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getPropertyList</actionMapping>
+            <outputActionMapping>urn:getPropertyListResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getPropertyListDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getPropertyListDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestMaximumResponseTimeForService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestMaximumResponseTimeForService</actionMapping>
+            <outputActionMapping>urn:getLatestMaximumResponseTimeForServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestMaximumResponseTimeForServiceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestMaximumResponseTimeForServiceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInFaultCountForEndpoint" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInFaultCountForEndpoint</actionMapping>
+            <outputActionMapping>urn:getLatestInFaultCountForEndpointResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInFaultCountForEndpointDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInFaultCountForEndpointDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMessagesForOperationIDAndActivityID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMessagesForOperationIDAndActivityID</actionMapping>
+            <outputActionMapping>urn:getMessagesForOperationIDAndActivityIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMessagesForOperationIDAndActivityIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMessagesForOperationIDAndActivityIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllMessagesForTimeRange" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllMessagesForTimeRange</actionMapping>
+            <outputActionMapping>urn:getAllMessagesForTimeRangeResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllMessagesForTimeRangeDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllMessagesForTimeRangeDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInMaximumProcessingTimeForSequence" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInMaximumProcessingTimeForSequence</actionMapping>
+            <outputActionMapping>urn:getLatestInMaximumProcessingTimeForSequenceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInMaximumProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInMaximumProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getActivityInfoForActivityID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getActivityInfoForActivityID</actionMapping>
+            <outputActionMapping>urn:getActivityInfoForActivityIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getActivityInfoForActivityIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getActivityInfoForActivityIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperationForActivityID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationForActivityID</actionMapping>
+            <outputActionMapping>urn:getOperationForActivityIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationForActivityIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationForActivityIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestRequestCountForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestRequestCountForOperation</actionMapping>
+            <outputActionMapping>urn:getLatestRequestCountForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestRequestCountForOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestRequestCountForOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInCumulativeCountForProxy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInCumulativeCountForProxy</actionMapping>
+            <outputActionMapping>urn:getLatestInCumulativeCountForProxyResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInCumulativeCountForProxyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInCumulativeCountForProxyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInCumulativeCountForEndpoint" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInCumulativeCountForEndpoint</actionMapping>
+            <outputActionMapping>urn:getLatestInCumulativeCountForEndpointResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInCumulativeCountForEndpointDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInCumulativeCountForEndpointDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInAverageProcessingTimeForEndpoint" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInAverageProcessingTimeForEndpoint</actionMapping>
+            <outputActionMapping>urn:getLatestInAverageProcessingTimeForEndpointResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInAverageProcessingTimeForEndpointDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInAverageProcessingTimeForEndpointDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestOutMaximumProcessingTimeForProxy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestOutMaximumProcessingTimeForProxy</actionMapping>
+            <outputActionMapping>urn:getLatestOutMaximumProcessingTimeForProxyResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestOutMaximumProcessingTimeForProxyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestOutMaximumProcessingTimeForProxyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMinResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMinResponseTime</actionMapping>
+            <outputActionMapping>urn:getMinResponseTimeResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMinResponseTimeDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMinResponseTimeDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestMinimumResponseTimeForService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestMinimumResponseTimeForService</actionMapping>
+            <outputActionMapping>urn:getLatestMinimumResponseTimeForServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestMinimumResponseTimeForServiceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestMinimumResponseTimeForServiceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInAverageProcessingTimeForSequence" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInAverageProcessingTimeForSequence</actionMapping>
+            <outputActionMapping>urn:getLatestInAverageProcessingTimeForSequenceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInAverageProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInAverageProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServiceForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServiceForServer</actionMapping>
+            <outputActionMapping>urn:getServiceForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServiceForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServiceForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getClientServiceOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getClientServiceOperation</actionMapping>
+            <outputActionMapping>urn:getClientServiceOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getClientServiceOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getClientServiceOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestAverageResponseTimeForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestAverageResponseTimeForOperation</actionMapping>
+            <outputActionMapping>urn:getLatestAverageResponseTimeForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestAverageResponseTimeForOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestAverageResponseTimeForOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestDataForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestDataForOperation</actionMapping>
+            <outputActionMapping>urn:getLatestDataForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestDataForOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestDataForOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestFaultCountForService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestFaultCountForService</actionMapping>
+            <outputActionMapping>urn:getLatestFaultCountForServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestFaultCountForServiceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestFaultCountForServiceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMessagesForOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMessagesForOperation</actionMapping>
+            <outputActionMapping>urn:getMessagesForOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMessagesForOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMessagesForOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestOutAverageProcessingTimeForProxy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestOutAverageProcessingTimeForProxy</actionMapping>
+            <outputActionMapping>urn:getLatestOutAverageProcessingTimeForProxyResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestOutAverageProcessingTimeForProxyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestOutAverageProcessingTimeForProxyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAvgResponseTimeSystem" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAvgResponseTimeSystem</actionMapping>
+            <outputActionMapping>urn:getAvgResponseTimeSystemResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAvgResponseTimeSystemDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAvgResponseTimeSystemDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInMinimumProcessingTimeForProxy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInMinimumProcessingTimeForProxy</actionMapping>
+            <outputActionMapping>urn:getLatestInMinimumProcessingTimeForProxyResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInMinimumProcessingTimeForProxyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInMinimumProcessingTimeForProxyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInCumulativeCountForSequence" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInCumulativeCountForSequence</actionMapping>
+            <outputActionMapping>urn:getLatestInCumulativeCountForSequenceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInCumulativeCountForSequenceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInCumulativeCountForSequenceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getSequences" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getSequences</actionMapping>
+            <outputActionMapping>urn:getSequencesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getSequencesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getSequencesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestFaultCountForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestFaultCountForServer</actionMapping>
+            <outputActionMapping>urn:getLatestFaultCountForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestFaultCountForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestFaultCountForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestDataForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestDataForServer</actionMapping>
+            <outputActionMapping>urn:getLatestDataForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestDataForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestDataForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllActivityForTimeRange" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllActivityForTimeRange</actionMapping>
+            <outputActionMapping>urn:getAllActivityForTimeRangeResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllActivityForTimeRangeDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllActivityForTimeRangeDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestOutCumulativeCountForProxy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestOutCumulativeCountForProxy</actionMapping>
+            <outputActionMapping>urn:getLatestOutCumulativeCountForProxyResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestOutCumulativeCountForProxyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestOutCumulativeCountForProxyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperationNameList" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationNameList</actionMapping>
+            <outputActionMapping>urn:getOperationNameListResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationNameListDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationNameListDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllActivityDataForTimeRangeAndOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllActivityDataForTimeRangeAndOperation</actionMapping>
+            <outputActionMapping>urn:getAllActivityDataForTimeRangeAndOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllActivityDataForTimeRangeAndOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllActivityDataForTimeRangeAndOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestOutAverageProcessingTimeForSequence" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestOutAverageProcessingTimeForSequence</actionMapping>
+            <outputActionMapping>urn:getLatestOutAverageProcessingTimeForSequenceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestOutAverageProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestOutAverageProcessingTimeForSequenceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestOutCumulativeCountForSequence" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestOutCumulativeCountForSequence</actionMapping>
+            <outputActionMapping>urn:getLatestOutCumulativeCountForSequenceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestOutCumulativeCountForSequenceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestOutCumulativeCountForSequenceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperationListForActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationListForActivity</actionMapping>
+            <outputActionMapping>urn:getOperationListForActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationListForActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationListForActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getProxyServices" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getProxyServices</actionMapping>
+            <outputActionMapping>urn:getProxyServicesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getProxyServicesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getProxyServicesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMaxResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMaxResponseTime</actionMapping>
+            <outputActionMapping>urn:getMaxResponseTimeResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMaxResponseTimeDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMaxResponseTimeDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllActivityMessagesForTimeRange" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllActivityMessagesForTimeRange</actionMapping>
+            <outputActionMapping>urn:getAllActivityMessagesForTimeRangeResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllActivityMessagesForTimeRangeDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllActivityMessagesForTimeRangeDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getActivityIDForActivityName" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getActivityIDForActivityName</actionMapping>
+            <outputActionMapping>urn:getActivityIDForActivityNameResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getActivityIDForActivityNameDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getActivityIDForActivityNameDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLastMinuteRequestCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLastMinuteRequestCount</actionMapping>
+            <outputActionMapping>urn:getLastMinuteRequestCountResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLastMinuteRequestCountDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLastMinuteRequestCountDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getReplayedFailRequestCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getReplayedFailRequestCount</actionMapping>
+            <outputActionMapping>urn:getReplayedFailRequestCountResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getReplayedFailRequestCountDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getReplayedFailRequestCountDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestAverageResponseTimeForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestAverageResponseTimeForServer</actionMapping>
+            <outputActionMapping>urn:getLatestAverageResponseTimeForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestAverageResponseTimeForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestAverageResponseTimeForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServiceListForActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServiceListForActivity</actionMapping>
+            <outputActionMapping>urn:getServiceListForActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServiceListForActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServiceListForActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMinResponseTimeSystem" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMinResponseTimeSystem</actionMapping>
+            <outputActionMapping>urn:getMinResponseTimeSystemResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMinResponseTimeSystemDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMinResponseTimeSystemDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllMessages" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllMessages</actionMapping>
+            <outputActionMapping>urn:getAllMessagesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllMessagesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllMessagesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAvgResponseTime" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAvgResponseTime</actionMapping>
+            <outputActionMapping>urn:getAvgResponseTimeResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAvgResponseTimeDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAvgResponseTimeDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getChildrenMessagesForSAP" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getChildrenMessagesForSAP</actionMapping>
+            <outputActionMapping>urn:getChildrenMessagesForSAPResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getChildrenMessagesForSAPDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getChildrenMessagesForSAPDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestDataForServices" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestDataForServices</actionMapping>
+            <outputActionMapping>urn:getLatestDataForServicesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestDataForServicesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestDataForServicesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperationInfoForActivityID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationInfoForActivityID</actionMapping>
+            <outputActionMapping>urn:getOperationInfoForActivityIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationInfoForActivityIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationInfoForActivityIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getPropertyKeyForActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getPropertyKeyForActivity</actionMapping>
+            <outputActionMapping>urn:getPropertyKeyForActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getPropertyKeyForActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getPropertyKeyForActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMessagesCountForSAP" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMessagesCountForSAP</actionMapping>
+            <outputActionMapping>urn:getMessagesCountForSAPResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMessagesCountForSAPDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMessagesCountForSAPDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestOutFaultCountForSequence" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestOutFaultCountForSequence</actionMapping>
+            <outputActionMapping>urn:getLatestOutFaultCountForSequenceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestOutFaultCountForSequenceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestOutFaultCountForSequenceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestInMaximumProcessingTimeForEndpoint" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestInMaximumProcessingTimeForEndpoint</actionMapping>
+            <outputActionMapping>urn:getLatestInMaximumProcessingTimeForEndpointResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestInMaximumProcessingTimeForEndpointDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestInMaximumProcessingTimeForEndpointDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getReplayedFailReponseCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getReplayedFailReponseCount</actionMapping>
+            <outputActionMapping>urn:getReplayedFailReponseCountResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getReplayedFailReponseCountDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getReplayedFailReponseCountDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOriginalFailCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOriginalFailCount</actionMapping>
+            <outputActionMapping>urn:getOriginalFailCountResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOriginalFailCountDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOriginalFailCountDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestRequestCountForService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestRequestCountForService</actionMapping>
+            <outputActionMapping>urn:getLatestRequestCountForServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestRequestCountForServiceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestRequestCountForServiceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getInCumulativeCountsForEndpoint" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getInCumulativeCountsForEndpoint</actionMapping>
+            <outputActionMapping>urn:getInCumulativeCountsForEndpointResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getInCumulativeCountsForEndpointDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getInCumulativeCountsForEndpointDataServiceFault</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

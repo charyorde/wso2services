@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="AddServicesService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.governance.services.services.AddServicesServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.governance.services.services.AddServicesServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getServicePath" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.services.governance.carbon.wso2.org">
+            <actionMapping>urn:getServicePath</actionMapping>
+            <outputActionMapping>urn:getServicePathResponse</outputActionMapping>
+            <faultActionMapping faultName="AddServicesServiceRegistryException">urn:getServicePathAddServicesServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="AddServicesServiceRegistryException_Exception">urn:getServicePathAddServicesServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="saveServiceConfiguration" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.services.governance.carbon.wso2.org">
+            <actionMapping>urn:saveServiceConfiguration</actionMapping>
+            <outputActionMapping>urn:saveServiceConfigurationResponse</outputActionMapping>
+            <faultActionMapping faultName="AddServicesServiceRegistryException">urn:saveServiceConfigurationAddServicesServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="AddServicesServiceRegistryException_Exception">urn:saveServiceConfigurationAddServicesServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getServiceConfiguration" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.services.governance.carbon.wso2.org">
+            <actionMapping>urn:getServiceConfiguration</actionMapping>
+            <outputActionMapping>urn:getServiceConfigurationResponse</outputActionMapping>
+            <faultActionMapping faultName="AddServicesServiceRegistryException">urn:getServiceConfigurationAddServicesServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="AddServicesServiceRegistryException_Exception">urn:getServiceConfigurationAddServicesServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="addService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.services.governance.carbon.wso2.org">
+            <actionMapping>urn:addService</actionMapping>
+            <outputActionMapping>urn:addServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="AddServicesServiceRegistryException">urn:addServiceAddServicesServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="AddServicesServiceRegistryException_Exception">urn:addServiceAddServicesServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="canChange" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.services.governance.carbon.wso2.org">
+            <actionMapping>urn:canChange</actionMapping>
+            <outputActionMapping>urn:canChangeResponse</outputActionMapping>
+            <faultActionMapping faultName="AddServicesServiceException">urn:canChangeAddServicesServiceException</faultActionMapping>
+            <faultActionMapping faultName="AddServicesServiceException_Exception">urn:canChangeAddServicesServiceException</faultActionMapping>
+        </operation>
+        <operation name="getAvailableAspects" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.services.governance.carbon.wso2.org">
+            <actionMapping>urn:getAvailableAspects</actionMapping>
+            <outputActionMapping>urn:getAvailableAspectsResponse</outputActionMapping>
+            <faultActionMapping faultName="AddServicesServiceException">urn:getAvailableAspectsAddServicesServiceException</faultActionMapping>
+            <faultActionMapping faultName="AddServicesServiceException_Exception">urn:getAvailableAspectsAddServicesServiceException</faultActionMapping>
+        </operation>
+        <operation name="editService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.services.governance.carbon.wso2.org">
+            <actionMapping>urn:editService</actionMapping>
+            <outputActionMapping>urn:editServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="AddServicesServiceRegistryException">urn:editServiceAddServicesServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="AddServicesServiceRegistryException_Exception">urn:editServiceAddServicesServiceRegistryException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

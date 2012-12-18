@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="ProfileAdminService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.profiles.mgt.ProfileAdminServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.profiles.mgt.ProfileAdminServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.profiles.mgt.ProfileAdminServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="isAddProfileEnabled" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.profiles.carbon.wso2.org">
+            <actionMapping>urn:isAddProfileEnabled</actionMapping>
+            <outputActionMapping>urn:isAddProfileEnabledResponse</outputActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException">urn:isAddProfileEnabledProfileAdminServiceProfileManagementException</faultActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException_Exception">urn:isAddProfileEnabledProfileAdminServiceProfileManagementException</faultActionMapping>
+        </operation>
+        <operation name="deleteProfileConfiguraiton" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://mgt.profiles.carbon.wso2.org">
+            <actionMapping>urn:deleteProfileConfiguraiton</actionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException">urn:deleteProfileConfiguraitonProfileAdminServiceProfileManagementException</faultActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException_Exception">urn:deleteProfileConfiguraitonProfileAdminServiceProfileManagementException</faultActionMapping>
+        </operation>
+        <operation name="getClaimConfigurations" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.profiles.carbon.wso2.org">
+            <actionMapping>urn:getClaimConfigurations</actionMapping>
+            <outputActionMapping>urn:getClaimConfigurationsResponse</outputActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException">urn:getClaimConfigurationsProfileAdminServiceProfileManagementException</faultActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException_Exception">urn:getClaimConfigurationsProfileAdminServiceProfileManagementException</faultActionMapping>
+        </operation>
+        <operation name="getDialectsForUserStore" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.profiles.carbon.wso2.org">
+            <actionMapping>urn:getDialectsForUserStore</actionMapping>
+            <outputActionMapping>urn:getDialectsForUserStoreResponse</outputActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException">urn:getDialectsForUserStoreProfileAdminServiceProfileManagementException</faultActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException_Exception">urn:getDialectsForUserStoreProfileAdminServiceProfileManagementException</faultActionMapping>
+        </operation>
+        <operation name="getAllAvailableProfileConfiguraions" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.profiles.carbon.wso2.org">
+            <actionMapping>urn:getAllAvailableProfileConfiguraions</actionMapping>
+            <outputActionMapping>urn:getAllAvailableProfileConfiguraionsResponse</outputActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException">urn:getAllAvailableProfileConfiguraionsProfileAdminServiceProfileManagementException</faultActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException_Exception">urn:getAllAvailableProfileConfiguraionsProfileAdminServiceProfileManagementException</faultActionMapping>
+        </operation>
+        <operation name="getProfileConfiguration" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.profiles.carbon.wso2.org">
+            <actionMapping>urn:getProfileConfiguration</actionMapping>
+            <outputActionMapping>urn:getProfileConfigurationResponse</outputActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException">urn:getProfileConfigurationProfileAdminServiceProfileManagementException</faultActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException_Exception">urn:getProfileConfigurationProfileAdminServiceProfileManagementException</faultActionMapping>
+        </operation>
+        <operation name="getAllAvailableProfileConfiguraionsForUserStore" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.profiles.carbon.wso2.org">
+            <actionMapping>urn:getAllAvailableProfileConfiguraionsForUserStore</actionMapping>
+            <outputActionMapping>urn:getAllAvailableProfileConfiguraionsForUserStoreResponse</outputActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException">urn:getAllAvailableProfileConfiguraionsForUserStoreProfileAdminServiceProfileManagementException</faultActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException_Exception">urn:getAllAvailableProfileConfiguraionsForUserStoreProfileAdminServiceProfileManagementException</faultActionMapping>
+        </operation>
+        <operation name="addProfile" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://mgt.profiles.carbon.wso2.org">
+            <actionMapping>urn:addProfile</actionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException">urn:addProfileProfileAdminServiceProfileManagementException</faultActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException_Exception">urn:addProfileProfileAdminServiceProfileManagementException</faultActionMapping>
+        </operation>
+        <operation name="getDialects" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.profiles.carbon.wso2.org">
+            <actionMapping>urn:getDialects</actionMapping>
+            <outputActionMapping>urn:getDialectsResponse</outputActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException">urn:getDialectsProfileAdminServiceProfileManagementException</faultActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException_Exception">urn:getDialectsProfileAdminServiceProfileManagementException</faultActionMapping>
+        </operation>
+        <operation name="updateClaimMappingBehavior" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://mgt.profiles.carbon.wso2.org">
+            <actionMapping>urn:updateClaimMappingBehavior</actionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException">urn:updateClaimMappingBehaviorProfileAdminServiceProfileManagementException</faultActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException_Exception">urn:updateClaimMappingBehaviorProfileAdminServiceProfileManagementException</faultActionMapping>
+        </operation>
+        <operation name="getAllAvailableProfileConfiguraionsForDialect" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mgt.profiles.carbon.wso2.org">
+            <actionMapping>urn:getAllAvailableProfileConfiguraionsForDialect</actionMapping>
+            <outputActionMapping>urn:getAllAvailableProfileConfiguraionsForDialectResponse</outputActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException">urn:getAllAvailableProfileConfiguraionsForDialectProfileAdminServiceProfileManagementException</faultActionMapping>
+            <faultActionMapping faultName="ProfileAdminServiceProfileManagementException_Exception">urn:getAllAvailableProfileConfiguraionsForDialectProfileAdminServiceProfileManagementException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

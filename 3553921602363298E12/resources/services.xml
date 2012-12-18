@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="TenantRegAgentService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.tenant.reg.agent.service.TenantRegAgentServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.tenant.reg.agent.service.TenantRegAgentServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.tenant.reg.agent.service.TenantRegAgentServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="updateTenant" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.agent.reg.tenant.carbon.wso2.org">
+            <actionMapping>urn:updateTenant</actionMapping>
+            <faultActionMapping faultName="TenantRegAgentServiceUserStoreException">urn:updateTenantTenantRegAgentServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="TenantRegAgentServiceUserStoreException_Exception">urn:updateTenantTenantRegAgentServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="renameTenant" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.agent.reg.tenant.carbon.wso2.org">
+            <actionMapping>urn:renameTenant</actionMapping>
+            <faultActionMapping faultName="TenantRegAgentServiceUserStoreException">urn:renameTenantTenantRegAgentServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="TenantRegAgentServiceUserStoreException_Exception">urn:renameTenantTenantRegAgentServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="addTenant" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://service.agent.reg.tenant.carbon.wso2.org">
+            <actionMapping>urn:addTenant</actionMapping>
+            <faultActionMapping faultName="TenantRegAgentServiceUserStoreException">urn:addTenantTenantRegAgentServiceUserStoreException</faultActionMapping>
+            <faultActionMapping faultName="TenantRegAgentServiceUserStoreException_Exception">urn:addTenantTenantRegAgentServiceUserStoreException</faultActionMapping>
+        </operation>
+        <operation name="getListenerOrder" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.agent.reg.tenant.carbon.wso2.org">
+            <actionMapping>urn:getListenerOrder</actionMapping>
+            <outputActionMapping>urn:getListenerOrderResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

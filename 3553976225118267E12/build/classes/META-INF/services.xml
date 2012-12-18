@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="BAMTenantAdmin">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.bam.core.admin.BAMTenantAdminMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.bam.core.admin.BAMTenantAdminSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getTenantId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.bam.carbon.wso2.org">
+            <actionMapping>urn:getTenantId</actionMapping>
+            <outputActionMapping>urn:getTenantIdResponse</outputActionMapping>
+            <faultActionMapping faultName="BAMTenantAdminBAMException">urn:getTenantIdBAMTenantAdminBAMException</faultActionMapping>
+            <faultActionMapping faultName="BAMTenantAdminBAMException_Exception">urn:getTenantIdBAMTenantAdminBAMException</faultActionMapping>
+        </operation>
+        <operation name="getTenant" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.bam.carbon.wso2.org">
+            <actionMapping>urn:getTenant</actionMapping>
+            <outputActionMapping>urn:getTenantResponse</outputActionMapping>
+            <faultActionMapping faultName="BAMTenantAdminBAMException">urn:getTenantBAMTenantAdminBAMException</faultActionMapping>
+            <faultActionMapping faultName="BAMTenantAdminBAMException_Exception">urn:getTenantBAMTenantAdminBAMException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

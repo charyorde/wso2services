@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="BAMListAdminService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.bam.core.services.BAMListAdminServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.bam.core.services.BAMListAdminServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getActivityList" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.bam.carbon.wso2.org">
+            <actionMapping>urn:getActivityList</actionMapping>
+            <outputActionMapping>urn:getActivityListResponse</outputActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException">urn:getActivityListBAMListAdminServiceBAMException</faultActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException_Exception">urn:getActivityListBAMListAdminServiceBAMException</faultActionMapping>
+        </operation>
+        <operation name="getServerListWithCategoryName" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.bam.carbon.wso2.org">
+            <actionMapping>urn:getServerListWithCategoryName</actionMapping>
+            <outputActionMapping>urn:getServerListWithCategoryNameResponse</outputActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException">urn:getServerListWithCategoryNameBAMListAdminServiceBAMException</faultActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException_Exception">urn:getServerListWithCategoryNameBAMListAdminServiceBAMException</faultActionMapping>
+        </operation>
+        <operation name="getOperationList" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.bam.carbon.wso2.org">
+            <actionMapping>urn:getOperationList</actionMapping>
+            <outputActionMapping>urn:getOperationListResponse</outputActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException">urn:getOperationListBAMListAdminServiceBAMException</faultActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException_Exception">urn:getOperationListBAMListAdminServiceBAMException</faultActionMapping>
+        </operation>
+        <operation name="getClientList" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.bam.carbon.wso2.org">
+            <actionMapping>urn:getClientList</actionMapping>
+            <outputActionMapping>urn:getClientListResponse</outputActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException">urn:getClientListBAMListAdminServiceBAMException</faultActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException_Exception">urn:getClientListBAMListAdminServiceBAMException</faultActionMapping>
+        </operation>
+        <operation name="getServiceList" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.bam.carbon.wso2.org">
+            <actionMapping>urn:getServiceList</actionMapping>
+            <outputActionMapping>urn:getServiceListResponse</outputActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException">urn:getServiceListBAMListAdminServiceBAMException</faultActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException_Exception">urn:getServiceListBAMListAdminServiceBAMException</faultActionMapping>
+        </operation>
+        <operation name="getServerList" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.bam.carbon.wso2.org">
+            <actionMapping>urn:getServerList</actionMapping>
+            <outputActionMapping>urn:getServerListResponse</outputActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException">urn:getServerListBAMListAdminServiceBAMException</faultActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException_Exception">urn:getServerListBAMListAdminServiceBAMException</faultActionMapping>
+        </operation>
+        <operation name="getNamespaces" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.bam.carbon.wso2.org">
+            <actionMapping>urn:getNamespaces</actionMapping>
+            <outputActionMapping>urn:getNamespacesResponse</outputActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException">urn:getNamespacesBAMListAdminServiceBAMException</faultActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException_Exception">urn:getNamespacesBAMListAdminServiceBAMException</faultActionMapping>
+        </operation>
+        <operation name="getMessageList" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.bam.carbon.wso2.org">
+            <actionMapping>urn:getMessageList</actionMapping>
+            <outputActionMapping>urn:getMessageListResponse</outputActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException">urn:getMessageListBAMListAdminServiceBAMException</faultActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException_Exception">urn:getMessageListBAMListAdminServiceBAMException</faultActionMapping>
+        </operation>
+        <operation name="getXpathConfigurations" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.core.bam.carbon.wso2.org">
+            <actionMapping>urn:getXpathConfigurations</actionMapping>
+            <outputActionMapping>urn:getXpathConfigurationsResponse</outputActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException">urn:getXpathConfigurationsBAMListAdminServiceBAMException</faultActionMapping>
+            <faultActionMapping faultName="BAMListAdminServiceBAMException_Exception">urn:getXpathConfigurationsBAMListAdminServiceBAMException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

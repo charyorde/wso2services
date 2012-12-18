@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="RSSManagerAdminService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.adminconsole.core.admin.RSSManagerAdminServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.adminconsole.core.admin.RSSManagerAdminServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.adminconsole.core.admin.RSSManagerAdminServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getDatabaseUserById" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:getDatabaseUserById</actionMapping>
+            <outputActionMapping>urn:getDatabaseUserByIdResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:getDatabaseUserByIdRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:getDatabaseUserByIdRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="createPrivilegeGroup" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:createPrivilegeGroup</actionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:createPrivilegeGroupRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:createPrivilegeGroupRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="editRSSInstance" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:editRSSInstance</actionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:editRSSInstanceRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:editRSSInstanceRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="removeRSSInstance" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:removeRSSInstance</actionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:removeRSSInstanceRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:removeRSSInstanceRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="getDatabaseInstanceList" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:getDatabaseInstanceList</actionMapping>
+            <outputActionMapping>urn:getDatabaseInstanceListResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:getDatabaseInstanceListRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:getDatabaseInstanceListRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="createDatabase" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:createDatabase</actionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:createDatabaseRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:createDatabaseRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="getRoundRobinAssignedRSSInstance" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:getRoundRobinAssignedRSSInstance</actionMapping>
+            <outputActionMapping>urn:getRoundRobinAssignedRSSInstanceResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:getRoundRobinAssignedRSSInstanceRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:getRoundRobinAssignedRSSInstanceRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="editPrivilegeGroup" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:editPrivilegeGroup</actionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:editPrivilegeGroupRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:editPrivilegeGroupRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="addRSSInstance" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:addRSSInstance</actionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:addRSSInstanceRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:addRSSInstanceRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="dropUser" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:dropUser</actionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:dropUserRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:dropUserRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="createCarbonDSFromDatabaseUserEntry" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:createCarbonDSFromDatabaseUserEntry</actionMapping>
+            <outputActionMapping>urn:createCarbonDSFromDatabaseUserEntryResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:createCarbonDSFromDatabaseUserEntryRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:createCarbonDSFromDatabaseUserEntryRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="getDatabaseInstanceById" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:getDatabaseInstanceById</actionMapping>
+            <outputActionMapping>urn:getDatabaseInstanceByIdResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:getDatabaseInstanceByIdRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:getDatabaseInstanceByIdRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="createUser" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:createUser</actionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:createUserRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:createUserRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="getRSSInstanceList" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:getRSSInstanceList</actionMapping>
+            <outputActionMapping>urn:getRSSInstanceListResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:getRSSInstanceListRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:getRSSInstanceListRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="getUsersByDatabaseInstanceId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:getUsersByDatabaseInstanceId</actionMapping>
+            <outputActionMapping>urn:getUsersByDatabaseInstanceIdResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:getUsersByDatabaseInstanceIdRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:getUsersByDatabaseInstanceIdRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="getUserDatabasePermissions" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:getUserDatabasePermissions</actionMapping>
+            <outputActionMapping>urn:getUserDatabasePermissionsResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:getUserDatabasePermissionsRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:getUserDatabasePermissionsRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="dropDatabase" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:dropDatabase</actionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:dropDatabaseRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:dropDatabaseRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="testConnection" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:testConnection</actionMapping>
+            <outputActionMapping>urn:testConnectionResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:testConnectionRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:testConnectionRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="getRSSInstanceDataById" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:getRSSInstanceDataById</actionMapping>
+            <outputActionMapping>urn:getRSSInstanceDataByIdResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:getRSSInstanceDataByIdRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:getRSSInstanceDataByIdRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="getPrivilegeGroupById" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:getPrivilegeGroupById</actionMapping>
+            <outputActionMapping>urn:getPrivilegeGroupByIdResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:getPrivilegeGroupByIdRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:getPrivilegeGroupByIdRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="getPrivilegeGroups" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:getPrivilegeGroups</actionMapping>
+            <outputActionMapping>urn:getPrivilegeGroupsResponse</outputActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:getPrivilegeGroupsRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:getPrivilegeGroupsRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="removePrivilegeGroup" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:removePrivilegeGroup</actionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:removePrivilegeGroupRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:removePrivilegeGroupRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+        <operation name="editUserPrivileges" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://admin.core.adminconsole.carbon.wso2.org">
+            <actionMapping>urn:editUserPrivileges</actionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException">urn:editUserPrivilegesRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+            <faultActionMapping faultName="RSSManagerAdminServiceRSSDAOException_Exception">urn:editUserPrivilegesRSSManagerAdminServiceRSSDAOException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>
