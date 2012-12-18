@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="ThemeMgtService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.theme.mgt.services.ThemeMgtServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.theme.mgt.services.ThemeMgtServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="renameResource" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:renameResource</actionMapping>
+            <outputActionMapping>urn:renameResourceResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:renameResourceThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:renameResourceThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="delete" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:delete</actionMapping>
+            <outputActionMapping>urn:deleteResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:deleteThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:deleteThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getMetadata" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:getMetadata</actionMapping>
+            <outputActionMapping>urn:getMetadataResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:getMetadataThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:getMetadataThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getContentDownloadBean" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:getContentDownloadBean</actionMapping>
+            <outputActionMapping>urn:getContentDownloadBeanResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:getContentDownloadBeanThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:getContentDownloadBeanThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="addResource" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:addResource</actionMapping>
+            <outputActionMapping>urn:addResourceResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:addResourceThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:addResourceThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="addCollection" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:addCollection</actionMapping>
+            <outputActionMapping>urn:addCollectionResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:addCollectionThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:addCollectionThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getAllThemes" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:getAllThemes</actionMapping>
+            <outputActionMapping>urn:getAllThemesResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:getAllThemesThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:getAllThemesThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="updateTextContent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:updateTextContent</actionMapping>
+            <outputActionMapping>urn:updateTextContentResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:updateTextContentThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:updateTextContentThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getContentBean" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:getContentBean</actionMapping>
+            <outputActionMapping>urn:getContentBeanResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:getContentBeanThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:getContentBeanThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="applyTheme" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:applyTheme</actionMapping>
+            <outputActionMapping>urn:applyThemeResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:applyThemeThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:applyThemeThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getAllPaths" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:getAllPaths</actionMapping>
+            <outputActionMapping>urn:getAllPathsResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:getAllPathsThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:getAllPathsThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getSessionResourcePath" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:getSessionResourcePath</actionMapping>
+            <outputActionMapping>urn:getSessionResourcePathResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:getSessionResourcePathThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:getSessionResourcePathThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="importResource" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:importResource</actionMapping>
+            <outputActionMapping>urn:importResourceResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:importResourceThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:importResourceThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getResourceData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:getResourceData</actionMapping>
+            <outputActionMapping>urn:getResourceDataResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:getResourceDataThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:getResourceDataThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getCollectionContent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:getCollectionContent</actionMapping>
+            <outputActionMapping>urn:getCollectionContentResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:getCollectionContentThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:getCollectionContentThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="addTextResource" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:addTextResource</actionMapping>
+            <outputActionMapping>urn:addTextResourceResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:addTextResourceThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:addTextResourceThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getTextContent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:getTextContent</actionMapping>
+            <outputActionMapping>urn:getTextContentResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:getTextContentThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:getTextContentThemeMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getResourceTreeEntry" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.theme.carbon.wso2.org">
+            <actionMapping>urn:getResourceTreeEntry</actionMapping>
+            <outputActionMapping>urn:getResourceTreeEntryResponse</outputActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException">urn:getResourceTreeEntryThemeMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="ThemeMgtServiceException_Exception">urn:getResourceTreeEntryThemeMgtServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

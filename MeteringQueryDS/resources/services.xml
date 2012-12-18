@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="MeteringQueryDS">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.ws.dataservice.MeteringQueryDSMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.ws.dataservice.MeteringQueryDSSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getRegistryBandwidthUsageStats" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getRegistryBandwidthUsageStats</actionMapping>
+            <outputActionMapping>urn:getRegistryBandwidthUsageStatsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getRegistryBandwidthUsageStatsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getRegistryBandwidthUsageStatsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getHourlyServiceRequestStats" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getHourlyServiceRequestStats</actionMapping>
+            <outputActionMapping>urn:getHourlyServiceRequestStatsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getHourlyServiceRequestStatsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getHourlyServiceRequestStatsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getDailyRegistryBandwidthUsageStats" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getDailyRegistryBandwidthUsageStats</actionMapping>
+            <outputActionMapping>urn:getDailyRegistryBandwidthUsageStatsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getDailyRegistryBandwidthUsageStatsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getDailyRegistryBandwidthUsageStatsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getHourlyBandwidthStats" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getHourlyBandwidthStats</actionMapping>
+            <outputActionMapping>urn:getHourlyBandwidthStatsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getHourlyBandwidthStatsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getHourlyBandwidthStatsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getInstanceUsageStats" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getInstanceUsageStats</actionMapping>
+            <outputActionMapping>urn:getInstanceUsageStatsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getInstanceUsageStatsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getInstanceUsageStatsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getBandwidthStats" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getBandwidthStats</actionMapping>
+            <outputActionMapping>urn:getBandwidthStatsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getBandwidthStatsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getBandwidthStatsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServiceRequestStats" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServiceRequestStats</actionMapping>
+            <outputActionMapping>urn:getServiceRequestStatsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServiceRequestStatsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServiceRequestStatsDataServiceFault</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

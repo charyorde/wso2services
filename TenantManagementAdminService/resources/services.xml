@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="TenantMgtAdminService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.tenant.mgt.services.TenantMgtAdminServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.tenant.mgt.services.TenantMgtAdminServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.tenant.mgt.services.TenantMgtAdminServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="updateTenant" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.tenant.carbon.wso2.org">
+            <actionMapping>urn:updateTenant</actionMapping>
+            <outputActionMapping>urn:updateTenantResponse</outputActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException">urn:updateTenantTenantMgtAdminServiceException</faultActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException_Exception">urn:updateTenantTenantMgtAdminServiceException</faultActionMapping>
+        </operation>
+        <operation name="deactivateTenant" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.tenant.carbon.wso2.org">
+            <actionMapping>urn:deactivateTenant</actionMapping>
+            <outputActionMapping>urn:deactivateTenantResponse</outputActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException">urn:deactivateTenantTenantMgtAdminServiceException</faultActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException_Exception">urn:deactivateTenantTenantMgtAdminServiceException</faultActionMapping>
+        </operation>
+        <operation name="activateTenant" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.tenant.carbon.wso2.org">
+            <actionMapping>urn:activateTenant</actionMapping>
+            <outputActionMapping>urn:activateTenantResponse</outputActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException">urn:activateTenantTenantMgtAdminServiceException</faultActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException_Exception">urn:activateTenantTenantMgtAdminServiceException</faultActionMapping>
+        </operation>
+        <operation name="retrieveTenants" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.tenant.carbon.wso2.org">
+            <actionMapping>urn:retrieveTenants</actionMapping>
+            <outputActionMapping>urn:retrieveTenantsResponse</outputActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException">urn:retrieveTenantsTenantMgtAdminServiceException</faultActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException_Exception">urn:retrieveTenantsTenantMgtAdminServiceException</faultActionMapping>
+        </operation>
+        <operation name="getTenant" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.tenant.carbon.wso2.org">
+            <actionMapping>urn:getTenant</actionMapping>
+            <outputActionMapping>urn:getTenantResponse</outputActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException">urn:getTenantTenantMgtAdminServiceException</faultActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException_Exception">urn:getTenantTenantMgtAdminServiceException</faultActionMapping>
+        </operation>
+        <operation name="retrievePaginatedTenants" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.tenant.carbon.wso2.org">
+            <actionMapping>urn:retrievePaginatedTenants</actionMapping>
+            <outputActionMapping>urn:retrievePaginatedTenantsResponse</outputActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException">urn:retrievePaginatedTenantsTenantMgtAdminServiceException</faultActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException_Exception">urn:retrievePaginatedTenantsTenantMgtAdminServiceException</faultActionMapping>
+        </operation>
+        <operation name="restartTenant" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://services.mgt.tenant.carbon.wso2.org">
+            <actionMapping>urn:restartTenant</actionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException">urn:restartTenantTenantMgtAdminServiceException</faultActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException_Exception">urn:restartTenantTenantMgtAdminServiceException</faultActionMapping>
+        </operation>
+        <operation name="addTenant" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.tenant.carbon.wso2.org">
+            <actionMapping>urn:addTenant</actionMapping>
+            <outputActionMapping>urn:addTenantResponse</outputActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException">urn:addTenantTenantMgtAdminServiceException</faultActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException_Exception">urn:addTenantTenantMgtAdminServiceException</faultActionMapping>
+        </operation>
+        <operation name="updateTenantPassword" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.tenant.carbon.wso2.org">
+            <actionMapping>urn:updateTenantPassword</actionMapping>
+            <outputActionMapping>urn:updateTenantPasswordResponse</outputActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException">urn:updateTenantPasswordTenantMgtAdminServiceException</faultActionMapping>
+            <faultActionMapping faultName="TenantMgtAdminServiceException_Exception">urn:updateTenantPasswordTenantMgtAdminServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

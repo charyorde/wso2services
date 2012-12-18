@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="MeteringSummaryGenerationDS">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.ws.dataservice.MeteringSummaryGenerationDSMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.ws.dataservice.MeteringSummaryGenerationDSMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.ws.dataservice.MeteringSummaryGenerationDSSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="addBandwidthStatDailySummary" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addBandwidthStatDailySummary</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addBandwidthStatDailySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addBandwidthStatDailySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getDataForYearlySummary" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getDataForYearlySummary</actionMapping>
+            <outputActionMapping>urn:getDataForYearlySummaryResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getDataForYearlySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getDataForYearlySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getRegistryHistoryBandwidthUsage" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getRegistryHistoryBandwidthUsage</actionMapping>
+            <outputActionMapping>urn:getRegistryHistoryBandwidthUsageResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getRegistryHistoryBandwidthUsageDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getRegistryHistoryBandwidthUsageDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addBandwidthStatHourlySummary" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addBandwidthStatHourlySummary</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addBandwidthStatHourlySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addBandwidthStatHourlySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getRegistryBandwidthUsage" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getRegistryBandwidthUsage</actionMapping>
+            <outputActionMapping>urn:getRegistryBandwidthUsageResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getRegistryBandwidthUsageDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getRegistryBandwidthUsageDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getDataForMonthlySummary" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getDataForMonthlySummary</actionMapping>
+            <outputActionMapping>urn:getDataForMonthlySummaryResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getDataForMonthlySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getDataForMonthlySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addBandwidthStatYearlySummary" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addBandwidthStatYearlySummary</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addBandwidthStatYearlySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addBandwidthStatYearlySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMinimumPeriodId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMinimumPeriodId</actionMapping>
+            <outputActionMapping>urn:getMinimumPeriodIdResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMinimumPeriodIdDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMinimumPeriodIdDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addBandwidthStatMonthlySummary" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addBandwidthStatMonthlySummary</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addBandwidthStatMonthlySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addBandwidthStatMonthlySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addRegistryBandwidthUsageDailySummary" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addRegistryBandwidthUsageDailySummary</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addRegistryBandwidthUsageDailySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addRegistryBandwidthUsageDailySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestMonthlyBandwidthSummaryPeriodId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestMonthlyBandwidthSummaryPeriodId</actionMapping>
+            <outputActionMapping>urn:getLatestMonthlyBandwidthSummaryPeriodIdResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestMonthlyBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestMonthlyBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="deleteServerUserData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:deleteServerUserData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:deleteServerUserDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:deleteServerUserDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addRegistryBandwidthUsageMonthlySummary" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addRegistryBandwidthUsageMonthlySummary</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addRegistryBandwidthUsageMonthlySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addRegistryBandwidthUsageMonthlySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addBandwidthStatQuarterlySummary" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addBandwidthStatQuarterlySummary</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addBandwidthStatQuarterlySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addBandwidthStatQuarterlySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getRegistryBandwidthUsageForMonthlySummary" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getRegistryBandwidthUsageForMonthlySummary</actionMapping>
+            <outputActionMapping>urn:getRegistryBandwidthUsageForMonthlySummaryResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getRegistryBandwidthUsageForMonthlySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getRegistryBandwidthUsageForMonthlySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestHourlyBandwidthSummaryPeriodId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestHourlyBandwidthSummaryPeriodId</actionMapping>
+            <outputActionMapping>urn:getLatestHourlyBandwidthSummaryPeriodIdResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestHourlyBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestHourlyBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getDataForHourlySummary" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getDataForHourlySummary</actionMapping>
+            <outputActionMapping>urn:getDataForHourlySummaryResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getDataForHourlySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getDataForHourlySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestMonthlyRegistryBandwidthSummaryPeriodId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestMonthlyRegistryBandwidthSummaryPeriodId</actionMapping>
+            <outputActionMapping>urn:getLatestMonthlyRegistryBandwidthSummaryPeriodIdResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestMonthlyRegistryBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestMonthlyRegistryBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getDataForQuarterlySummary" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getDataForQuarterlySummary</actionMapping>
+            <outputActionMapping>urn:getDataForQuarterlySummaryResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getDataForQuarterlySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getDataForQuarterlySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestDailyRegistryBandwidthSummaryPeriodId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestDailyRegistryBandwidthSummaryPeriodId</actionMapping>
+            <outputActionMapping>urn:getLatestDailyRegistryBandwidthSummaryPeriodIdResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestDailyRegistryBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestDailyRegistryBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getDataForDailySummary" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getDataForDailySummary</actionMapping>
+            <outputActionMapping>urn:getDataForDailySummaryResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getDataForDailySummaryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getDataForDailySummaryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestYearlyBandwidthSummaryPeriodId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestYearlyBandwidthSummaryPeriodId</actionMapping>
+            <outputActionMapping>urn:getLatestYearlyBandwidthSummaryPeriodIdResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestYearlyBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestYearlyBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestQuarterlyBandwidthSummaryPeriodId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestQuarterlyBandwidthSummaryPeriodId</actionMapping>
+            <outputActionMapping>urn:getLatestQuarterlyBandwidthSummaryPeriodIdResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestQuarterlyBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestQuarterlyBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getLatestDailyBandwidthSummaryPeriodId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getLatestDailyBandwidthSummaryPeriodId</actionMapping>
+            <outputActionMapping>urn:getLatestDailyBandwidthSummaryPeriodIdResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getLatestDailyBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getLatestDailyBandwidthSummaryPeriodIdDataServiceFault</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

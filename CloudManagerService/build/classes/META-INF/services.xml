@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="CloudManagerService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.stratos.manager.services.mgt.services.CloudManagerServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.stratos.manager.services.mgt.services.CloudManagerServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="deactivate" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.services.manager.stratos.wso2.org">
+            <actionMapping>urn:deactivate</actionMapping>
+            <outputActionMapping>urn:deactivateResponse</outputActionMapping>
+            <faultActionMapping faultName="CloudManagerServiceException">urn:deactivateCloudManagerServiceException</faultActionMapping>
+            <faultActionMapping faultName="CloudManagerServiceException_Exception">urn:deactivateCloudManagerServiceException</faultActionMapping>
+        </operation>
+        <operation name="retrieveCloudServiceInfo" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.services.manager.stratos.wso2.org">
+            <actionMapping>urn:retrieveCloudServiceInfo</actionMapping>
+            <outputActionMapping>urn:retrieveCloudServiceInfoResponse</outputActionMapping>
+            <faultActionMapping faultName="CloudManagerServiceException">urn:retrieveCloudServiceInfoCloudManagerServiceException</faultActionMapping>
+            <faultActionMapping faultName="CloudManagerServiceException_Exception">urn:retrieveCloudServiceInfoCloudManagerServiceException</faultActionMapping>
+        </operation>
+        <operation name="activate" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.services.manager.stratos.wso2.org">
+            <actionMapping>urn:activate</actionMapping>
+            <outputActionMapping>urn:activateResponse</outputActionMapping>
+            <faultActionMapping faultName="CloudManagerServiceException">urn:activateCloudManagerServiceException</faultActionMapping>
+            <faultActionMapping faultName="CloudManagerServiceException_Exception">urn:activateCloudManagerServiceException</faultActionMapping>
+        </operation>
+        <operation name="saveCloudServicesActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.services.manager.stratos.wso2.org">
+            <actionMapping>urn:saveCloudServicesActivity</actionMapping>
+            <outputActionMapping>urn:saveCloudServicesActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="CloudManagerServiceException">urn:saveCloudServicesActivityCloudManagerServiceException</faultActionMapping>
+            <faultActionMapping faultName="CloudManagerServiceException_Exception">urn:saveCloudServicesActivityCloudManagerServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

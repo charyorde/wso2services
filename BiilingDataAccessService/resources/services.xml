@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="BillingDataAccessService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.billing.mgt.services.BillingDataAccessServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.billing.mgt.services.BillingDataAccessServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getItemIdWithName" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.billing.carbon.wso2.org">
+            <actionMapping>urn:getItemIdWithName</actionMapping>
+            <outputActionMapping>urn:getItemIdWithNameResponse</outputActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException">urn:getItemIdWithNameBillingDataAccessServiceException</faultActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException_Exception">urn:getItemIdWithNameBillingDataAccessServiceException</faultActionMapping>
+        </operation>
+        <operation name="addSubscription" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.billing.carbon.wso2.org">
+            <actionMapping>urn:addSubscription</actionMapping>
+            <outputActionMapping>urn:addSubscriptionResponse</outputActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException">urn:addSubscriptionBillingDataAccessServiceException</faultActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException_Exception">urn:addSubscriptionBillingDataAccessServiceException</faultActionMapping>
+        </operation>
+        <operation name="getCustomerWithName" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.billing.carbon.wso2.org">
+            <actionMapping>urn:getCustomerWithName</actionMapping>
+            <outputActionMapping>urn:getCustomerWithNameResponse</outputActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException">urn:getCustomerWithNameBillingDataAccessServiceException</faultActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException_Exception">urn:getCustomerWithNameBillingDataAccessServiceException</faultActionMapping>
+        </operation>
+        <operation name="getInactiveSubscriptionsOfCustomer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.billing.carbon.wso2.org">
+            <actionMapping>urn:getInactiveSubscriptionsOfCustomer</actionMapping>
+            <outputActionMapping>urn:getInactiveSubscriptionsOfCustomerResponse</outputActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException">urn:getInactiveSubscriptionsOfCustomerBillingDataAccessServiceException</faultActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException_Exception">urn:getInactiveSubscriptionsOfCustomerBillingDataAccessServiceException</faultActionMapping>
+        </operation>
+        <operation name="deactivateActiveSubscription" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.billing.carbon.wso2.org">
+            <actionMapping>urn:deactivateActiveSubscription</actionMapping>
+            <outputActionMapping>urn:deactivateActiveSubscriptionResponse</outputActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException">urn:deactivateActiveSubscriptionBillingDataAccessServiceException</faultActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException_Exception">urn:deactivateActiveSubscriptionBillingDataAccessServiceException</faultActionMapping>
+        </operation>
+        <operation name="changeSubscription" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.billing.carbon.wso2.org">
+            <actionMapping>urn:changeSubscription</actionMapping>
+            <outputActionMapping>urn:changeSubscriptionResponse</outputActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException">urn:changeSubscriptionBillingDataAccessServiceException</faultActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException_Exception">urn:changeSubscriptionBillingDataAccessServiceException</faultActionMapping>
+        </operation>
+        <operation name="getActiveSubscriptionOfCustomer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.billing.carbon.wso2.org">
+            <actionMapping>urn:getActiveSubscriptionOfCustomer</actionMapping>
+            <outputActionMapping>urn:getActiveSubscriptionOfCustomerResponse</outputActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException">urn:getActiveSubscriptionOfCustomerBillingDataAccessServiceException</faultActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException_Exception">urn:getActiveSubscriptionOfCustomerBillingDataAccessServiceException</faultActionMapping>
+        </operation>
+        <operation name="getSubscription" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.billing.carbon.wso2.org">
+            <actionMapping>urn:getSubscription</actionMapping>
+            <outputActionMapping>urn:getSubscriptionResponse</outputActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException">urn:getSubscriptionBillingDataAccessServiceException</faultActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException_Exception">urn:getSubscriptionBillingDataAccessServiceException</faultActionMapping>
+        </operation>
+        <operation name="activateSubscription" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.billing.carbon.wso2.org">
+            <actionMapping>urn:activateSubscription</actionMapping>
+            <outputActionMapping>urn:activateSubscriptionResponse</outputActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException">urn:activateSubscriptionBillingDataAccessServiceException</faultActionMapping>
+            <faultActionMapping faultName="BillingDataAccessServiceException_Exception">urn:activateSubscriptionBillingDataAccessServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

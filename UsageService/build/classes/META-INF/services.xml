@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="UsageService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.usage.services.UsageServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.usage.services.UsageServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="retrievePaginatedInstanceUsage" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.usage.carbon.wso2.org">
+            <actionMapping>urn:retrievePaginatedInstanceUsage</actionMapping>
+            <outputActionMapping>urn:retrievePaginatedInstanceUsageResponse</outputActionMapping>
+            <faultActionMapping faultName="UsageServiceException">urn:retrievePaginatedInstanceUsageUsageServiceException</faultActionMapping>
+            <faultActionMapping faultName="UsageServiceException_Exception">urn:retrievePaginatedInstanceUsageUsageServiceException</faultActionMapping>
+        </operation>
+        <operation name="retrieveInstanceUsage" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.usage.carbon.wso2.org">
+            <actionMapping>urn:retrieveInstanceUsage</actionMapping>
+            <outputActionMapping>urn:retrieveInstanceUsageResponse</outputActionMapping>
+            <faultActionMapping faultName="UsageServiceException">urn:retrieveInstanceUsageUsageServiceException</faultActionMapping>
+            <faultActionMapping faultName="UsageServiceException_Exception">urn:retrieveInstanceUsageUsageServiceException</faultActionMapping>
+        </operation>
+        <operation name="retrieveTenantUsages" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.usage.carbon.wso2.org">
+            <actionMapping>urn:retrieveTenantUsages</actionMapping>
+            <outputActionMapping>urn:retrieveTenantUsagesResponse</outputActionMapping>
+            <faultActionMapping faultName="UsageServiceException">urn:retrieveTenantUsagesUsageServiceException</faultActionMapping>
+            <faultActionMapping faultName="UsageServiceException_Exception">urn:retrieveTenantUsagesUsageServiceException</faultActionMapping>
+        </operation>
+        <operation name="getValidUsageEntry" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.usage.carbon.wso2.org">
+            <actionMapping>urn:getValidUsageEntry</actionMapping>
+            <outputActionMapping>urn:getValidUsageEntryResponse</outputActionMapping>
+        </operation>
+        <operation name="retrieveCurrentTenantUsage" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.usage.carbon.wso2.org">
+            <actionMapping>urn:retrieveCurrentTenantUsage</actionMapping>
+            <outputActionMapping>urn:retrieveCurrentTenantUsageResponse</outputActionMapping>
+            <faultActionMapping faultName="UsageServiceException">urn:retrieveCurrentTenantUsageUsageServiceException</faultActionMapping>
+            <faultActionMapping faultName="UsageServiceException_Exception">urn:retrieveCurrentTenantUsageUsageServiceException</faultActionMapping>
+        </operation>
+        <operation name="retrieveTenantUsage" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.usage.carbon.wso2.org">
+            <actionMapping>urn:retrieveTenantUsage</actionMapping>
+            <outputActionMapping>urn:retrieveTenantUsageResponse</outputActionMapping>
+            <faultActionMapping faultName="UsageServiceException">urn:retrieveTenantUsageUsageServiceException</faultActionMapping>
+            <faultActionMapping faultName="UsageServiceException_Exception">urn:retrieveTenantUsageUsageServiceException</faultActionMapping>
+        </operation>
+        <operation name="retrievePaginatedTenantUsages" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.usage.carbon.wso2.org">
+            <actionMapping>urn:retrievePaginatedTenantUsages</actionMapping>
+            <outputActionMapping>urn:retrievePaginatedTenantUsagesResponse</outputActionMapping>
+            <faultActionMapping faultName="UsageServiceException">urn:retrievePaginatedTenantUsagesUsageServiceException</faultActionMapping>
+            <faultActionMapping faultName="UsageServiceException_Exception">urn:retrievePaginatedTenantUsagesUsageServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://services.mgt.account.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://services.mgt.account.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ax23="http://beans.mgt.account.carbon.wso2.org/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>AccountMgtService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://services.mgt.account.carbon.wso2.org" xmlns:ax24="http://beans.mgt.account.carbon.wso2.org/xsd">
+            <xs:import namespace="http://beans.mgt.account.carbon.wso2.org/xsd"/>
+            <xs:element name="AccountMgtServiceException">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="AccountMgtServiceException" nillable="true" type="ns:Exception"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="Exception">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="updateFullname">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="accountInfoBean" nillable="true" type="ax23:AccountInfoBean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateFullnameResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateContact">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="contactEmail" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="isEmailValidated">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="isEmailValidatedResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="isDomainValidated">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="isDomainValidatedResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getFullname">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getFullnameResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ax23:AccountInfoBean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getContact">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getContactResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="finishedDomainValidation">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="validatedDomain" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="successKey" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="finishedDomainValidationResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deactivate">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="checkDomainAvailability">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="domainName" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="checkDomainAvailabilityResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://beans.mgt.account.carbon.wso2.org/xsd">
+            <xs:complexType name="AccountInfoBean">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="firstname" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="lastname" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="updateContactResponse">
+  </wsdl:message>
+  <wsdl:message name="finishedDomainValidationResponse">
+    <wsdl:part name="parameters" element="ns:finishedDomainValidationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getContactRequest">
+    <wsdl:part name="parameters" element="ns:getContact">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AccountMgtServiceException">
+    <wsdl:part name="parameters" element="ns:AccountMgtServiceException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateFullnameResponse">
+    <wsdl:part name="parameters" element="ns:updateFullnameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getFullnameRequest">
+    <wsdl:part name="parameters" element="ns:getFullname">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="checkDomainAvailabilityRequest">
+    <wsdl:part name="parameters" element="ns:checkDomainAvailability">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isEmailValidatedResponse">
+    <wsdl:part name="parameters" element="ns:isEmailValidatedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deactivateRequest">
+    <wsdl:part name="parameters" element="ns:deactivate">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="finishedDomainValidationRequest">
+    <wsdl:part name="parameters" element="ns:finishedDomainValidation">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="checkDomainAvailabilityResponse">
+    <wsdl:part name="parameters" element="ns:checkDomainAvailabilityResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isEmailValidatedRequest">
+    <wsdl:part name="parameters" element="ns:isEmailValidated">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getFullnameResponse">
+    <wsdl:part name="parameters" element="ns:getFullnameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getContactResponse">
+    <wsdl:part name="parameters" element="ns:getContactResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isDomainValidatedResponse">
+    <wsdl:part name="parameters" element="ns:isDomainValidatedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateContactRequest">
+    <wsdl:part name="parameters" element="ns:updateContact">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deactivateResponse">
+  </wsdl:message>
+  <wsdl:message name="updateFullnameRequest">
+    <wsdl:part name="parameters" element="ns:updateFullname">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isDomainValidatedRequest">
+    <wsdl:part name="parameters" element="ns:isDomainValidated">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="AccountMgtServicePortType">
+    <wsdl:operation name="checkDomainAvailability">
+      <wsdl:input message="ns:checkDomainAvailabilityRequest" wsaw:Action="urn:checkDomainAvailability">
+    </wsdl:input>
+      <wsdl:output message="ns:checkDomainAvailabilityResponse" wsaw:Action="urn:checkDomainAvailabilityResponse">
+    </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException" message="ns:AccountMgtServiceException" wsaw:Action="urn:checkDomainAvailabilityAccountMgtServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getContact">
+      <wsdl:input message="ns:getContactRequest" wsaw:Action="urn:getContact">
+    </wsdl:input>
+      <wsdl:output message="ns:getContactResponse" wsaw:Action="urn:getContactResponse">
+    </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException" message="ns:AccountMgtServiceException" wsaw:Action="urn:getContactAccountMgtServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isEmailValidated">
+      <wsdl:input message="ns:isEmailValidatedRequest" wsaw:Action="urn:isEmailValidated">
+    </wsdl:input>
+      <wsdl:output message="ns:isEmailValidatedResponse" wsaw:Action="urn:isEmailValidatedResponse">
+    </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException" message="ns:AccountMgtServiceException" wsaw:Action="urn:isEmailValidatedAccountMgtServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateFullname">
+      <wsdl:input message="ns:updateFullnameRequest" wsaw:Action="urn:updateFullname">
+    </wsdl:input>
+      <wsdl:output message="ns:updateFullnameResponse" wsaw:Action="urn:updateFullnameResponse">
+    </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException" message="ns:AccountMgtServiceException" wsaw:Action="urn:updateFullnameAccountMgtServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isDomainValidated">
+      <wsdl:input message="ns:isDomainValidatedRequest" wsaw:Action="urn:isDomainValidated">
+    </wsdl:input>
+      <wsdl:output message="ns:isDomainValidatedResponse" wsaw:Action="urn:isDomainValidatedResponse">
+    </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException" message="ns:AccountMgtServiceException" wsaw:Action="urn:isDomainValidatedAccountMgtServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deactivate">
+      <wsdl:input message="ns:deactivateRequest" wsaw:Action="urn:deactivate">
+    </wsdl:input>
+      <wsdl:output message="ns:deactivateResponse" wsaw:Action="urn:deactivateResponse">
+    </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException" message="ns:AccountMgtServiceException" wsaw:Action="urn:deactivateAccountMgtServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getFullname">
+      <wsdl:input message="ns:getFullnameRequest" wsaw:Action="urn:getFullname">
+    </wsdl:input>
+      <wsdl:output message="ns:getFullnameResponse" wsaw:Action="urn:getFullnameResponse">
+    </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException" message="ns:AccountMgtServiceException" wsaw:Action="urn:getFullnameAccountMgtServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="finishedDomainValidation">
+      <wsdl:input message="ns:finishedDomainValidationRequest" wsaw:Action="urn:finishedDomainValidation">
+    </wsdl:input>
+      <wsdl:output message="ns:finishedDomainValidationResponse" wsaw:Action="urn:finishedDomainValidationResponse">
+    </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException" message="ns:AccountMgtServiceException" wsaw:Action="urn:finishedDomainValidationAccountMgtServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateContact">
+      <wsdl:input message="ns:updateContactRequest" wsaw:Action="urn:updateContact">
+    </wsdl:input>
+      <wsdl:output message="ns:updateContactResponse" wsaw:Action="urn:updateContactResponse">
+    </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException" message="ns:AccountMgtServiceException" wsaw:Action="urn:updateContactAccountMgtServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AccountMgtServiceSoap11Binding" type="ns:AccountMgtServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="checkDomainAvailability">
+      <soap:operation soapAction="urn:checkDomainAvailability" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getContact">
+      <soap:operation soapAction="urn:getContact" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isEmailValidated">
+      <soap:operation soapAction="urn:isEmailValidated" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateFullname">
+      <soap:operation soapAction="urn:updateFullname" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isDomainValidated">
+      <soap:operation soapAction="urn:isDomainValidated" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deactivate">
+      <soap:operation soapAction="urn:deactivate" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getFullname">
+      <soap:operation soapAction="urn:getFullname" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="finishedDomainValidation">
+      <soap:operation soapAction="urn:finishedDomainValidation" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateContact">
+      <soap:operation soapAction="urn:updateContact" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AccountMgtServiceSoap12Binding" type="ns:AccountMgtServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="checkDomainAvailability">
+      <soap12:operation soapAction="urn:checkDomainAvailability" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap12:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getContact">
+      <soap12:operation soapAction="urn:getContact" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap12:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isEmailValidated">
+      <soap12:operation soapAction="urn:isEmailValidated" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap12:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateFullname">
+      <soap12:operation soapAction="urn:updateFullname" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap12:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isDomainValidated">
+      <soap12:operation soapAction="urn:isDomainValidated" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap12:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deactivate">
+      <soap12:operation soapAction="urn:deactivate" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap12:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getFullname">
+      <soap12:operation soapAction="urn:getFullname" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap12:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="finishedDomainValidation">
+      <soap12:operation soapAction="urn:finishedDomainValidation" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap12:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateContact">
+      <soap12:operation soapAction="urn:updateContact" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="AccountMgtServiceException">
+        <soap12:fault name="AccountMgtServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AccountMgtServiceHttpBinding" type="ns:AccountMgtServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="checkDomainAvailability">
+      <http:operation location="checkDomainAvailability"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getContact">
+      <http:operation location="getContact"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isEmailValidated">
+      <http:operation location="isEmailValidated"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateFullname">
+      <http:operation location="updateFullname"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isDomainValidated">
+      <http:operation location="isDomainValidated"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deactivate">
+      <http:operation location="deactivate"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFullname">
+      <http:operation location="getFullname"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="finishedDomainValidation">
+      <http:operation location="finishedDomainValidation"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateContact">
+      <http:operation location="updateContact"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AccountMgtService">
+    <wsdl:port name="AccountMgtServiceHttpsEndpoint" binding="ns:AccountMgtServiceHttpBinding">
+      <http:address location="https://cloud-test.wso2.com:9443/services/AccountMgtService.AccountMgtServiceHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="AccountMgtServiceHttpsSoap11Endpoint" binding="ns:AccountMgtServiceSoap11Binding">
+      <soap:address location="https://cloud-test.wso2.com:9443/services/AccountMgtService.AccountMgtServiceHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="AccountMgtServiceHttpsSoap12Endpoint" binding="ns:AccountMgtServiceSoap12Binding">
+      <soap12:address location="https://cloud-test.wso2.com:9443/services/AccountMgtService.AccountMgtServiceHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

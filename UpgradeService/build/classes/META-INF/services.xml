@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="UpgradeService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.upgrade.services.UpgradeServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.upgrade.services.UpgradeServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.upgrade.services.UpgradeServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getCurrentSubscription" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.upgrade.carbon.wso2.org">
+            <actionMapping>urn:getCurrentSubscription</actionMapping>
+            <outputActionMapping>urn:getCurrentSubscriptionResponse</outputActionMapping>
+            <faultActionMapping faultName="UpgradeServiceException">urn:getCurrentSubscriptionUpgradeServiceException</faultActionMapping>
+            <faultActionMapping faultName="UpgradeServiceException_Exception">urn:getCurrentSubscriptionUpgradeServiceException</faultActionMapping>
+        </operation>
+        <operation name="getPackageInfo" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.upgrade.carbon.wso2.org">
+            <actionMapping>urn:getPackageInfo</actionMapping>
+            <outputActionMapping>urn:getPackageInfoResponse</outputActionMapping>
+            <faultActionMapping faultName="UpgradeServiceException">urn:getPackageInfoUpgradeServiceException</faultActionMapping>
+            <faultActionMapping faultName="UpgradeServiceException_Exception">urn:getPackageInfoUpgradeServiceException</faultActionMapping>
+        </operation>
+        <operation name="cancelSubscription" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://services.upgrade.carbon.wso2.org">
+            <actionMapping>urn:cancelSubscription</actionMapping>
+            <faultActionMapping faultName="UpgradeServiceException">urn:cancelSubscriptionUpgradeServiceException</faultActionMapping>
+            <faultActionMapping faultName="UpgradeServiceException_Exception">urn:cancelSubscriptionUpgradeServiceException</faultActionMapping>
+        </operation>
+        <operation name="updateSubscription" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://services.upgrade.carbon.wso2.org">
+            <actionMapping>urn:updateSubscription</actionMapping>
+            <faultActionMapping faultName="UpgradeServiceException">urn:updateSubscriptionUpgradeServiceException</faultActionMapping>
+            <faultActionMapping faultName="UpgradeServiceException_Exception">urn:updateSubscriptionUpgradeServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

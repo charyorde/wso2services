@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="AccountMgtService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.account.mgt.services.AccountMgtServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.account.mgt.services.AccountMgtServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="finishedDomainValidation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.account.carbon.wso2.org">
+            <actionMapping>urn:finishedDomainValidation</actionMapping>
+            <outputActionMapping>urn:finishedDomainValidationResponse</outputActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException">urn:finishedDomainValidationAccountMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException_Exception">urn:finishedDomainValidationAccountMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="updateContact" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.account.carbon.wso2.org">
+            <actionMapping>urn:updateContact</actionMapping>
+            <outputActionMapping>urn:updateContactResponse</outputActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException">urn:updateContactAccountMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException_Exception">urn:updateContactAccountMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getFullname" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.account.carbon.wso2.org">
+            <actionMapping>urn:getFullname</actionMapping>
+            <outputActionMapping>urn:getFullnameResponse</outputActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException">urn:getFullnameAccountMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException_Exception">urn:getFullnameAccountMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="getContact" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.account.carbon.wso2.org">
+            <actionMapping>urn:getContact</actionMapping>
+            <outputActionMapping>urn:getContactResponse</outputActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException">urn:getContactAccountMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException_Exception">urn:getContactAccountMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="isEmailValidated" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.account.carbon.wso2.org">
+            <actionMapping>urn:isEmailValidated</actionMapping>
+            <outputActionMapping>urn:isEmailValidatedResponse</outputActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException">urn:isEmailValidatedAccountMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException_Exception">urn:isEmailValidatedAccountMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="isDomainValidated" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.account.carbon.wso2.org">
+            <actionMapping>urn:isDomainValidated</actionMapping>
+            <outputActionMapping>urn:isDomainValidatedResponse</outputActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException">urn:isDomainValidatedAccountMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException_Exception">urn:isDomainValidatedAccountMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="updateFullname" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.account.carbon.wso2.org">
+            <actionMapping>urn:updateFullname</actionMapping>
+            <outputActionMapping>urn:updateFullnameResponse</outputActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException">urn:updateFullnameAccountMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException_Exception">urn:updateFullnameAccountMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="deactivate" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.account.carbon.wso2.org">
+            <actionMapping>urn:deactivate</actionMapping>
+            <outputActionMapping>urn:deactivateResponse</outputActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException">urn:deactivateAccountMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException_Exception">urn:deactivateAccountMgtServiceException</faultActionMapping>
+        </operation>
+        <operation name="checkDomainAvailability" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.mgt.account.carbon.wso2.org">
+            <actionMapping>urn:checkDomainAvailability</actionMapping>
+            <outputActionMapping>urn:checkDomainAvailabilityResponse</outputActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException">urn:checkDomainAvailabilityAccountMgtServiceException</faultActionMapping>
+            <faultActionMapping faultName="AccountMgtServiceException_Exception">urn:checkDomainAvailabilityAccountMgtServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

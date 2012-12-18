@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="ValidateDomainService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.validate.domain.services.ValidateDomainServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.validate.domain.services.ValidateDomainServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="validateByTextInRoot" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.domain.validate.carbon.wso2.org">
+            <actionMapping>urn:validateByTextInRoot</actionMapping>
+            <outputActionMapping>urn:validateByTextInRootResponse</outputActionMapping>
+            <faultActionMapping faultName="ValidateDomainServiceException">urn:validateByTextInRootValidateDomainServiceException</faultActionMapping>
+            <faultActionMapping faultName="ValidateDomainServiceException_Exception">urn:validateByTextInRootValidateDomainServiceException</faultActionMapping>
+        </operation>
+        <operation name="validateByDNSEntry" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.domain.validate.carbon.wso2.org">
+            <actionMapping>urn:validateByDNSEntry</actionMapping>
+            <outputActionMapping>urn:validateByDNSEntryResponse</outputActionMapping>
+            <faultActionMapping faultName="ValidateDomainServiceException">urn:validateByDNSEntryValidateDomainServiceException</faultActionMapping>
+            <faultActionMapping faultName="ValidateDomainServiceException_Exception">urn:validateByDNSEntryValidateDomainServiceException</faultActionMapping>
+        </operation>
+        <operation name="getDomainValidationKey" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.domain.validate.carbon.wso2.org">
+            <actionMapping>urn:getDomainValidationKey</actionMapping>
+            <outputActionMapping>urn:getDomainValidationKeyResponse</outputActionMapping>
+            <faultActionMapping faultName="ValidateDomainServiceException">urn:getDomainValidationKeyValidateDomainServiceException</faultActionMapping>
+            <faultActionMapping faultName="ValidateDomainServiceException_Exception">urn:getDomainValidationKeyValidateDomainServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>
