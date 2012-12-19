@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="DashboardService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.dashboard.DashboardServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.dashboard.DashboardServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="duplicateTab" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:duplicateTab</actionMapping>
+            <outputActionMapping>urn:duplicateTabResponse</outputActionMapping>
+        </operation>
+        <operation name="getBackendHttpPort" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getBackendHttpPort</actionMapping>
+            <outputActionMapping>urn:getBackendHttpPortResponse</outputActionMapping>
+        </operation>
+        <operation name="getTabContentAsJson" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getTabContentAsJson</actionMapping>
+            <outputActionMapping>urn:getTabContentAsJsonResponse</outputActionMapping>
+        </operation>
+        <operation name="getTabTitle" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getTabTitle</actionMapping>
+            <outputActionMapping>urn:getTabTitleResponse</outputActionMapping>
+        </operation>
+        <operation name="copyGadget" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:copyGadget</actionMapping>
+            <outputActionMapping>urn:copyGadgetResponse</outputActionMapping>
+        </operation>
+        <operation name="setGadgetLayout" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:setGadgetLayout</actionMapping>
+            <outputActionMapping>urn:setGadgetLayoutResponse</outputActionMapping>
+        </operation>
+        <operation name="populateDefaultThreeColumnLayout" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:populateDefaultThreeColumnLayout</actionMapping>
+            <outputActionMapping>urn:populateDefaultThreeColumnLayoutResponse</outputActionMapping>
+        </operation>
+        <operation name="moveGadgetToTab" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:moveGadgetToTab</actionMapping>
+            <outputActionMapping>urn:moveGadgetToTabResponse</outputActionMapping>
+        </operation>
+        <operation name="getDashboardContent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getDashboardContent</actionMapping>
+            <outputActionMapping>urn:getDashboardContentResponse</outputActionMapping>
+        </operation>
+        <operation name="getPortalStylesUrl" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getPortalStylesUrl</actionMapping>
+            <outputActionMapping>urn:getPortalStylesUrlResponse</outputActionMapping>
+        </operation>
+        <operation name="getGadgetUrlsToLayout" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getGadgetUrlsToLayout</actionMapping>
+            <outputActionMapping>urn:getGadgetUrlsToLayoutResponse</outputActionMapping>
+        </operation>
+        <operation name="getTabLayout" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getTabLayout</actionMapping>
+            <outputActionMapping>urn:getTabLayoutResponse</outputActionMapping>
+        </operation>
+        <operation name="populateCustomLayouts" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:populateCustomLayouts</actionMapping>
+            <outputActionMapping>urn:populateCustomLayoutsResponse</outputActionMapping>
+        </operation>
+        <operation name="getGadgetLayout" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getGadgetLayout</actionMapping>
+            <outputActionMapping>urn:getGadgetLayoutResponse</outputActionMapping>
+        </operation>
+        <operation name="addGadgetToUser" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:addGadgetToUser</actionMapping>
+            <outputActionMapping>urn:addGadgetToUserResponse</outputActionMapping>
+        </operation>
+        <operation name="isSelfRegistrationEnabled" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:isSelfRegistrationEnabled</actionMapping>
+            <outputActionMapping>urn:isSelfRegistrationEnabledResponse</outputActionMapping>
+        </operation>
+        <operation name="removeGadget" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:removeGadget</actionMapping>
+            <outputActionMapping>urn:removeGadgetResponse</outputActionMapping>
+        </operation>
+        <operation name="addNewTab" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:addNewTab</actionMapping>
+            <outputActionMapping>urn:addNewTabResponse</outputActionMapping>
+        </operation>
+        <operation name="isExternalGadgetAdditionEnabled" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:isExternalGadgetAdditionEnabled</actionMapping>
+            <outputActionMapping>urn:isExternalGadgetAdditionEnabledResponse</outputActionMapping>
+        </operation>
+        <operation name="isSessionValid" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:isSessionValid</actionMapping>
+            <outputActionMapping>urn:isSessionValidResponse</outputActionMapping>
+        </operation>
+        <operation name="removeTab" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:removeTab</actionMapping>
+            <outputActionMapping>urn:removeTabResponse</outputActionMapping>
+        </operation>
+        <operation name="getDefaultGadgetUrlSet" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getDefaultGadgetUrlSet</actionMapping>
+            <outputActionMapping>urn:getDefaultGadgetUrlSetResponse</outputActionMapping>
+        </operation>
+        <operation name="getGadgetPrefs" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getGadgetPrefs</actionMapping>
+            <outputActionMapping>urn:getGadgetPrefsResponse</outputActionMapping>
+        </operation>
+        <operation name="getTabLayoutWithNames" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getTabLayoutWithNames</actionMapping>
+            <outputActionMapping>urn:getTabLayoutWithNamesResponse</outputActionMapping>
+        </operation>
+        <operation name="setGadgetPrefs" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:setGadgetPrefs</actionMapping>
+            <outputActionMapping>urn:setGadgetPrefsResponse</outputActionMapping>
+        </operation>
+        <operation name="getDashboardContentAsJson" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:getDashboardContentAsJson</actionMapping>
+            <outputActionMapping>urn:getDashboardContentAsJsonResponse</outputActionMapping>
+        </operation>
+        <operation name="populateDashboardTab" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:populateDashboardTab</actionMapping>
+            <outputActionMapping>urn:populateDashboardTabResponse</outputActionMapping>
+        </operation>
+        <operation name="isReadOnlyMode" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://dashboard.carbon.wso2.org">
+            <actionMapping>urn:isReadOnlyMode</actionMapping>
+            <outputActionMapping>urn:isReadOnlyModeResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

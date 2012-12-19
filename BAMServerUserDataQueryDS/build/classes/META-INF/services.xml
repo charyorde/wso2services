@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="BAMServerUserDataQueryDS">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.ws.dataservice.BAMServerUserDataQueryDSMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.ws.dataservice.BAMServerUserDataQueryDSSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="queryServerUserDataWithThreeANDedConditionsForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:queryServerUserDataWithThreeANDedConditionsForServer</actionMapping>
+            <outputActionMapping>urn:queryServerUserDataWithThreeANDedConditionsForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:queryServerUserDataWithThreeANDedConditionsForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:queryServerUserDataWithThreeANDedConditionsForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="queryServerUserDataWithOneConditionForServerDistinct" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:queryServerUserDataWithOneConditionForServerDistinct</actionMapping>
+            <outputActionMapping>urn:queryServerUserDataWithOneConditionForServerDistinctResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:queryServerUserDataWithOneConditionForServerDistinctDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:queryServerUserDataWithOneConditionForServerDistinctDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="queryServerUserDataWithThreeORedConditionsForServerDistinct" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:queryServerUserDataWithThreeORedConditionsForServerDistinct</actionMapping>
+            <outputActionMapping>urn:queryServerUserDataWithThreeORedConditionsForServerDistinctResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:queryServerUserDataWithThreeORedConditionsForServerDistinctDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:queryServerUserDataWithThreeORedConditionsForServerDistinctDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="queryServerUserDataWithTwoANDedConditionsForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:queryServerUserDataWithTwoANDedConditionsForServer</actionMapping>
+            <outputActionMapping>urn:queryServerUserDataWithTwoANDedConditionsForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:queryServerUserDataWithTwoANDedConditionsForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:queryServerUserDataWithTwoANDedConditionsForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="queryServerUserDataWithThreeORedConditionsForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:queryServerUserDataWithThreeORedConditionsForServer</actionMapping>
+            <outputActionMapping>urn:queryServerUserDataWithThreeORedConditionsForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:queryServerUserDataWithThreeORedConditionsForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:queryServerUserDataWithThreeORedConditionsForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="queryServerUserDataWithOneConditionForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:queryServerUserDataWithOneConditionForServer</actionMapping>
+            <outputActionMapping>urn:queryServerUserDataWithOneConditionForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:queryServerUserDataWithOneConditionForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:queryServerUserDataWithOneConditionForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="queryServerUserDataWithTwoANDedConditionsForServerDistinct" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:queryServerUserDataWithTwoANDedConditionsForServerDistinct</actionMapping>
+            <outputActionMapping>urn:queryServerUserDataWithTwoANDedConditionsForServerDistinctResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:queryServerUserDataWithTwoANDedConditionsForServerDistinctDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:queryServerUserDataWithTwoANDedConditionsForServerDistinctDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="queryServerUserDataWithTwoORedConditionsForServerDistinct" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:queryServerUserDataWithTwoORedConditionsForServerDistinct</actionMapping>
+            <outputActionMapping>urn:queryServerUserDataWithTwoORedConditionsForServerDistinctResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:queryServerUserDataWithTwoORedConditionsForServerDistinctDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:queryServerUserDataWithTwoORedConditionsForServerDistinctDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="queryServerUserDataWithTwoORedConditionsForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:queryServerUserDataWithTwoORedConditionsForServer</actionMapping>
+            <outputActionMapping>urn:queryServerUserDataWithTwoORedConditionsForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:queryServerUserDataWithTwoORedConditionsForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:queryServerUserDataWithTwoORedConditionsForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="queryServerUserDataWithThreeANDedConditionsForServerDistinct" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:queryServerUserDataWithThreeANDedConditionsForServerDistinct</actionMapping>
+            <outputActionMapping>urn:queryServerUserDataWithThreeANDedConditionsForServerDistinctResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:queryServerUserDataWithThreeANDedConditionsForServerDistinctDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:queryServerUserDataWithThreeANDedConditionsForServerDistinctDataServiceFault</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

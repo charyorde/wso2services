@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="GadgetSourceService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.governance.gadgetsource.services.GadgetSourceServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.governance.gadgetsource.services.GadgetSourceServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getLifecyclePiechartGadgetData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.gadgetsource.governance.carbon.wso2.org">
+            <actionMapping>urn:getLifecyclePiechartGadgetData</actionMapping>
+            <outputActionMapping>urn:getLifecyclePiechartGadgetDataResponse</outputActionMapping>
+            <faultActionMapping faultName="GadgetSourceServiceRegistryException">urn:getLifecyclePiechartGadgetDataGadgetSourceServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="GadgetSourceServiceRegistryException_Exception">urn:getLifecyclePiechartGadgetDataGadgetSourceServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getServiceInfoGadgetData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.gadgetsource.governance.carbon.wso2.org">
+            <actionMapping>urn:getServiceInfoGadgetData</actionMapping>
+            <outputActionMapping>urn:getServiceInfoGadgetDataResponse</outputActionMapping>
+        </operation>
+        <operation name="getSchemaSharingInfoGadgetData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.gadgetsource.governance.carbon.wso2.org">
+            <actionMapping>urn:getSchemaSharingInfoGadgetData</actionMapping>
+            <outputActionMapping>urn:getSchemaSharingInfoGadgetDataResponse</outputActionMapping>
+        </operation>
+        <operation name="getServiceVersionHistogramGadgetData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.gadgetsource.governance.carbon.wso2.org">
+            <actionMapping>urn:getServiceVersionHistogramGadgetData</actionMapping>
+            <outputActionMapping>urn:getServiceVersionHistogramGadgetDataResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://eventing.bam.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://eventing.bam.carbon.wso2.org" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>BAMServerUserDefinedDataSubscriberService</wsdl:documentation>
+  <wsdl:types>
+  </wsdl:types>
+  <wsdl:message name="PublishRequest">
+  </wsdl:message>
+  <wsdl:portType name="BAMServerUserDefinedDataSubscriberServicePortType">
+    <wsdl:operation name="Publish">
+      <wsdl:input message="tns:PublishRequest" wsaw:Action="http://ws.apache.org/ws/2007/05/eventing-extended/Publish">
+    </wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BAMServerUserDefinedDataSubscriberServiceSoap12Binding" type="tns:BAMServerUserDefinedDataSubscriberServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Publish">
+      <soap12:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BAMServerUserDefinedDataSubscriberServiceSoap11Binding" type="tns:BAMServerUserDefinedDataSubscriberServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Publish">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BAMServerUserDefinedDataSubscriberServiceHttpBinding" type="tns:BAMServerUserDefinedDataSubscriberServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="Publish">
+      <http:operation location="Publish"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BAMServerUserDefinedDataSubscriberService">
+    <wsdl:port name="BAMServerUserDefinedDataSubscriberServiceHttpsSoap11Endpoint" binding="tns:BAMServerUserDefinedDataSubscriberServiceSoap11Binding">
+      <soap:address location="https://monitor.cloud-test.wso2.com:9447/services/BAMServerUserDefinedDataSubscriberService.BAMServerUserDefinedDataSubscriberServiceHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="BAMServerUserDefinedDataSubscriberServiceHttpsEndpoint" binding="tns:BAMServerUserDefinedDataSubscriberServiceHttpBinding">
+      <http:address location="https://monitor.cloud-test.wso2.com:9447/services/BAMServerUserDefinedDataSubscriberService.BAMServerUserDefinedDataSubscriberServiceHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="BAMServerUserDefinedDataSubscriberServiceHttpsSoap12Endpoint" binding="tns:BAMServerUserDefinedDataSubscriberServiceSoap12Binding">
+      <soap12:address location="https://monitor.cloud-test.wso2.com:9447/services/BAMServerUserDefinedDataSubscriberService.BAMServerUserDefinedDataSubscriberServiceHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://services.resourceimpact.gadgets.governance.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ax2191="http://exceptions.core.registry.carbon.wso2.org/xsd" xmlns:ax2192="http://api.registry.carbon.wso2.org/xsd" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://services.resourceimpact.gadgets.governance.carbon.wso2.org" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ax2195="http://beans.resourceimpact.gadgets.governance.carbon.wso2.org/xsd">
+<wsdl:documentation>ResourceImpactAdminService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://org.apache.axis2/xsd" xmlns:ax2194="http://exceptions.core.registry.carbon.wso2.org/xsd" xmlns:ax2196="http://beans.resourceimpact.gadgets.governance.carbon.wso2.org/xsd" xmlns:ns="http://org.apache.axis2/xsd">
+            <xs:import namespace="http://exceptions.core.registry.carbon.wso2.org/xsd"/>
+            <xs:import namespace="http://beans.resourceimpact.gadgets.governance.carbon.wso2.org/xsd"/>
+            <xs:element name="ResourceImpactAdminServiceRegistryException">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="RegistryException" nillable="true" type="ax2191:RegistryException"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAssociations">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="path" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="reverse" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAssociationsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ax2196:AssociationBean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://exceptions.core.registry.carbon.wso2.org/xsd" xmlns:ax2193="http://api.registry.carbon.wso2.org/xsd">
+            <xs:import namespace="http://api.registry.carbon.wso2.org/xsd"/>
+            <xs:complexType name="RegistryException">
+                <xs:complexContent>
+                    <xs:extension base="ax2192:RegistryException">
+                        <xs:sequence/>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://beans.resourceimpact.gadgets.governance.carbon.wso2.org/xsd">
+            <xs:complexType name="AssociationBean">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="associationType" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="destinationPath" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="sourcePath" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://api.registry.carbon.wso2.org/xsd">
+            <xs:complexType name="RegistryException">
+                <xs:sequence/>
+            </xs:complexType>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getAssociationsResponse">
+    <wsdl:part name="parameters" element="ns1:getAssociationsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAssociationsRequest">
+    <wsdl:part name="parameters" element="ns1:getAssociations">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ResourceImpactAdminServiceRegistryException">
+    <wsdl:part name="parameters" element="ns1:ResourceImpactAdminServiceRegistryException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ResourceImpactAdminServicePortType">
+    <wsdl:operation name="getAssociations">
+      <wsdl:input message="tns:getAssociationsRequest" wsaw:Action="urn:getAssociations">
+    </wsdl:input>
+      <wsdl:output message="tns:getAssociationsResponse" wsaw:Action="urn:getAssociationsResponse">
+    </wsdl:output>
+      <wsdl:fault name="ResourceImpactAdminServiceRegistryException" message="tns:ResourceImpactAdminServiceRegistryException" wsaw:Action="urn:getAssociationsResourceImpactAdminServiceRegistryException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ResourceImpactAdminServiceSoap12Binding" type="tns:ResourceImpactAdminServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getAssociations">
+      <soap12:operation soapAction="urn:getAssociations" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ResourceImpactAdminServiceRegistryException">
+        <soap12:fault name="ResourceImpactAdminServiceRegistryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ResourceImpactAdminServiceHttpBinding" type="tns:ResourceImpactAdminServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="getAssociations">
+      <http:operation location="getAssociations"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ResourceImpactAdminServiceSoap11Binding" type="tns:ResourceImpactAdminServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getAssociations">
+      <soap:operation soapAction="urn:getAssociations" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ResourceImpactAdminServiceRegistryException">
+        <soap:fault name="ResourceImpactAdminServiceRegistryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ResourceImpactAdminService">
+    <wsdl:port name="ResourceImpactAdminServiceHttpsSoap11Endpoint" binding="tns:ResourceImpactAdminServiceSoap11Binding">
+      <soap:address location="https://governance.cloud-test.wso2.com:9445/services/ResourceImpactAdminService.ResourceImpactAdminServiceHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="ResourceImpactAdminServiceHttpsEndpoint" binding="tns:ResourceImpactAdminServiceHttpBinding">
+      <http:address location="https://governance.cloud-test.wso2.com:9445/services/ResourceImpactAdminService.ResourceImpactAdminServiceHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="ResourceImpactAdminServiceHttpsSoap12Endpoint" binding="tns:ResourceImpactAdminServiceSoap12Binding">
+      <soap12:address location="https://governance.cloud-test.wso2.com:9445/services/ResourceImpactAdminService.ResourceImpactAdminServiceHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

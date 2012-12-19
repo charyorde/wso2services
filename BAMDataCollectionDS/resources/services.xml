@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="BAMDataCollectionDS">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.ws.dataservice.BAMDataCollectionDSMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.ws.dataservice.BAMDataCollectionDSSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="addMessageDataDump" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addMessageDataDump</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addMessageDataDumpDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addMessageDataDumpDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addOperationUserData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addOperationUserData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addOperationUserDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addOperationUserDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServerUserData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServerUserData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServerUserDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServerUserDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addMessageProperty_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addMessageProperty_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addMessageProperty_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addMessageProperty_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addOperationData_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addOperationData_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addOperationData_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addOperationData_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addOperationData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addOperationData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addOperationDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addOperationDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addActivityData_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addActivityData_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addActivityData_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addActivityData_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addOperationUserData_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addOperationUserData_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addOperationUserData_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addOperationUserData_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addMessageDataDump_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addMessageDataDump_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addMessageDataDump_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addMessageDataDump_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServerUserLoginData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServerUserLoginData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServerUserLoginDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServerUserLoginDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServerData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServerData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServerDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServerDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addMessageProperty" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addMessageProperty</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addMessagePropertyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addMessagePropertyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServiceData_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServiceData_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServiceData_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServiceData_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServiceUserData_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServiceUserData_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServiceUserData_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServiceUserData_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addMessageData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addMessageData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addMessageDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addMessageDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addMessageUserData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addMessageUserData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addMessageUserDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addMessageUserDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServerData_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServerData_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServerData_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServerData_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServerLoginData_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServerLoginData_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServerLoginData_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServerLoginData_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServerUserLoginData_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServerUserLoginData_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServerUserLoginData_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServerUserLoginData_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServiceUserData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServiceUserData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServiceUserDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServiceUserDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServerUserData_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServerUserData_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServerUserData_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServerUserData_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServiceData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServiceData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServiceDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServiceDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addMessageData_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addMessageData_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addMessageData_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addMessageData_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServerLoginData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServerLoginData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServerLoginDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServerLoginDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addMessageUserData_batch_req" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addMessageUserData_batch_req</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addMessageUserData_batch_reqDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addMessageUserData_batch_reqDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addActivityData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addActivityData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addActivityDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addActivityDataDataServiceFault</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

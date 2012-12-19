@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="GadgetEditorService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.gadget.editor.services.GadgetEditorServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.gadget.editor.services.GadgetEditorServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="saveGadget" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.editor.gadget.carbon.wso2.org">
+            <actionMapping>urn:saveGadget</actionMapping>
+            <outputActionMapping>urn:saveGadgetResponse</outputActionMapping>
+            <faultActionMapping faultName="GadgetEditorServiceRegistryException">urn:saveGadgetGadgetEditorServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="GadgetEditorServiceRegistryException_Exception">urn:saveGadgetGadgetEditorServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="openGadget" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.editor.gadget.carbon.wso2.org">
+            <actionMapping>urn:openGadget</actionMapping>
+            <outputActionMapping>urn:openGadgetResponse</outputActionMapping>
+            <faultActionMapping faultName="GadgetEditorServiceRegistryException">urn:openGadgetGadgetEditorServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="GadgetEditorServiceRegistryException_Exception">urn:openGadgetGadgetEditorServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="isResourceExist" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.editor.gadget.carbon.wso2.org">
+            <actionMapping>urn:isResourceExist</actionMapping>
+            <outputActionMapping>urn:isResourceExistResponse</outputActionMapping>
+        </operation>
+        <operation name="getImmediateChildResources" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.editor.gadget.carbon.wso2.org">
+            <actionMapping>urn:getImmediateChildResources</actionMapping>
+            <outputActionMapping>urn:getImmediateChildResourcesResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

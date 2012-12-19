@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="WSDLToolService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.governance.wsdltool.services.WSDLToolServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.governance.wsdltool.services.WSDLToolServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="addMEXService" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://services.wsdltool.governance.carbon.wso2.org">
+            <actionMapping>urn:addMEXService</actionMapping>
+            <faultActionMapping faultName="WSDLToolServiceException">urn:addMEXServiceWSDLToolServiceException</faultActionMapping>
+            <faultActionMapping faultName="WSDLToolServiceException_Exception">urn:addMEXServiceWSDLToolServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

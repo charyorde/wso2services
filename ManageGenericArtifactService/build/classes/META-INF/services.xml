@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="ManageGenericArtifactService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.governance.generic.services.ManageGenericArtifactServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.governance.generic.services.ManageGenericArtifactServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="setArtifactUIConfiguration" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.generic.governance.carbon.wso2.org">
+            <actionMapping>urn:setArtifactUIConfiguration</actionMapping>
+            <outputActionMapping>urn:setArtifactUIConfigurationResponse</outputActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceRegistryException">urn:setArtifactUIConfigurationManageGenericArtifactServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceRegistryException_Exception">urn:setArtifactUIConfigurationManageGenericArtifactServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="canChange" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.generic.governance.carbon.wso2.org">
+            <actionMapping>urn:canChange</actionMapping>
+            <outputActionMapping>urn:canChangeResponse</outputActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceException">urn:canChangeManageGenericArtifactServiceException</faultActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceException_Exception">urn:canChangeManageGenericArtifactServiceException</faultActionMapping>
+        </operation>
+        <operation name="getArtifactContent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.generic.governance.carbon.wso2.org">
+            <actionMapping>urn:getArtifactContent</actionMapping>
+            <outputActionMapping>urn:getArtifactContentResponse</outputActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceRegistryException">urn:getArtifactContentManageGenericArtifactServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceRegistryException_Exception">urn:getArtifactContentManageGenericArtifactServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getArtifactUIConfiguration" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.generic.governance.carbon.wso2.org">
+            <actionMapping>urn:getArtifactUIConfiguration</actionMapping>
+            <outputActionMapping>urn:getArtifactUIConfigurationResponse</outputActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceRegistryException">urn:getArtifactUIConfigurationManageGenericArtifactServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceRegistryException_Exception">urn:getArtifactUIConfigurationManageGenericArtifactServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="listArtifacts" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.generic.governance.carbon.wso2.org">
+            <actionMapping>urn:listArtifacts</actionMapping>
+            <outputActionMapping>urn:listArtifactsResponse</outputActionMapping>
+        </operation>
+        <operation name="addArtifact" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.generic.governance.carbon.wso2.org">
+            <actionMapping>urn:addArtifact</actionMapping>
+            <outputActionMapping>urn:addArtifactResponse</outputActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceRegistryException">urn:addArtifactManageGenericArtifactServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceRegistryException_Exception">urn:addArtifactManageGenericArtifactServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="editArtifact" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.generic.governance.carbon.wso2.org">
+            <actionMapping>urn:editArtifact</actionMapping>
+            <outputActionMapping>urn:editArtifactResponse</outputActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceRegistryException">urn:editArtifactManageGenericArtifactServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceRegistryException_Exception">urn:editArtifactManageGenericArtifactServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getAvailableAspects" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.generic.governance.carbon.wso2.org">
+            <actionMapping>urn:getAvailableAspects</actionMapping>
+            <outputActionMapping>urn:getAvailableAspectsResponse</outputActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceException">urn:getAvailableAspectsManageGenericArtifactServiceException</faultActionMapping>
+            <faultActionMapping faultName="ManageGenericArtifactServiceException_Exception">urn:getAvailableAspectsManageGenericArtifactServiceException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="BAMConfigurationDS">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.ws.dataservice.BAMConfigurationDSMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.ws.dataservice.BAMConfigurationDSMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.ws.dataservice.BAMConfigurationDSSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getMessageDataForActivityKeyIDandMessageKeyID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMessageDataForActivityKeyIDandMessageKeyID</actionMapping>
+            <outputActionMapping>urn:getMessageDataForActivityKeyIDandMessageKeyIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMessageDataForActivityKeyIDandMessageKeyIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMessageDataForActivityKeyIDandMessageKeyIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMessage" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMessage</actionMapping>
+            <outputActionMapping>urn:getMessageResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMessageDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMessageDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addService" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addService</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServiceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServiceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllServersWithCategory" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllServersWithCategory</actionMapping>
+            <outputActionMapping>urn:getAllServersWithCategoryResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllServersWithCategoryDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllServersWithCategoryDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="deactivateServer" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:deactivateServer</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:deactivateServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:deactivateServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllOperationsForService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllOperationsForService</actionMapping>
+            <outputActionMapping>urn:getAllOperationsForServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllOperationsForServiceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllOperationsForServiceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServersForTenant" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServersForTenant</actionMapping>
+            <outputActionMapping>urn:getServersForTenantResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServersForTenantDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServersForTenantDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperationFromName" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperationFromName</actionMapping>
+            <outputActionMapping>urn:getOperationFromNameResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationFromNameDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationFromNameDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllMessagesForOperationID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllMessagesForOperationID</actionMapping>
+            <outputActionMapping>urn:getAllMessagesForOperationIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllMessagesForOperationIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllMessagesForOperationIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllOperations" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllOperations</actionMapping>
+            <outputActionMapping>urn:getAllOperationsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllOperationsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllOperationsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMessageForMessageandOperationandActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMessageForMessageandOperationandActivity</actionMapping>
+            <outputActionMapping>urn:getMessageForMessageandOperationandActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMessageForMessageandOperationandActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMessageForMessageandOperationandActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="deleteTenet" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:deleteTenet</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:deleteTenetDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:deleteTenetDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getEndpoints" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getEndpoints</actionMapping>
+            <outputActionMapping>urn:getEndpointsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getEndpointsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getEndpointsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getTenent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getTenent</actionMapping>
+            <outputActionMapping>urn:getTenentResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getTenentDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getTenentDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllMessagesForActivityKeyId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllMessagesForActivityKeyId</actionMapping>
+            <outputActionMapping>urn:getAllMessagesForActivityKeyIdResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllMessagesForActivityKeyIdDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllMessagesForActivityKeyIdDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getActivityForActivityID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getActivityForActivityID</actionMapping>
+            <outputActionMapping>urn:getActivityForActivityIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getActivityForActivityIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getActivityForActivityIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllXpathData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllXpathData</actionMapping>
+            <outputActionMapping>urn:getAllXpathDataResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllXpathDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllXpathDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllServices" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllServices</actionMapping>
+            <outputActionMapping>urn:getAllServicesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllServicesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllServicesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addNamespaceData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addNamespaceData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addNamespaceDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addNamespaceDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllServersWithCategoryForTenent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllServersWithCategoryForTenent</actionMapping>
+            <outputActionMapping>urn:getAllServersWithCategoryForTenentResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllServersWithCategoryForTenentDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllServersWithCategoryForTenentDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServerFromURL" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServerFromURL</actionMapping>
+            <outputActionMapping>urn:getServerFromURLResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServerFromURLDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServerFromURLDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="updateMessageProperty" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:updateMessageProperty</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:updateMessagePropertyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:updateMessagePropertyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServersForServerType" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServersForServerType</actionMapping>
+            <outputActionMapping>urn:getServersForServerTypeResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServersForServerTypeDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServersForServerTypeDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="selectXpathData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:selectXpathData</actionMapping>
+            <outputActionMapping>urn:selectXpathDataResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:selectXpathDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:selectXpathDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getActivity</actionMapping>
+            <outputActionMapping>urn:getActivityResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServerFromURLAndTenantID" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServerFromURLAndTenantID</actionMapping>
+            <outputActionMapping>urn:getServerFromURLAndTenantIDResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServerFromURLAndTenantIDDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServerFromURLAndTenantIDDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="selectNamespaceData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:selectNamespaceData</actionMapping>
+            <outputActionMapping>urn:selectNamespaceDataResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:selectNamespaceDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:selectNamespaceDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllServers" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllServers</actionMapping>
+            <outputActionMapping>urn:getAllServersResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllServersDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllServersDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addTenent" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addTenent</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addTenentDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addTenentDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addOperation" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addOperation</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="activateServer" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:activateServer</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:activateServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:activateServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="deleteNamespaceData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:deleteNamespaceData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:deleteNamespaceDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:deleteNamespaceDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServiceForServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServiceForServer</actionMapping>
+            <outputActionMapping>urn:getServiceForServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServiceForServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServiceForServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="updateServer" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:updateServer</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:updateServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:updateServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="deleteMessage" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:deleteMessage</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:deleteMessageDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:deleteMessageDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addXpathData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addXpathData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addXpathDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addXpathDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServerFromBAMDB" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServerFromBAMDB</actionMapping>
+            <outputActionMapping>urn:getServerFromBAMDBResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServerFromBAMDBDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServerFromBAMDBDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getMessageProperty" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getMessageProperty</actionMapping>
+            <outputActionMapping>urn:getMessagePropertyResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getMessagePropertyDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getMessagePropertyDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getSequences" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getSequences</actionMapping>
+            <outputActionMapping>urn:getSequencesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getSequencesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getSequencesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="deleteServer" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:deleteServer</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:deleteServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:deleteServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="updateMessageDump" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:updateMessageDump</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:updateMessageDumpDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:updateMessageDumpDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="updateMessageStatus" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:updateMessageStatus</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:updateMessageStatusDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:updateMessageStatusDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllTenents" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllTenents</actionMapping>
+            <outputActionMapping>urn:getAllTenentsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllTenentsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllTenentsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getProxyServices" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getProxyServices</actionMapping>
+            <outputActionMapping>urn:getProxyServicesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getProxyServicesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getProxyServicesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addMessage" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addMessage</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addMessageDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addMessageDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getService" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getService</actionMapping>
+            <outputActionMapping>urn:getServiceResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServiceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServiceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="updateXpathData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:updateXpathData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:updateXpathDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:updateXpathDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="updateNamespaceData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:updateNamespaceData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:updateNamespaceDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:updateNamespaceDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllClients" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllClients</actionMapping>
+            <outputActionMapping>urn:getAllClientsResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllClientsDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllClientsDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllMessages" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllMessages</actionMapping>
+            <outputActionMapping>urn:getAllMessagesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllMessagesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllMessagesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addActivityData" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addActivityData</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addActivityDataDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addActivityDataDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getAllActivities" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getAllActivities</actionMapping>
+            <outputActionMapping>urn:getAllActivitiesResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getAllActivitiesDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getAllActivitiesDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getServer</actionMapping>
+            <outputActionMapping>urn:getServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="deleteOperation" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:deleteOperation</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:deleteOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:deleteOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="getOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:getOperation</actionMapping>
+            <outputActionMapping>urn:getOperationResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:getOperationDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:getOperationDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="addServer" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:addServer</actionMapping>
+            <outputActionMapping>urn:addServerResponse</outputActionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:addServerDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:addServerDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="deleteService" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:deleteService</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:deleteServiceDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:deleteServiceDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="updateActivity" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:updateActivity</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:updateActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:updateActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="deleteActivity" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:deleteActivity</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:deleteActivityDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:deleteActivityDataServiceFault</faultActionMapping>
+        </operation>
+        <operation name="updateServerWithSubscription" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://ws.wso2.org/dataservice">
+            <actionMapping>urn:updateServerWithSubscription</actionMapping>
+            <faultActionMapping faultName="DataServiceFault">urn:updateServerWithSubscriptionDataServiceFault</faultActionMapping>
+            <faultActionMapping faultName="DataServiceFault_Exception">urn:updateServerWithSubscriptionDataServiceFault</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

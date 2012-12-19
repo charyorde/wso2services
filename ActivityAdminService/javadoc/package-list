@@ -1,0 +1,3 @@
+org.wso2.carbon.registry.activities.services
+org.wso2.carbon.registry.common.beans.xsd
+org.wso2.carbon.registry.core.exceptions.xsd

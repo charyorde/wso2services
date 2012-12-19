@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1-wso2v1  Built on : Jun 24, 2011 (06:41:37 IST) -->
+<serviceGroup>
+    <service name="WSRegistryService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.wso2.carbon.registry.ws.api.WSRegistryServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/robust-in-only" class="org.wso2.carbon.registry.ws.api.WSRegistryServiceMessageReceiverRobustInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.wso2.carbon.registry.ws.api.WSRegistryServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="createVersion" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:createVersion</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:createVersionWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:createVersionWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="copy" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:copy</actionMapping>
+            <outputActionMapping>urn:copyResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:copyWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:copyWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="removeComment" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:removeComment</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:removeCommentWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:removeCommentWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSget" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSget</actionMapping>
+            <outputActionMapping>urn:WSgetResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSgetWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSgetWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="move" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:move</actionMapping>
+            <outputActionMapping>urn:moveResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:moveWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:moveWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getAverageRating" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:getAverageRating</actionMapping>
+            <outputActionMapping>urn:getAverageRatingResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:getAverageRatingWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:getAverageRatingWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="associateAspect" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:associateAspect</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:associateAspectWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:associateAspectWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSsearchContent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSsearchContent</actionMapping>
+            <outputActionMapping>urn:WSsearchContentResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSsearchContentWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSsearchContentWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSgetChildCollection" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSgetChildCollection</actionMapping>
+            <outputActionMapping>urn:WSgetChildCollectionResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSgetChildCollectionWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSgetChildCollectionWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getAspectActions" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:getAspectActions</actionMapping>
+            <outputActionMapping>urn:getAspectActionsResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:getAspectActionsWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:getAspectActionsWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="rename" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:rename</actionMapping>
+            <outputActionMapping>urn:renameResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:renameWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:renameWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSgetSingleComment" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSgetSingleComment</actionMapping>
+            <outputActionMapping>urn:WSgetSingleCommentResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSgetSingleCommentWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSgetSingleCommentWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSgetAssociations" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSgetAssociations</actionMapping>
+            <outputActionMapping>urn:WSgetAssociationsResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSgetAssociationsWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSgetAssociationsWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getContent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:getContent</actionMapping>
+            <outputActionMapping>urn:getContentResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:getContentWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:getContentWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSput" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSput</actionMapping>
+            <outputActionMapping>urn:WSputResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSputWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSputWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceIOException">urn:WSputWSRegistryServiceIOException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceIOException_Exception">urn:WSputWSRegistryServiceIOException</faultActionMapping>
+        </operation>
+        <operation name="wsDump" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:wsDump</actionMapping>
+            <outputActionMapping>urn:wsDumpResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:wsDumpWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:wsDumpWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getChildCount" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:getChildCount</actionMapping>
+            <outputActionMapping>urn:getChildCountResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:getChildCountWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:getChildCountWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="removeTag" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:removeTag</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:removeTagWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:removeTagWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getAvailableAspects" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:getAvailableAspects</actionMapping>
+            <outputActionMapping>urn:getAvailableAspectsResponse</outputActionMapping>
+        </operation>
+        <operation name="wsRestore" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:wsRestore</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:wsRestoreWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:wsRestoreWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getRating" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:getRating</actionMapping>
+            <outputActionMapping>urn:getRatingResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:getRatingWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:getRatingWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSgetLogs" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSgetLogs</actionMapping>
+            <outputActionMapping>urn:WSgetLogsResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSgetLogsWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSgetLogsWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getCollectionContent" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:getCollectionContent</actionMapping>
+            <outputActionMapping>urn:getCollectionContentResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:getCollectionContentWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:getCollectionContentWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getVersions" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:getVersions</actionMapping>
+            <outputActionMapping>urn:getVersionsResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:getVersionsWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:getVersionsWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSnewResource" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSnewResource</actionMapping>
+            <outputActionMapping>urn:WSnewResourceResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSnewResourceWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSnewResourceWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="removeLink" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:removeLink</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:removeLinkWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:removeLinkWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSaddComment" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSaddComment</actionMapping>
+            <outputActionMapping>urn:WSaddCommentResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSaddCommentWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSaddCommentWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="applyTag" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:applyTag</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:applyTagWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:applyTagWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="setTenantId" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:setTenantId</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:setTenantIdWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:setTenantIdWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="rateResource" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:rateResource</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:rateResourceWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:rateResourceWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="removeAspect" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:removeAspect</actionMapping>
+            <outputActionMapping>urn:removeAspectResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:removeAspectWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:removeAspectWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSnewCollection" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSnewCollection</actionMapping>
+            <outputActionMapping>urn:WSnewCollectionResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSnewCollectionWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSnewCollectionWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSgetMetaData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSgetMetaData</actionMapping>
+            <outputActionMapping>urn:WSgetMetaDataResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSgetMetaDataWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSgetMetaDataWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="removeAssociation" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:removeAssociation</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:removeAssociationWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:removeAssociationWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="editComment" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:editComment</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:editCommentWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:editCommentWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="delete" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:delete</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:deleteWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:deleteWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSgetAllAssociations" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSgetAllAssociations</actionMapping>
+            <outputActionMapping>urn:WSgetAllAssociationsResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSgetAllAssociationsWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSgetAllAssociationsWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="resourceExists" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:resourceExists</actionMapping>
+            <outputActionMapping>urn:resourceExistsResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:resourceExistsWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:resourceExistsWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="setEventingServiceURL" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:setEventingServiceURL</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:setEventingServiceURLWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:setEventingServiceURLWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="invokeAspectNoParam" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:invokeAspectNoParam</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:invokeAspectNoParamWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:invokeAspectNoParamWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSgetComments" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSgetComments</actionMapping>
+            <outputActionMapping>urn:WSgetCommentsResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSgetCommentsWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSgetCommentsWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSimportResource" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSimportResource</actionMapping>
+            <outputActionMapping>urn:WSimportResourceResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSimportResourceWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSimportResourceWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="getEventingServiceURL" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:getEventingServiceURL</actionMapping>
+            <outputActionMapping>urn:getEventingServiceURLResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:getEventingServiceURLWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:getEventingServiceURLWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSgetTags" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSgetTags</actionMapping>
+            <outputActionMapping>urn:WSgetTagsResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSgetTagsWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSgetTagsWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSgetResourcePathsWithTag" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSgetResourcePathsWithTag</actionMapping>
+            <outputActionMapping>urn:WSgetResourcePathsWithTagResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSgetResourcePathsWithTagWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSgetResourcePathsWithTagWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="invokeAspectWithParam" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:invokeAspectWithParam</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:invokeAspectWithParamWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:invokeAspectWithParamWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="createLinkWithSubTarget" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:createLinkWithSubTarget</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:createLinkWithSubTargetWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:createLinkWithSubTargetWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="restoreVersion" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:restoreVersion</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:restoreVersionWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:restoreVersionWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSgetWithPageSize" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSgetWithPageSize</actionMapping>
+            <outputActionMapping>urn:WSgetWithPageSizeResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSgetWithPageSizeWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSgetWithPageSizeWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="addAssociation" mep="http://www.w3.org/ns/wsdl/robust-in-only" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:addAssociation</actionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:addAssociationWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:addAssociationWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+        <operation name="WSexecuteQuery" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://api.ws.registry.carbon.wso2.org">
+            <actionMapping>urn:WSexecuteQuery</actionMapping>
+            <outputActionMapping>urn:WSexecuteQueryResponse</outputActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException">urn:WSexecuteQueryWSRegistryServiceRegistryException</faultActionMapping>
+            <faultActionMapping faultName="WSRegistryServiceRegistryException_Exception">urn:WSexecuteQueryWSRegistryServiceRegistryException</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

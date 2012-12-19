@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://services.activities.registry.carbon.wso2.org" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://services.activities.registry.carbon.wso2.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:ax2423="http://beans.common.registry.carbon.wso2.org/xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ax2420="http://api.registry.carbon.wso2.org/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ax2419="http://exceptions.core.registry.carbon.wso2.org/xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>ActivityAdminService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://exceptions.core.registry.carbon.wso2.org/xsd" xmlns:ax2421="http://api.registry.carbon.wso2.org/xsd">
+            <xs:import namespace="http://api.registry.carbon.wso2.org/xsd"/>
+            <xs:complexType name="RegistryException">
+                <xs:complexContent>
+                    <xs:extension base="ax2421:RegistryException">
+                        <xs:sequence/>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://beans.common.registry.carbon.wso2.org/xsd">
+            <xs:complexType name="ActivityBean">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="activity" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://services.activities.registry.carbon.wso2.org" xmlns:ax2422="http://exceptions.core.registry.carbon.wso2.org/xsd" xmlns:ax2424="http://beans.common.registry.carbon.wso2.org/xsd">
+            <xs:import namespace="http://exceptions.core.registry.carbon.wso2.org/xsd"/>
+            <xs:import namespace="http://beans.common.registry.carbon.wso2.org/xsd"/>
+            <xs:element name="ActivityAdminServiceRegistryException">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="RegistryException" nillable="true" type="ax2422:RegistryException"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getActivities">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="resourcePath" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="fromDate" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="toDate" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="filter" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="pageStr" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="sessionId" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getActivitiesResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ax2423:ActivityBean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://api.registry.carbon.wso2.org/xsd">
+            <xs:complexType name="RegistryException">
+                <xs:sequence/>
+            </xs:complexType>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getActivitiesResponse">
+    <wsdl:part name="parameters" element="ns:getActivitiesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getActivitiesRequest">
+    <wsdl:part name="parameters" element="ns:getActivities">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ActivityAdminServiceRegistryException">
+    <wsdl:part name="parameters" element="ns:ActivityAdminServiceRegistryException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ActivityAdminServicePortType">
+    <wsdl:operation name="getActivities">
+      <wsdl:input message="ns:getActivitiesRequest" wsaw:Action="urn:getActivities">
+    </wsdl:input>
+      <wsdl:output message="ns:getActivitiesResponse" wsaw:Action="urn:getActivitiesResponse">
+    </wsdl:output>
+      <wsdl:fault name="ActivityAdminServiceRegistryException" message="ns:ActivityAdminServiceRegistryException" wsaw:Action="urn:getActivitiesActivityAdminServiceRegistryException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ActivityAdminServiceHttpBinding" type="ns:ActivityAdminServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="getActivities">
+      <http:operation location="getActivities"/>
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ActivityAdminServiceSoap11Binding" type="ns:ActivityAdminServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getActivities">
+      <soap:operation soapAction="urn:getActivities" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ActivityAdminServiceRegistryException">
+        <soap:fault name="ActivityAdminServiceRegistryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ActivityAdminServiceSoap12Binding" type="ns:ActivityAdminServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getActivities">
+      <soap12:operation soapAction="urn:getActivities" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ActivityAdminServiceRegistryException">
+        <soap12:fault name="ActivityAdminServiceRegistryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ActivityAdminService">
+    <wsdl:port name="ActivityAdminServiceHttpsSoap12Endpoint" binding="ns:ActivityAdminServiceSoap12Binding">
+      <soap12:address location="https://governance.cloud-test.wso2.com:9445/services/ActivityAdminService.ActivityAdminServiceHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="ActivityAdminServiceHttpsEndpoint" binding="ns:ActivityAdminServiceHttpBinding">
+      <http:address location="https://governance.cloud-test.wso2.com:9445/services/ActivityAdminService.ActivityAdminServiceHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="ActivityAdminServiceHttpsSoap11Endpoint" binding="ns:ActivityAdminServiceSoap11Binding">
+      <soap:address location="https://governance.cloud-test.wso2.com:9445/services/ActivityAdminService.ActivityAdminServiceHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
